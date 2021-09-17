@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 //var objeto1 = [A, B, C, D, F, G, H, J];
 //var objeto2 = [R, S, C, G, H, W, X, Y];
 
@@ -80,5 +78,4 @@ for(var x = 0; x < obel1.length; x++){
     }
     contr--;
 }
->>>>>>> 209d39ef51d77baf48f1b143ea72df2b5c41d452
 console.log(contenedor);
