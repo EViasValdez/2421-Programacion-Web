@@ -37,4 +37,5 @@ for(var x = 0; x < obel1.length; x++){
     }
     contr--;
 }
+
 console.log(contenedor);
