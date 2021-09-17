@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var id = {
     "Informacion personal":{
     "Nombre":"Eduardo",
@@ -70,5 +69,4 @@ var info = {
 };
 
 console.log(id);
->>>>>>> 209d39ef51d77baf48f1b143ea72df2b5c41d452
 console.log(info);
