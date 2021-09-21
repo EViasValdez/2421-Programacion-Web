@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var id = {
     "Informacion personal":{
     "Nombre":"Eduardo",
@@ -12,63 +11,28 @@ var id = {
 var info = {
     "Intereses":{
         "IDES preferidos":{
-                "IDES":"NetBeans",
-                "IDES":"Atom",
-                "IDES":"WAMP",
-                "IDES":"Visual Studio Code",
-                "IDES":"Visual Studio Community"
+                "IDE 1":"NetBeans",
+                "IDE 2":"Atom",
+                "IDE 3":"WAMP/MySQL",
+                "IDE 4":"Visual Studio Code",
+                "IDE 5":"Visual Studio Community",
             },
         "Lenguajes de programacion favoritos":{
-                "Lenguaje":"Java",
-                "Lenguaje":"C#"
+                "Lenguaje 1":"Java",
+                "Lenguaje 2":"C#",
+                "Lenguaje 3":"HTML",
+                "Lenguaje 4":"Javascript"
         },
         "Videoconsolas en posesion":{
-                "Videoconsolas":"PS2",
-                "Videoconsolas":"Wii",
+                "Videoconsola 1":"PS2",
+                "Videoconsola 2":"Wii"
         },
         "Generos musicales":{
-                "Generos":"Rock",
-                "Generos":"New Age"
-        }
-    }
-};
-
-console.log(id);
-=======
-var id = {
-    "Informacion personal":{
-    "Nombre":"Eduardo",
-    "Edad":21,
-    "Carrera":"Ingenieria en software",
-    "Universidad":"Universidad Politecnica de Tecamac",
-    "Horario":"Vespertino"
+                "Genero 1":"Rock",
+                "Genero 2":"New Age"
+        },
     },
 };
 
-var info = {
-    "Intereses":{
-        "IDES preferidos":{
-                "IDES":"NetBeans",
-                "IDES":"Atom",
-                "IDES":"WAMP",
-                "IDES":"Visual Studio Code",
-                "IDES":"Visual Studio Community"
-            },
-        "Lenguajes de programacion favoritos":{
-                "Lenguaje":"Java",
-                "Lenguaje":"C#"
-        },
-        "Videoconsolas en posesion":{
-                "Videoconsolas":"PS2",
-                "Videoconsolas":"Wii",
-        },
-        "Generos musicales":{
-                "Generos":"Rock",
-                "Generos":"New Age"
-        }
-    }
-};
-
-console.log(id);
->>>>>>> 209d39ef51d77baf48f1b143ea72df2b5c41d452
-console.log(info);
+console.log(id)
+console.log(info)
