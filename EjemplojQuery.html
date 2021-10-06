@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content=" ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ejemplo jQuery</title>
+</head>
+<body>
+    <input type ="text" id="ok" mascota="Peluccio" class="test">
+    <input type ="text" id="hola" mascota="Pez" class="test">
+    <script src ="jquery.min.js"></script>
+    <script>
+    //    $("#ok").click(function() {
+    //        alert();
+    //    });
+    $("#ok").click(function(){
+        
+        console.log($(this));
+        
+        //alert();
+        });
+    $(".valor").change(function (){
+        //alert($(this).val());
+        alert($(this).attr('mascota'));
+        });
+    </script>
+</body>
+</html>
