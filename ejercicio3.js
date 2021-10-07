@@ -24,15 +24,30 @@ var info = {
                 "Lenguaje 4":"Javascript"
         },
         "Videoconsolas en posesion":{
+<<<<<<< HEAD
                 "Videoconsola 1":"PS2",
                 "Videoconsola 2":"Wii"
         },
         "Generos musicales":{
                 "Genero 1":"Rock",
                 "Genero 2":"New Age"
+=======
+                "Videoconsolas":"PS2",
+                "Videoconsolas":"Wii"
+        },
+        "Generos musicales":{
+                "Generos":"Rock",
+                "Generos":"New Age"
+>>>>>>> c27c893f3a4d4034789b21a42823ed45baedf587
         },
     },
 };
 
+<<<<<<< HEAD
 console.log(id)
 console.log(info)
+=======
+console.log(id);
+console.log(info);
+console.log(info);
+>>>>>>> c27c893f3a4d4034789b21a42823ed45baedf587
