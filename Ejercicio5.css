@@ -1,0 +1,26 @@
+.tablero{
+    align-self: center;
+    margin-top: 10%;
+    width: 20%;
+    border: 1px solid black;
+}
+.botones{
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    background-color: #6b6666a4;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.botones:hover{
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #ada2a2a4;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
