@@ -1,6 +1,8 @@
-$( document ).ready(function() {
+$( document ).ready(
+function() {
     cargarValores();
-});
+}
+);
 
 var total = 0;
 $(".botones").click(function()
@@ -15,14 +17,17 @@ $(".botones").click(function()
         location.reload();            
     }
 
-});
+}
+);
 
 function valorAleatorio(min = 0, max = 1){
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function cargarValores(){
-    $(".verificar").each(function(){
+    $(".verificar").each(
+        function(){
         $(this).attr("valor", valorAleatorio)
-    });
+    }
+    );
 }
