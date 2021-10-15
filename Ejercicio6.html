@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="http://fonts.googleapis.com/css?family=Nanum+Gothic:wght@700" rel="stylesheet">
+    <link href="Ejercicio6.css" type="text/css" rel="stylesheet">
+    <script type= text/javascript src="ejercicio6.js"></script>
+    <title>Formulario a base de template</title>
+  </head>
+  <body>
+    <div class="main-block">
+      <div class="left-part">
+        <i class="fas fa-graduation-cap"></i>
+        <h1>Unete a nuestros cursos</h1>
+        <p>W3docs provides free learning materials for programming languages like HTML, CSS, Java Script, PHP etc.</p>
+        <div class="btn-group">
+          <a class="btn-item" href="https://www.w3docs.com/learn-html.html">Sobre HTML</a>
+          <a class="btn-item" href="https://www.w3docs.com/quiz/#">Pruebe su conocimiento</a>
+        </div>
+      </div>
+      <form id="formulario">
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i> 
+          <h2>Registrese aqui</h2>
+        </div>
+        <div class="info">
+          <input id="nombre" type="text" placeholder="Nombre completo">
+          <input id="usuario" type="text" placeholder="Nombre de usuario">
+          <input id="email" type="text" placeholder="Email">
+          <input id="numero" type="number" placeholder="Numero de telefono">
+          <input id="contras" type="password" placeholder="Contraseña">
+          <select id="seleccion">
+            <option value="predeterminado" selected>Tipo de cursos*</option>
+            <option value="uno">Cursos cortos</option>
+            <option value="dos">Cursos especiales</option>
+            <option value="tres">Licenciatura</option>
+            <option value="cuatro">Diploma</option>
+            <option value="cinco">Certificado</option>
+            <option value="seis">Grado de maestria</option>
+            <option value="siete">Postgraduado</option>
+          </select>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="marcado" name="checkbox"><span>Estoy de acuerdo con <a href="https://www.w3docs.com/privacy-policy">la politica de privacidad del sitio.</a></span>
+          <p>* - Campo obligatorio</p>
+        </div>
+        <input type="button" id="registro" onclick="datos()" value="Registrarse">
+      </form>
+    </div>
+  </body>
+</html>
