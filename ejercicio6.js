@@ -6,7 +6,7 @@ function enviardatos(){
     var contras = document.getElementById("contras").value;
     
     if (nombre == ""){
-        alert("No ha su nombre completo");
+        alert("No ha ingresado su nombre completo");
         document.getElementById("nombre").focus();
     }
     else if (usuario == ""){
