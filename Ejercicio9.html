@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="ejercicio9.js"></script>
+    <link rel="stylesheet" href="Ejercicio9.css" type="text/css">
+    <title>Credito simple</title>
+</head>
+<body>
+    <div class="cuerpo">
+        <h1 class="Texto1">Credito Simple</h1>
+        <h1 class="Texto2">Su fondo de confizanza</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <input id="nombres" type="text" placeholder="Ingrese sus nombres">
+        <input id="apellidos" type="text" placeholder="Ingrese sus apellidos">
+        <input id="montoprestamo" type="text" placeholder="Ingrese monto">
+        <input id="fechapago" type="text" placeholder="Ingrese la fecha de pago">
+        <input id="nplazo" type="text" placeholder="Ingrese plazo de pagos">
+        <select id="amortizacion">
+            <option value="1">Si</option>
+            <option value="2">No</option>
+        </select>
+        <input id="boton1" type="button" onclick="poner()" value="Ingresar a la tabla">
+        <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    </div>
+    <br>
+    <br>
+<table id="tabladatos" class="tabla" align="center">
+    <tr>
+            <th>Nombre del cliente</th>
+            <th>Apellido del cliente</th>
+            <th>Importe del credito</th>
+            <th>Plazo</th>
+            <th>Periodo</th>
+    </tr>
+    <tbody id="tablacontenido">
+    </tbody>
+</table>
+</body>
+</html>

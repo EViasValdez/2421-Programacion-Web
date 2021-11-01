@@ -1,0 +1,77 @@
+body{
+    text-align: center;
+    color: white;
+    background: radial-gradient(circle, rgba(0,15,93,1) 0%, rgba(66,0,13,1) 100%);
+    background-size: cover;
+}
+.Texto1{
+    font-family: "Secular One";
+    font-size: 48px;
+}
+.Texto2{
+    font-family: "Secular One";
+    font-size: 24px;
+}
+.tabla, .tablacontenido, tr, th{
+    column-width: 200px;
+    border-collapse: collapse;
+    border: 2px solid rgb(255, 255, 255);
+    font-family: "Palanquin Dark";
+    font-weight: bolder;
+    background-color: rgb(0, 17, 255);
+    color: white;
+    font-size: 20px;
+}
+#nombres, #apellidos, #montoprestamo, #fechapago, #nplazo{
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    font-family: "Palanquin Dark";
+    font-size: 18px;
+    width: 224px;
+    background-color: black;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+#nombres:hover, #apellidos:hover, #montoprestamo:hover, #fechapago:hover, #nplazo:hover{
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    font-family: "Palanquin Dark";
+    font-size: 18px;
+    width: 224px;
+    background-color: white;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+#amortizacion{
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    font-family: "Palanquin Dark";
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+#amortizacion:hover{
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    font-family: "Palanquin Dark";
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+#boton1{
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    font-family: "Palanquin Dark";
+    font-size: 18px;
+    background-color: black;
+    color: white;
+}
+#boton1:active{
+    border: 1px solid rgb(255, 255, 255);
+    font-family: "Palanquin Dark";
+    font-size: 18px;
+    background-color: white;
+    color: black;
+}
