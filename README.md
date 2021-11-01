@@ -3,10 +3,10 @@
 Notas:
 El orden va de la manera siguiente:
 ====Unidad 1====
-Actividad 1
-Ejercicio 1
-Ejercicio 2
-Ejercicio 3
+Actividad 1&nbsp;
+Ejercicio 1&nbsp;
+Ejercicio 2&nbsp;
+Ejercicio 3&nbsp;
 Ejercicio 4
 Ejemplo JQuery
 Buscaminas
