@@ -2,7 +2,7 @@
 
 Notas:
 El orden va de la manera siguiente:
-====Unidad 1====
+*====Unidad 1====*
 Actividad 1
 - Ejercicio 1
 - Ejercicio 2
@@ -12,5 +12,5 @@ Actividad 1
 - Buscaminas
 - Lista de compras
 
-====Unidad 2====
+*====Unidad 2====*
 //Por ser escrita en su totalidad\\
