@@ -1,9 +1,9 @@
-# 2421-Ingenieria-en-Software
+# ████ 2421-Ingenieria-en-Software ████
 
 Notas:
-El orden va de la manera siguiente:
+El orden va junto con sus contenidos y otras cosas *(trabajo en proceso)*:
 # Unidad 1
-Actividad 1
+- Actividad 1
 - Ejercicio 1
 - Ejercicio 2
 - Ejercicio 3
