@@ -1,8 +1,8 @@
 # 2421-Ingenieria-en-Software
 
-Notas:
-El orden va de la manera siguiente:
-*====Unidad 1====*
+# Notas:
+# El orden va de la manera siguiente:
+====Unidad 1====
 Actividad 1
 - Ejercicio 1
 - Ejercicio 2
