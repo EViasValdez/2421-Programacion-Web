@@ -3,7 +3,6 @@
 - El orden va junto con sus contenidos y otras cosas *(trabajo en proceso)*:
 # ◄ Unidad 1 ►
 - Actividad 1
-```
 (Actividad1.html, Actividad1.png)
 ## Ejercicio Tablas
 (EjercicioTablas.html)
