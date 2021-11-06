@@ -37,7 +37,7 @@
 (Ejercicio10.php, E10Datos.php)
 ###### Ejercicio 11
 (Ejercicio11.php, E11Datos.php)
-###### Ejercicio 12*
-(Ejercicio12.php, E12Conexion.php, E12Postm.php)
+###### Ejercicio 12
+(Ejercicio12.php*, E12Conexion.php*, E12Postm.php*)
 
->* Todavia no ha sido subido
+> * Todavia no han sido subidos.
