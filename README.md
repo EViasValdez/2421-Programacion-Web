@@ -1,6 +1,7 @@
 # Archivos de la materia de programacion web
 - Notas:
-- El orden va junto con sus contenidos y otras cosas *(trabajo en proceso)*:
+- El orden va junto con sus contenidos y otras cosas:
+
 # ◄ Unidad 1 ►
 ###### Actividad 1
 (Actividad1.html, Actividad1.png)
@@ -20,8 +21,6 @@
 (listadecompras (carpetas), listadecompras/listadecompras.html, listadecompras/listadecompras.css, listadecompras/listadecompras.js, listadecompras/Barra.jpeg,             listadecompras/Color.jpeg, listadecompras/purpura.jpeg, listadecompras/Minimalista.png, listadecompras/Pc.png)
 
 # ◄ Unidad 2 ►
-Trabajo todavía en proceso.
-
 ###### Ejercicio 5
 (Ejercicio5.html, ejercicio5.js, Ejercicio5.css)
 ###### Ejercicio 6
@@ -38,5 +37,7 @@ Trabajo todavía en proceso.
 (Ejercicio10.php, E10Datos.php)
 ###### Ejercicio 11
 (Ejercicio11.php, E11Datos.php)
-###### Ejercicio 12
+###### Ejercicio 12*
 (Ejercicio12.php, E12Conexion.php, E12Postm.php)
+
+>* Todavia no ha sido subido
