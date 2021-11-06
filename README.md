@@ -40,4 +40,4 @@
 ###### Ejercicio 12
 (Ejercicio12.php*, E12Conexion.php*, E12Postm.php*)
 
-* *Todavia no han sido subidos.*
+(*) - *Todavia no han sido subidos.*
