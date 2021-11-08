@@ -1,6 +1,6 @@
 # Archivos de la materia de programacion web
-- Notas:
-- El orden va junto con sus contenidos y otras cosas:
+###### Nota:
+###### El orden va junto con sus contenidos y otras cosas:
 
 # ◄ Unidad 1 ►
 ###### Actividad 1
