@@ -1,23 +1,23 @@
 # Archivos de la materia de programacion web
-Nota:
-El orden de cada ejercicio realizado va junto con sus contenidos y otras cosas
+**Nota:**
+**El orden de cada ejercicio realizado va junto con sus contenidos y otras cosas.**
 
 # ◄ Unidad 1 ►
-###### **Actividad 1**
+###### Actividad 1
 (Actividad1.html, Actividad1.png)
-###### **Ejercicio Tablas**
+###### Ejercicio Tablas
 (EjercicioTablas.html)
-###### **Ejercicio 2**
+###### Ejercicio 2
 (Ejercicio2.html, ejercicio2.js, ejercicio2.png)
-###### **Ejercicio 3**
+###### Ejercicio 3
 (Ejercicio3.html, ejercicio3.js, ejercicio3.png)
-###### **Ejercicio 4**
+###### Ejercicio 4
 (Ejercicio4.html, ejercicio4.js, ejercicio4.png)
-###### **Ejemplo JQuery**
+###### Ejemplo JQuery
 (EjemploJQuery.html, jQuery.min)
-###### **Buscaminas**
+###### Buscaminas
 (Buscaminas.html, Buscaminas.js, Buscaminas.css)
-###### **Lista de compras**
+###### Lista de compras
 (listadecompras (carpetas), listadecompras/listadecompras.html, listadecompras/listadecompras.css, listadecompras/listadecompras.js, listadecompras/Barra.jpeg,             listadecompras/Color.jpeg, listadecompras/purpura.jpeg, listadecompras/Minimalista.png, listadecompras/Pc.png)
 
 # ◄ Unidad 2 ►
