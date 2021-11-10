@@ -32,7 +32,7 @@
 ###### Ejercicio 9
 (Ejercicio9.html , ejercicio9.js , Ejercicio9.css)
 ###### Trabajo en equipo
-(TrabajoEquipo)
+(TrabajoEquipo (carpeta), TrabajoEquipo/index(2).html, TrabajoEquipo/estilo.css, TrabajoEquipo/Logica (1).js, TrabajoEquipo/JQuerry.min (1).js)
 ###### Ejercicio 10
 (Ejercicio10.php, E10Datos.php)
 ###### Ejercicio 11
