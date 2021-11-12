@@ -2,7 +2,7 @@
 **Nota:**
 **El orden de cada ejercicio realizado va junto con sus contenidos y otras cosas.**
 
-## ▬ Unidad 1 ▬
+## ▬▬ Unidad 1 ▬▬
 ###### Actividad 1
 (Actividad1.html, Actividad1.png)
 ###### Ejercicio Tablas
@@ -20,7 +20,7 @@
 ###### Lista de compras
 (listadecompras (carpetas), listadecompras/listadecompras.html, listadecompras/listadecompras.css, listadecompras/listadecompras.js, listadecompras/Barra.jpeg,             listadecompras/Color.jpeg, listadecompras/purpura.jpeg, listadecompras/Minimalista.png, listadecompras/Pc.png)
 
-## ▬ Unidad 2 ▬
+## ▬▬ Unidad 2 ▬▬
 ###### Ejercicio 5
 (Ejercicio5.html, ejercicio5.js, Ejercicio5.css)
 ###### Ejercicio 6
