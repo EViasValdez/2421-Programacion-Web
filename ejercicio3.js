@@ -34,5 +34,5 @@ var info = {
     },
 };
 
-console.log(id);
-console.log(info);
+console.log(id)
+console.log(info)
