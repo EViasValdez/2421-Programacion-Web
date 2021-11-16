@@ -14,7 +14,7 @@
 //console.log(objeto1);
 //console.log(objeto2);
 
-console.log("Preuba");
+console.log("Prueba");
 
 var palabra = "hola mundo";
 var obel1 = [1, 2, 3, 4, 5 ,6 ,7, 8, 9, 10];
