@@ -18,8 +18,3 @@ for(var i = 0; i < elemento1.length; i++){
     contrario--;
 }
 console.log(contenedorPalabra);
-
-
-
-
-
