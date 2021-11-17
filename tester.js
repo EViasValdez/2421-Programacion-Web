@@ -1,9 +1,8 @@
 var num1 =10;
 var num2 =10;
-var reuno;
 var result;
 
-var oper = prompt("Ingresa la operacion realizar");
+var oper = prompt("Ingresa la operacion a realizar");
 
 var prueba=operacion();
     alert(prueba)
@@ -36,6 +35,3 @@ function mulitplicacion(){
 function division(){
     result=num1/num2
 }
-
-
-
