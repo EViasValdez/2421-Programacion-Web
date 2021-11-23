@@ -1,5 +1,5 @@
 <?php
-require ("E12Conexion.php");
+require ("Conexion.php");
 
 $nombre = "";
 $edad = "";

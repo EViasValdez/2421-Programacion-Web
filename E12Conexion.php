@@ -1,18 +1,17 @@
 <?php
+public $con;
 
-$servername = "localhost";
-$database = "2421IS";
-$username = "root";
-$password = "";
+function__construct(){
+    $host = "localhost";
+    $username = "root";
+    $password = "";
+    $database = "2421IS";
 
-$conn = mysqli_connect($servername, $username, $password, $database);
+    $this->con = mysqli_connect($servername, $username, $password, $database);
+    mysqli_query($this->con, "SET NAMES "utf8"");
 
-if (!$conn){
+if (!$con){
     die("Connection failed: " . mysqli_connect_error());
 }
-
-// echo "Connected successfully";
-
-// mysqli_close($conn);
-
+}
 ?>
