@@ -41,3 +41,5 @@
 (Ejercicio11.php, E11Datos.php)
 ###### Ejercicio 12
 (Ejercicio12.php, E12Conexion.php, E12Postm.php)
+###### Ejercicio 13
+(Ejercicio13.php, E13Conexion.php, E13ContUsua.php, E13Datos.php ,E13Postm.php ,E13Usuario.php)
