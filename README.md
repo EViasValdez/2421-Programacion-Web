@@ -1,4 +1,7 @@
 # Archivos de la materia de programacion web
+
+Periodo Septiembre - Diciembre 2021.
+
 **Nota:**
 **El orden de cada ejercicio realizado va junto con sus archivos correspondientes.**
 
