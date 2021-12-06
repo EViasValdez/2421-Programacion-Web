@@ -5,7 +5,7 @@
 
 ## ▬ Unidad 1 ▬
 ###### Actividad 1
-(Actividad1.html, Actividad1.png)
+(Ejercicio1.html, ejercicio1.png)
 ###### Ejercicio Tablas
 (EjercicioTablas.html)
 ###### Ejercicio 2
