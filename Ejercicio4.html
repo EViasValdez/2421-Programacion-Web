@@ -4,32 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type= text/javascript src=ejercicio4.js></script>
+    <script type="text/javascript" src="ejercicio4.js"></script>
     <title>Calcuadora</title>
 </head>
 <body align=center>
-    <font size="4" face="Arial">
-    <table border = 2px align=center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <style type="text/css">
+        table, tr{
+            border-collapse: collapse;
+            border: 2px solid rgb(0, 0, 0);
+            color: black;
+            font-family: Arial;
+            font-size: 24px;
+        }
+        th{
+            border-collapse: collapse;
+            border: 2px solid rgb(0, 0, 0);
+            color: black;
+            font-family: Arial;
+            font-size: 24px;
+            padding: 18px;
+        }
+        #Numero1{
+            text-align: center;
+            font-family: "Arial";
+            font-size: 20px;
+            padding: 10px;
+        }
+        #Numero2{
+            text-align: center;
+            font-family: "Arial";
+            font-size: 20px;
+            padding: 10px;
+        }
+        #Operacion{
+            text-align: center;
+            font-family: "Arial";
+            font-size: 20px;
+            padding: 10px;
+        }
+        #Calcular{
+            text-align: center;
+            font-family: "Arial";
+            font-size: 20px;
+            padding: 10px;
+        }
+        #Resultado{
+            text-align: center;
+            font-family: "Arial";
+            font-size: 20px;
+            padding: 10px;
+        }
+    </style>
+    <table align="center">
         <tr>
             <th>
-                Numero 1
+                <p>Numero 1</p>
             </th>
             <th>
-                Operacion
+                <p>Operacion</p>
             </th>
             <th>
-                Numero 2
+                <p>Numero 2</p>
             </th>
             <th>
-                Da clcik aqui para calcular
+                <p>Da click aqui para calcular</p>
             </th>
             <th>
-                Resultado
+                <p>Resultado</p>
             </th>
         </tr>
         <tr>
             <th>
-                <input type=text id="Numero 1">
+                <input type=text id="Numero1">
             </th>
             <th>
                 <select name="" id="Operacion">
@@ -39,16 +101,15 @@
                 <option value="4">Division</option>
             </th>
             <th>
-                <input type=text id="Numero 2">
+                <input type=text id="Numero2">
             </th>
             <th>
-                <button onclick="calcular()">Calcular</button>
+                <button onclick="calcular()" id="Calcular">Calcular</button>
             </th>
             <th>
                 <input type="text" id=Resultado>
             </th>
         </tr>
     </table>
-</font>
 </body>
 </html>
