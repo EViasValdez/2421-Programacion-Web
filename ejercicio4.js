@@ -2,7 +2,6 @@ document.getElementById("botoncalcular").click(function(){
     alert();
 });
 
-
 function calcular(){
     let n1 = parseInt(document.getElementById("Numero1").value);
     let n2 = parseInt(document.getElementById("Numero2").value);
