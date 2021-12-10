@@ -1,10 +1,13 @@
-# Archivos de la materia de programacion web
+# Programacion web
+
+Estos son todos los ejercicios de las tres unidades de la materia de programacion web.
+
 **Nota:**
 **El orden de cada ejercicio realizado va junto con sus archivos correspondientes.**
 
-## ▬ Unidad 1 ▬
+## ● Unidad 1 ●
 ###### Actividad 1
-(Actividad1.html, Actividad1.png)
+(Ejercicio1.html, ejercicio1.png)
 ###### Ejercicio Tablas
 (EjercicioTablas.html)
 ###### Ejercicio 2
@@ -20,7 +23,7 @@
 ###### Lista de compras
 (listadecompras (carpetas), listadecompras/listadecompras.html, listadecompras/listadecompras.css, listadecompras/listadecompras.js, listadecompras/Barra.jpeg,             listadecompras/Color.jpeg, listadecompras/purpura.jpeg, listadecompras/Minimalista.png, listadecompras/Pc.png)
 
-## ▬ Unidad 2 ▬
+## ● Unidad 2 ●
 ###### Ejercicio 5
 (Ejercicio5.html, ejercicio5.js, Ejercicio5.css)
 ###### Ejercicio 6
@@ -34,10 +37,12 @@
 ###### Trabajo en equipo
 (TrabajoEquipo (carpeta), TrabajoEquipo/index(2).html, TrabajoEquipo/estilo.css, TrabajoEquipo/Logica (1).js, TrabajoEquipo/JQuerry.min (1).js)
 
-## ▬ Unidad 3 ▬
+## ● Unidad 3 ●
 ###### Ejercicio 10
 (Ejercicio10.php, E10Datos.php)
 ###### Ejercicio 11
 (Ejercicio11.php, E11Datos.php)
 ###### Ejercicio 12
 (Ejercicio12.php, E12Conexion.php, E12Postm.php)
+###### Ejercicio 13
+(Ejercicio13.php, E13Conexion.php, E13ContUsua.php, E13Datos.php ,E13Postm.php ,E13Usuario.php)
