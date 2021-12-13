@@ -37,7 +37,7 @@ Estos son todos los ejercicios de las tres unidades de la materia de programacio
 ###### Trabajo en equipo
 (TrabajoEquipo (carpeta), TrabajoEquipo/index(2).html, TrabajoEquipo/estilo.css, TrabajoEquipo/Logica (1).js, TrabajoEquipo/JQuerry.min (1).js)
 ###### Examen de la unidad
-(https://github.com/EViasValdez/ExamenUnidad2)
+(https://github.com/EViasValdez/ExamenUnidad2-2421)
 
 ## ● Unidad 3 ●
 ###### Ejercicio 10
@@ -49,4 +49,4 @@ Estos son todos los ejercicios de las tres unidades de la materia de programacio
 ###### Ejercicio 13
 (Ejercicio13.php, E13Conexion.php, E13ContUsua.php, E13Datos.php ,E13Postm.php ,E13Usuario.php)
 ###### Examen de la unidad
-(https://github.com/EViasValdez/ExamenUnidad3)
+(https://github.com/EViasValdez/ExamenUnidad3-2421)
