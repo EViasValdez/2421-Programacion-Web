@@ -5,7 +5,7 @@ Estos son todos los ejercicios de las tres unidades de la materia de programacio
 **Nota:**
 **El orden de cada ejercicio realizado va junto con sus archivos correspondientes.**
 
-## |● Unidad 1 ●|
+## ● Unidad 1 ●
 ###### Actividad 1
 (Ejercicio1.html, ejercicio1.png)
 ###### Ejercicio Tablas
@@ -23,7 +23,7 @@ Estos son todos los ejercicios de las tres unidades de la materia de programacio
 ###### Lista de compras
 (listadecompras (carpetas), listadecompras/listadecompras.html, listadecompras/listadecompras.css, listadecompras/listadecompras.js, listadecompras/Barra.jpeg,             listadecompras/Color.jpeg, listadecompras/purpura.jpeg, listadecompras/Minimalista.png, listadecompras/Pc.png)
 
-## |● Unidad 2 ●|
+## ● Unidad 2 ●
 ###### Ejercicio 5
 (Ejercicio5.html, ejercicio5.js, Ejercicio5.css)
 ###### Ejercicio 6
@@ -37,7 +37,7 @@ Estos son todos los ejercicios de las tres unidades de la materia de programacio
 ###### Trabajo en equipo
 (TrabajoEquipo (carpeta), TrabajoEquipo/index(2).html, TrabajoEquipo/estilo.css, TrabajoEquipo/Logica (1).js, TrabajoEquipo/JQuerry.min (1).js)
 
-## |● Unidad 3 ●|
+## ● Unidad 3 ●
 ###### Ejercicio 10
 (Ejercicio10.php, E10Datos.php)
 ###### Ejercicio 11
