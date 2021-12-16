@@ -1,11 +1,11 @@
 var num1 =10;
 var num2 =10;
 var result;
-
 var oper = prompt("Ingresa la operacion a realizar");
-
 var prueba=operacion();
-    alert(prueba)
+
+alert(prueba);
+
 function operaciones(){
     if(oper=="sumar"){
         suma();
@@ -24,14 +24,17 @@ function operaciones(){
 }
 
 function suma(){
-    result=num1+num2
+    result=num1+num2;
 }
+
 function resta(){
-    result=num1-num2
+    result=num1-num2;
 }
+
 function mulitplicacion(){
-    result=num1*num2
+    result=num1*num2;
 }
+
 function division(){
-    result=num1/num2
+    result=num1/num2;
 }
