@@ -52,7 +52,6 @@ function ponerMinas(){
     }
 }
 
-
 function contarMinasAlrededorCasilla(fila,columna){
     let numeroMinasAlrededor = 0;
 
@@ -77,7 +76,6 @@ function contarMinas(){
         }
     }
 }
-
 
 function marcar(miEvento){
     if (miEvento.type === "contextmenu"){
@@ -110,7 +108,6 @@ function marcar(miEvento){
             }
             actualizarNumMinasRestantes();
         }
-
     }
 }
 
@@ -188,7 +185,6 @@ function resolverTablero(isOK){
                 aCasillas[i].classList.add("icon-bomba");
             }
         }
-
     }
 
     if (isOK){
