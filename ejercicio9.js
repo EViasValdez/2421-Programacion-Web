@@ -16,8 +16,8 @@ function tabla(){
         document.getElementById("tablacontenido").appendChild(boton);
         alert("Datos aceptados");
     }
-
 }
+
 function amortizacion(){
     var iva = montoprestamo*0.12;
     let iniciointeres = monto*0.01 + iva;
@@ -40,6 +40,7 @@ function amortizacion(){
         }
     }
 }
+
 function poner(){
     tabla();
     amortizacion();
