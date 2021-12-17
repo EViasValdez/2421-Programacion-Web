@@ -16,7 +16,6 @@ $(".botones").click(function()
         alert("Perdiste, Estos son tus puntos:"+total);
         location.reload();            
     }
-
 }
 );
 
