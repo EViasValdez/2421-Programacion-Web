@@ -29,16 +29,19 @@ function enviardatos(){
         console.log(nombre+" "+usuario+" "+email+" "+numero+" "+contras);
     }
 }
+
 function selectdos(){
     if(document.getElementById("seleccion").value == "predeterminado"){
         alert("No deje esta parte vacia, eliga una opcion");
     }
 }
+
 function marcado(){
     if(document.getElementById("marcado").checked == false){
         alert("Esta opcion es obligatoria");
     }
 }
+
 function datos(){
     marcado();
     selectdos();
