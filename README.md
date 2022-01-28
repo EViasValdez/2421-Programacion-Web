@@ -6,7 +6,7 @@ Estos son todos los ejercicios de las tres unidades de la materia de programacio
 **El orden de cada ejercicio realizado va junto con sus archivos correspondientes.**
 
 ## ● Unidad 1 ●
-###### Actividad 1
+###### Ejercicio 1 - 03/09/21
 (Ejercicio1.html, ejercicio1.png)
 ###### Ejercicio Tablas
 (EjercicioTablas.html)
