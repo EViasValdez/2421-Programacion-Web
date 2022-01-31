@@ -1,12 +1,12 @@
 <?php
-    if(isset($_GET["palabra"]))
+    if (isset($_GET["palabra"]))
     {
         $palabra = $_GET["palabra"];
-        if(isset($_GET["tipo"]))
+        if (isset($_GET["tipo"]))
         {
             $tipo = $_GET["tipo"];
         }
-        if($tipo == 0){
+        if ($tipo == 0){
             $palabra = strtolower($palabra);
             echo "El resultado es: $palabra";
         }
