@@ -1,7 +1,9 @@
 # Programacion web
+<!----Descripcion---->
 Estos son todos los ejercicios de las tres unidades de la materia de programacion web.
+<!----Separador de la descripcion ---->
 
-<!----Aqui van las notas---->
+<!----Notas---->
 **Notas**
 
 **- El orden de cada ejercicio realizado va junto con sus archivos correspondientes.**
