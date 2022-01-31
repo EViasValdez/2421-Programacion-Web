@@ -2,7 +2,7 @@
 
 Estos son todos los ejercicios de las tres unidades de la materia de programacion web.
 
-**Nota:**
+**Notas:**
 
 **El orden de cada ejercicio realizado va junto con sus archivos correspondientes.**
 
