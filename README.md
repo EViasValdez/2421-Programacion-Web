@@ -23,21 +23,21 @@ Estos son todos los ejercicios de las tres unidades de la materia de programacio
 (EjemploJQuery.html, jQuery.min)
 ###### Buscaminas - 20/09/21
 (Buscaminas.html, Buscaminas.js, Buscaminas.css)
-###### Lista de compras
+###### Lista de compras - 22/09/21
 (listadecompras (carpetas), listadecompras/listadecompras.html, listadecompras/listadecompras.css, listadecompras/listadecompras.js, listadecompras/Barra.jpeg,             listadecompras/Color.jpeg, listadecompras/purpura.jpeg, listadecompras/Minimalista.png, listadecompras/Pc.png)
 
 ## ● Unidad 2 ●
-###### Ejercicio 5
+###### Ejercicio 5 - 13/09/21
 (Ejercicio5.html, ejercicio5.js, Ejercicio5.css)
 ###### Ejercicio 6 - 11/10/21
 (Ejercicio6.html, ejercicio6.js, Ejercicio6.css)
-###### Ejercicio 7
+###### Ejercicio 7 - 
 (Ejercicio7.html, ejercicio7.js, Ejercicio7.css)
-###### Ejercicio 8
+###### Ejercicio 8 - 15/10/21
 (Ejercicio8.html, ejercicio8.js, Ejercicio8.css)
 ###### Ejercicio 9 - 20/10/21
 (Ejercicio9.html , ejercicio9.js , Ejercicio9.css)
-###### Trabajo en equipo
+###### Trabajo en equipo - 22/10/21
 (TrabajoEquipo (carpeta), TrabajoEquipo/index(2).html, TrabajoEquipo/estilo.css, TrabajoEquipo/Logica (1).js, TrabajoEquipo/JQuerry.min (1).js)
 
 ## ● Unidad 3 ●
