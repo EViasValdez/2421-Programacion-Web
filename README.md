@@ -15,7 +15,8 @@ Estos son todos los ejercicios de las tres unidades de la materia de programacio
 ###### Ejercicio Tablas - 07/09/21
 (EjercicioTablas.html)
 ###### Ejercicio 2, Ejercicio 3 - 15/09/21
-(Ejercicio2.html, ejercicio2.js, ejercicio2.png), 
+(Ejercicio2.html, ejercicio2.js, ejercicio2.png)
+<!--Separador-->
 (Ejercicio3.html, ejercicio3.js, ejercicio3.png)
 ###### Ejercicio 4 - 17/09/21
 (Ejercicio4.html, ejercicio4.js, ejercicio4.png)
