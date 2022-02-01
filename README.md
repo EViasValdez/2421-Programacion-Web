@@ -30,7 +30,7 @@ Estos son todos los ejercicios de las tres unidades de la materia de programacio
 ## ● Unidad 2 ●
 ###### Ejercicio 5
 (Ejercicio5.html, ejercicio5.js, Ejercicio5.css)
-###### Ejercicio 6
+###### Ejercicio 6 - 11/10/21
 (Ejercicio6.html, ejercicio6.js, Ejercicio6.css)
 ###### Ejercicio 7
 (Ejercicio7.html, ejercicio7.js, Ejercicio7.css)
@@ -46,7 +46,7 @@ Estos son todos los ejercicios de las tres unidades de la materia de programacio
 (Ejercicio10.php, E10Datos.php)
 ###### Ejercicio 11
 (Ejercicio11.php, E11Datos.php)
-###### Ejercicio 12
+###### Ejercicio 12 - 01/11/21
 (Ejercicio12.php, E12Conexion.php, E12Postm.php)
 ###### Ejercicio 13
 (Ejercicio13.php, E13Conexion.php, E13ContUsua.php, E13Datos.php ,E13Postm.php ,E13Usuario.php)
