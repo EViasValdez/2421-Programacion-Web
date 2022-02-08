@@ -1,6 +1,6 @@
 # Programacion web
 <!----Descripcion---->
-Estos son todos los ejercicios de las tres unidades de la materia de programacion web.
+Estos son todos los ejercicios de las tres unidades de la materia de programacion web, creo que esta es de mis materias las cuales realice varias cosas en lo que respecta a la creacion de sitios web y diseño.
 <!----Separador de la descripcion ---->
 
 <!----Notas---->
