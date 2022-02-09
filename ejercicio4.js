@@ -7,16 +7,16 @@ function calcular(){
     let n2 = parseInt(document.getElementById("Numero2").value);
     var operacion = document.getElementById("Operacion").value;
     var calcular = document.getElementById("Calcular").value;
-   if(operacion == 1){
+   if (operacion == 1){
         document.getElementById("Resultado").value = n1 + n2;
     }
-    else if(operacion == 2){
+    else if (operacion == 2){
         document.getElementById("Resultado").value = n1 - n2;
     }
-    else if(operacion == 3){
+    else if (operacion == 3){
         document.getElementById("Resultado").value = n1 * n2;
     }
-    else if(operacion = 4){
+    else if (operacion = 4){
         document.getElementById("Resultado").value = n1 / n2;
     }
 }
