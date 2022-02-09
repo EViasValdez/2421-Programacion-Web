@@ -86,10 +86,10 @@ function marcar(miEvento){
         miEvento.stopPropagation();
         miEvento.preventDefault();
 
-        let fila = parseInt(casilla.dataset.fila,10);
-        let columna = parseInt(casilla.dataset.columna,10);
+        let fila = parseInt(casilla.dataset.fila, 10);
+        let columna = parseInt(casilla.dataset.columna, 10);
 
-        if (fila >= 0 && columna >= 0 && fila< buscaminas.numFilas && columna < buscaminas.numColumnas) {
+        if (fila >= 0 && columna >= 0 && fila < buscaminas.numFilas && columna < buscaminas.numColumnas) {
 
             if (casilla.classList.contains("icon-bandera")){
                 casilla.classList.remove("icon-bandera");
@@ -122,10 +122,10 @@ function revelar(miEvento){
 
 function revelarCuadro(fila, columna){
 
-    if (fila > -1 && fila < buscaminas.numFilas &&
-        columna >-1 && columna < buscaminas.numColumnas){
+    if (fila > - 1 && fila < buscaminas.numFilas &&
+        columna > - 1 && columna < buscaminas.numColumnas){
 
-        console.log("destapamos la casilla con fila " + fila + " y columna " +columna );
+        console.log("destapamos la casilla con fila " + fila + " y columna " + columna );
 
         let casilla = document.querySelector("#f" + fila + "_c" + columna);
 
@@ -194,7 +194,6 @@ function resolverTablero(isOK){
         alert("Acaba de perder, intente de nuevo");
     }
 }
-
 
 function actualizarNumMinasRestantes(){
     document.querySelector("#numMinasRestantes").innerHTML =
