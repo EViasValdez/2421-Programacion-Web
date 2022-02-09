@@ -13,15 +13,15 @@ function enviardatos(){
         alert("No ha ingresado su nombre de usuario");
         document.getElementById("usuario").focus();
     }
-    else if(email == ""){
+    else if (email == ""){
         alert("No ha ingresado su correo");
         document.getElementById("email").focus();
     }
-    else if(numero == ""){
+    else if (numero == ""){
         alert("No ha ingresado su numero de telefono");
         document.getElementById("numero").focus();
     }
-    else if(contras == ""){
+    else if (contras == ""){
         alert("No ha ingresado su contraseña");
         document.getElementById("contras").focus();
     } else {
@@ -31,7 +31,7 @@ function enviardatos(){
 }
 
 function selectdos(){
-    if(document.getElementById("seleccion").value == "predeterminado"){
+    if (document.getElementById("seleccion").value == "predeterminado"){
         alert("No deje esta parte vacia, eliga una opcion");
     }
 }
