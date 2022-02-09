@@ -6,8 +6,8 @@
     $pais = $_GET["pais"];
 
     if (isset($_GET["pais"])){
-    print "Ingreso exitoso <br>";
-    print "Sea bienvenido <br>";
-    echo "Sus datos son: $nombre, $apellido, $sexo, $edad, $pais <br>";
+        print "Ingreso exitoso <br>";
+        print "Sea bienvenido <br>";
+        echo "Sus datos son: $nombre, $apellido, $sexo, $edad, $pais <br>";
     }
 ?>
