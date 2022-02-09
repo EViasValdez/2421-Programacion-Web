@@ -18,8 +18,8 @@ function mostrarTablero(){
         tablero.removeChild(tablero.firstChild);
     }
 
-    for(let f=0; f<buscaminas.numFilas; f++){
-        for(let c=0; c<buscaminas.numColumnas; c++){
+    for(let f = 0; f<buscaminas.numFilas; f++){
+        for(let c = 0; c<buscaminas.numColumnas; c++){
             let newDiv = document.createElement("div");
             newDiv.setAttribute("id","f" + f + "_c" + c );
             newDiv.dataset.fila = f;
@@ -33,7 +33,7 @@ function mostrarTablero(){
 
 function generarCampoMinasVacio(){
     buscaminas.aCampoMinas = new Array(buscaminas.numFilas);
-    for (let fila=0; fila<buscaminas.numFilas; fila++){
+    for (let fila = 0; fila<buscaminas.numFilas; fila++){
         buscaminas.aCampoMinas[fila] = new Array(buscaminas.numColumnas);
     }
 }
@@ -42,7 +42,7 @@ function ponerMinas(){
     let numMinasEsparcidas = 0;
 
     while (numMinasEsparcidas<buscaminas.numMinasTotales){
-        let fila    = Math.floor(Math.random() * buscaminas.numFilas);
+        let fila = Math.floor(Math.random() * buscaminas.numFilas);
         let columna = Math.floor(Math.random() * buscaminas.numColumnas);
 
         if (buscaminas.aCampoMinas[fila][columna] != "B"){
@@ -55,10 +55,10 @@ function ponerMinas(){
 function contarMinasAlrededorCasilla(fila,columna){
     let numeroMinasAlrededor = 0;
 
-    for (let zFila = fila-1; zFila <= fila+1; zFila++){
-        for (let zColumna = columna-1; zColumna <= columna+1; zColumna++){
-            if (zFila>-1 && zFila<buscaminas.numFilas && zColumna>-1 && zColumna<buscaminas.numColumnas){
-                if (buscaminas.aCampoMinas[zFila][zColumna]=="B"){
+    for (let zFila = fila - 1; zFila <= fila + 1; zFila++){
+        for (let zColumna = columna - 1; zColumna <= columna + 1; zColumna++){
+            if (zFila >- 1 && zFila<buscaminas.numFilas && zColumna> - 1 && zColumna < buscaminas.numColumnas){
+                if (buscaminas.aCampoMinas[zFila][zColumna] == "B"){
                     numeroMinasAlrededor++;
                 }
             }
@@ -68,8 +68,8 @@ function contarMinasAlrededorCasilla(fila,columna){
 }
 
 function contarMinas(){
-    for (let fila=0; fila<buscaminas.numFilas; fila++){
-        for (let columna=0; columna<buscaminas.numColumnas; columna++){
+    for (let fila = 0; fila < buscaminas.numFilas; fila++){
+        for (let columna = 0; columna < buscaminas.numColumnas; columna++){
             if (buscaminas.aCampoMinas[fila][columna]!="B"){
                 contarMinasAlrededorCasilla(fila,columna);
             }
@@ -89,7 +89,7 @@ function marcar(miEvento){
         let fila = parseInt(casilla.dataset.fila,10);
         let columna = parseInt(casilla.dataset.columna,10);
 
-        if (fila>=0 && columna>=0 && fila< buscaminas.numFilas && columna < buscaminas.numColumnas) {
+        if (fila >= 0 && columna >= 0 && fila< buscaminas.numFilas && columna < buscaminas.numColumnas) {
 
             if (casilla.classList.contains("icon-bandera")){
                 casilla.classList.remove("icon-bandera");
@@ -136,16 +136,16 @@ function revelarCuadro(fila, columna){
                 casilla.innerHTML = buscaminas.aCampoMinas[fila][columna];
                 casilla.classList.add("c" + buscaminas.aCampoMinas[fila][columna])
 
-                if (buscaminas.aCampoMinas[fila][columna] !=="B"){
+                if (buscaminas.aCampoMinas[fila][columna] !== "B"){
                     if (buscaminas.aCampoMinas[fila][columna] == 0){
-                        revelarCuadro(fila-1,columna-1);
-                        revelarCuadro(fila-1,columna);
-                        revelarCuadro(fila-1,columna+1);
-                        revelarCuadro(fila,columna-1);
-                        revelarCuadro(fila,columna+1);
-                        revelarCuadro(fila+1,columna-1);
-                        revelarCuadro(fila+1,columna);
-                        revelarCuadro(fila+1,columna+1);
+                        revelarCuadro(fila-1, columna-1);
+                        revelarCuadro(fila-1, columna);
+                        revelarCuadro(fila-1, columna+1);
+                        revelarCuadro(fila, columna-1);
+                        revelarCuadro(fila, columna+1);
+                        revelarCuadro(fila+1, columna-1);
+                        revelarCuadro(fila+1, columna);
+                        revelarCuadro(fila+1, columna+1);
 
                         casilla.innerHTML  = "";
                     }
