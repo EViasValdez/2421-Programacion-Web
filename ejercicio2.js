@@ -4,7 +4,7 @@
 //console.log("--------------------");
 //for (var i = 0; i >= objeto1.length; i++){
 //    //objeto2.push(objeto1[i]);
-//    if(objeto1 = objeto2)
+//    if (objeto1 = objeto2)
 //        console.log("Estos elementos son iguales:");
 //    else
 //        console.log("Estos elementos no son iguales")
@@ -22,7 +22,7 @@ var obel1 = [1, 2, 3, 4, 5 ,6 ,7, 8, 9, 10];
 var contenedor = [];
 var obel2 = [11, 2, 4, 12, 20, 40, 14, 28];
 
-var contr = obel1.length- 1;
+var contr = obel1.length - 1;
 
 for (var x = 0; x < obel1.length; x++){
 
