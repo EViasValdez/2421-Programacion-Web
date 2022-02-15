@@ -19,14 +19,15 @@ $(document).ready(function () {
         var totalNegativo = 0 - total;
         console.log(`Sr. ${nombreCompleto} su prestamo fue aceptado.`);  
         console.log(totalNegativo);
-        //datos importantes 
+
+        //datos importantes
             $("#boton2").click(function () { 
                 $("#tres").show();
 
                 var montos = $("#pago").val();
 
                 if (amortizacion == 0){
-                    //secion2
+                    //seccion2
                     let aux = 1 + 0.12 / plazos * plazos;
                     var FRC = 1 + 0.12 / plazos * aux / aux * - 1;
                     var PI = total * FRC;
@@ -42,7 +43,7 @@ $(document).ready(function () {
                 }
             });
             $("#boton3").click( function () {
-                for(let x = 0; x < plazos; x++){
+                for (let x = 0; x < plazos; x++){
                    $(".nombre").html(x);
                    $(".periodo").html(`${fechaPrestamo1}-${fechaPrestamo2}-${fechaPrestamo3}`);
                    $(".dias").html(dias);
