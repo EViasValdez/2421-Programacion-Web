@@ -5,7 +5,6 @@ const buscaminas = {
     numColumnas: 15,
     aCampoMinas: []
 }
-
 function mostrarTablero(){
     let tablero = document.querySelector("#tablero");
 
@@ -18,8 +17,8 @@ function mostrarTablero(){
         tablero.removeChild(tablero.firstChild);
     }
 
-    for(let f = 0; f<buscaminas.numFilas; f++){
-        for(let c = 0; c<buscaminas.numColumnas; c++){
+    for (let f = 0; f<buscaminas.numFilas; f++){
+        for (let c = 0; c<buscaminas.numColumnas; c++){
             let newDiv = document.createElement("div");
             newDiv.setAttribute("id","f" + f + "_c" + c );
             newDiv.dataset.fila = f;
@@ -30,14 +29,12 @@ function mostrarTablero(){
         }
     }
 }
-
 function generarCampoMinasVacio(){
     buscaminas.aCampoMinas = new Array(buscaminas.numFilas);
     for (let fila = 0; fila<buscaminas.numFilas; fila++){
         buscaminas.aCampoMinas[fila] = new Array(buscaminas.numColumnas);
     }
 }
-
 function ponerMinas(){
     let numMinasEsparcidas = 0;
 
@@ -51,13 +48,12 @@ function ponerMinas(){
         }
     }
 }
-
 function contarMinasAlrededorCasilla(fila,columna){
     let numeroMinasAlrededor = 0;
 
     for (let zFila = fila - 1; zFila <= fila + 1; zFila++){
         for (let zColumna = columna - 1; zColumna <= columna + 1; zColumna++){
-            if (zFila >- 1 && zFila<buscaminas.numFilas && zColumna> - 1 && zColumna < buscaminas.numColumnas){
+            if (zFila >- 1 && zFila < buscaminas.numFilas && zColumna> - 1 && zColumna < buscaminas.numColumnas){
                 if (buscaminas.aCampoMinas[zFila][zColumna] == "B"){
                     numeroMinasAlrededor++;
                 }
@@ -66,7 +62,6 @@ function contarMinasAlrededorCasilla(fila,columna){
     }
     buscaminas.aCampoMinas[fila][columna] = numeroMinasAlrededor;
 }
-
 function contarMinas(){
     for (let fila = 0; fila < buscaminas.numFilas; fila++){
         for (let columna = 0; columna < buscaminas.numColumnas; columna++){
@@ -76,7 +71,6 @@ function contarMinas(){
         }
     }
 }
-
 function marcar(miEvento){
     if (miEvento.type === "contextmenu"){
         console.log(miEvento);
@@ -110,7 +104,6 @@ function marcar(miEvento){
         }
     }
 }
-
 function revelar(miEvento){
     if (miEvento.type === "click"){
         let casilla = miEvento.currentTarget;
@@ -119,9 +112,7 @@ function revelar(miEvento){
         revelarCuadro(fila,columna);
     }
 }
-
 function revelarCuadro(fila, columna){
-
     if (fila > - 1 && fila < buscaminas.numFilas &&
         columna > - 1 && columna < buscaminas.numColumnas){
 
@@ -159,7 +150,6 @@ function revelarCuadro(fila, columna){
         }
     }
 }
-
 function resolverTablero(isOK){
     let aCasillas = tablero.children;
     for (let i = 0 ; i < aCasillas.length; i++){
@@ -194,12 +184,10 @@ function resolverTablero(isOK){
         alert("Acaba de perder, intente de nuevo");
     }
 }
-
 function actualizarNumMinasRestantes(){
     document.querySelector("#numMinasRestantes").innerHTML =
         (buscaminas.numMinasTotales - buscaminas.numMinasEncontradas);
 }
-
 function inicio(){
     buscaminas.numFilas = 10;
     buscaminas.numColumnas = 10;
