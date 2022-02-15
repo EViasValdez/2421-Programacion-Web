@@ -8,7 +8,7 @@ var total = 0;
 $(".botones").click(function()
 {   
     var valor = $(this).attr("valor");
-    if(valor == 1){
+    if (valor == 1){
         $(this).css("background-color", "white");            
         total++;
     }else{
