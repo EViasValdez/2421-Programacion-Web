@@ -14,17 +14,17 @@ var precios5 = 0;
 var precios6 = 0;
 
 function funcionamiento(){
-    var marca=parseInt(document.getElementById("op").value);
-    var objeto=document.getElementById("objet").value;
+    var marca = parseInt(document.getElementById("op").value);
+    var objeto = document.getElementById("objet").value;
 
-    if(marca == 1){
-        if(objeto == "Core i5"){
+    if (marca == 1){
+        if (objeto == "Core i5"){
             total += 1900;
             precios1 += 1900;
             document.getElementById("uno").innerHTML = `Productos (${contador1}): ${objeto} = $1900`;
             contador1++;
         }
-        if(objeto == "Xeon"){
+        if (objeto == "Xeon"){
             total += 1300;
             precios2 += 1300;
             document.getElementById("dos").innerHTML = `Producto (${contador2}): ${objeto} = $1300`;
