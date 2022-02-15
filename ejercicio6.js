@@ -4,7 +4,7 @@ function enviardatos(){
     var email = document.getElementById("email").value;
     var numero = parseFloat(document.getElementById("numero")).value;
     var contras = document.getElementById("contras").value;
-    
+
     if (nombre == ""){
         alert("No ha ingresado su nombre completo");
         document.getElementById("nombre").focus();
@@ -29,19 +29,16 @@ function enviardatos(){
         console.log(nombre+" "+usuario+" "+email+" "+numero+" "+contras);
     }
 }
-
 function selectdos(){
     if (document.getElementById("seleccion").value == "predeterminado"){
         alert("No deje esta parte vacia, eliga una opcion");
     }
 }
-
 function marcado(){
-    if(document.getElementById("marcado").checked == false){
+    if (document.getElementById("marcado").checked == false){
         alert("Esta opcion es obligatoria");
     }
 }
-
 function datos(){
     marcado();
     selectdos();
