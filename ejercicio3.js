@@ -7,7 +7,6 @@ var id = {
     "Horario": "Vespertino"
     },
 };
-
 var info = {
     "Intereses":{
         "IDES preferidos":{
