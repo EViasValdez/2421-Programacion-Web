@@ -13,7 +13,7 @@ class Usuario extends Conexion
 
     static function find($id){
         $me = new Conexion();
-        $pre = mysqli_prepare($me->con, "SELECT * FROM personas WHERE id= ?");
+        $pre = mysqli_prepare($me->con, "SELECT * FROM personas WHERE id = ?");
         $pre->bind_param("i", $id);
         $pre->execute();
         $res = $pre->get_result();
