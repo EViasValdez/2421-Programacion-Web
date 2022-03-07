@@ -26,7 +26,7 @@ function enviardatos(){
         document.getElementById("contras").focus();
     } else {
         alert("Sus datos han sido registrados con exito");
-        console.log(nombre+" "+usuario+" "+email+" "+numero+" "+contras);
+        console.log(nombre + " " + usuario + " " + email + " " + numero + " " + contras);
     }
 }
 function selectdos(){
