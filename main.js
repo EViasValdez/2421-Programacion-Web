@@ -5,13 +5,12 @@ var elemento2 = [10,5,4,8,7,8,10,2,1];
 var contrario = elemento1.length - 1;
 
 for (var i = 0; i < elemento1.length; i++){
-    contenedorPalabra.push(palabra[i]);
+    contenedorPalabra.push(palabra [i]);
 
-    if (elemento1[i] == elemento2[contrario])
+    if (elemento1 [i] == elemento2 [contrario])
         console.log("Son iguales");
     else
         console.log("No son iguales");    
-
     contrario--;
 }
 
