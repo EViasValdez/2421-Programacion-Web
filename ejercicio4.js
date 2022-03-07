@@ -3,11 +3,12 @@ document.getElementById("botoncalcular").click(function(){
 });
 
 function calcular(){
-    let n1 = parseInt(document.getElementById("Numero1").value);
-    let n2 = parseInt(document.getElementById("Numero2").value);
+    let n1 = parseInt (document.getElementById("Numero1").value);
+    let n2 = parseInt (document.getElementById("Numero2").value);
     var operacion = document.getElementById("Operacion").value;
     var calcular = document.getElementById("Calcular").value;
-   if (operacion == 1){
+
+    if (operacion == 1){
         document.getElementById("Resultado").value = n1 + n2;
     }
     else if (operacion == 2){
