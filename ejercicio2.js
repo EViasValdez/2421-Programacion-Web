@@ -25,9 +25,9 @@ var obel2 = [11, 2, 4, 12, 20, 40, 14, 28];
 var contr = obel1.length - 1;
 
 for (var x = 0; x < obel1.length; x++){
-    contenedor.push(palabra[x]);
+    contenedor.push(palabra [x]);
 
-    if (obel1[x] == obel2[contr]){
+    if (obel1 [x] == obel2 [contr]){
         console.log("Estos elementos son iguales");
     }
     else
