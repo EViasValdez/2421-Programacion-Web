@@ -10,9 +10,9 @@ function tabla(){
         alert("No ha ingresado dato alguno");
     }
     else{
-        var fila="<tr><th>"+ nombre +"</th><th>"+ ap +"</th><th>"+ montoprestamo + "</th><th>" + fechapago + "</th><th>"+ nplazo + "</th></tr>";
+        var fila = "<tr><th>"+ nombre +"</th><th>"+ ap +"</th><th>"+ montoprestamo + "</th><th>" + fechapago + "</th><th>"+ nplazo + "</th></tr>";
         var boton = document.createElement("tr");
-        boton.innerHTML=fila;
+        boton.innerHTML = fila;
         document.getElementById("tablacontenido").appendChild(boton);
         alert("Datos aceptados");
     }
@@ -28,10 +28,10 @@ function amortizacion(){
     if (amortizacion == 1){
         let aux = 1 + 0.12 / plazos * plazos;
         var FRC = 1 + 0.12 / plazos * aux / aux * -1;
-        var PI = total*FRC;
+        var PI = total * FRC;
         console.log(PI);
     }
-    else(amortizacion == 2);{
+    else (amortizacion == 2);{
         var A2 = PI;
         FO = A2 + I * 1 + 0.12
 
