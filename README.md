@@ -9,8 +9,8 @@ Estos son todos los ejercicios de las tres unidades de la materia de programacio
 **- El orden de cada ejercicio realizado va junto con sus archivos correspondientes.**
 <!----Separador---->
 
-<!----Lista de directorios y archivos---->
-# Lista de directorios y archivos
+<!----Directorio con ubicacion de archivos---->
+# Lista con ubicacion de archivos
 ## ● Unidad 1 ●
 ###### Ejercicio 1 - 03/09/21
 (Ejercicio1.html, ejercicio1.png)
@@ -52,4 +52,4 @@ Estos son todos los ejercicios de las tres unidades de la materia de programacio
 (Ejercicio12.php, E12Conexion.php, E12Postm.php)
 ###### Ejercicio 13 - 11/21
 (Ejercicio13.php, E13Conexion.php, E13ContUsua.php, E13Datos.php ,E13Postm.php ,E13Usuario.php)
-<!----Separador de los directorios y archivos---->
+<!----Separador del direrctorio con ubicacion de archivos---->
