@@ -3,12 +3,12 @@
 
 // console.log("--------------------");
 // for (var i = 0; i >= objeto1.length; i++){
-//     //objeto2.push(objeto1[i]);
-//     if (objeto1 = objeto2)
+//     // objeto2.push (objeto1 [i]);
+//     if (objeto1 = objeto2){
 //         console.log("Estos elementos son iguales:");
-//     else
+//     }else{
 //         console.log("Estos elementos no son iguales")
-//    
+//     }
 // }
 
 // console.log(objeto1);
