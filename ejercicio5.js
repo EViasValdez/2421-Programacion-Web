@@ -13,7 +13,7 @@ $(".botones").click(function()
         total++;
     }else{
         $(this).css("background-color", "red");
-        alert("Perdiste, Estos son tus puntos:"+total);
+        alert("Perdiste, Estos son tus puntos:" + total);
         location.reload();            
     }
 }
@@ -26,7 +26,7 @@ function valorAleatorio(min = 0, max = 1){
 function cargarValores(){
     $(".verificar").each(
         function(){
-        $(this).attr("valor", valorAleatorio)
+            $(this).attr("valor", valorAleatorio)
         }
     );
 }
