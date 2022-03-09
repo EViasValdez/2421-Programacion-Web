@@ -6,6 +6,8 @@ Estos son todos los ejercicios de las tres unidades de la materia de programacio
 <!----Notas---->
 **Notas**
 
+**- Solo en este repositorio utilizo lo de poner la fecha de realizacion y el tipo de trabajo en el commit.
+
 **- El orden de cada ejercicio realizado va junto con sus archivos correspondientes.**
 <!----Separador---->
 
