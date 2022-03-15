@@ -6,7 +6,7 @@ Estos son todos los ejercicios de las tres unidades de la materia de programacio
 <!----Notas---->
 **Notas**
 
-**- Solo en este repositorio utilizo lo de poner la fecha de realizacion y el tipo de trabajo en el commit**
+**- Solo en este repositorio puse las fechas de realizacion y el tipo de trabajo en el commit de cada archivo.**
 
 **- El orden de cada ejercicio realizado va junto con sus archivos correspondientes.**
 <!----Separador---->
@@ -29,7 +29,14 @@ Estos son todos los ejercicios de las tres unidades de la materia de programacio
 ###### Buscaminas - 20/09/21
 (Buscaminas.html, Buscaminas.js, Buscaminas.css)
 ###### Lista de compras - 22/09/21
-(listadecompras (carpetas), listadecompras/listadecompras.html, listadecompras/listadecompras.css, listadecompras/listadecompras.js, listadecompras/Barra.jpeg,             listadecompras/Color.jpeg, listadecompras/purpura.jpeg, listadecompras/Minimalista.png, listadecompras/Pc.png)
+(listadecompras/listadecompras.html, 
+listadecompras/listadecompras.css, 
+listadecompras/listadecompras.js, 
+listadecompras/Barra.jpeg, 
+listadecompras/Color.jpeg, 
+listadecompras/purpura.jpeg, 
+listadecompras/Minimalista.png, 
+listadecompras/Pc.png)
 
 ## ● Unidad 2 ●
 ###### Ejercicio 5 - 13/09/21
@@ -43,7 +50,10 @@ Estos son todos los ejercicios de las tres unidades de la materia de programacio
 ###### Ejercicio 9 - 20/10/21
 (Ejercicio9.html , ejercicio9.js , Ejercicio9.css)
 ###### Trabajo en equipo - 22/10/21
-(TrabajoEquipo (carpeta), TrabajoEquipo/index(2).html, TrabajoEquipo/estilo.css, TrabajoEquipo/Logica (1).js, TrabajoEquipo/JQuerry.min (1).js)
+(TrabajoEquipo/index(2).html, 
+TrabajoEquipo/estilo.css, 
+TrabajoEquipo/Logica (1).js, 
+TrabajoEquipo/JQuerry.min (1).js)
 
 ## ● Unidad 3 ●
 ###### Ejercicio 10 - 25/10/21
