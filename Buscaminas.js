@@ -8,24 +8,24 @@ const buscaminas = {
 function mostrarTablero(){
     let tablero = document.querySelector("#tablero");
 
-    document.querySelector("html").style.setProperty("--num-filas",buscaminas.numFilas);
-    document.querySelector("html").style.setProperty("--num-columnas",buscaminas.numColumnas);
+    document.querySelector("html").style.setProperty("--num-filas", buscaminas.numFilas);
+    document.querySelector("html").style.setProperty("--num-columnas", buscaminas.numColumnas);
 
     while (tablero.firstChild) {
-        tablero.firstChild.removeEventListener("contextmenu",marcar);
-        tablero.firstChild.removeEventListener("click",revelar);
-        tablero.removeChild(tablero.firstChild);
+        tablero.firstChild.removeEventListener ("contextmenu", marcar);
+        tablero.firstChild.removeEventListener ("click", revelar);
+        tablero.removeChild (tablero.firstChild);
     }
 
     for (let f = 0; f < buscaminas.numFilas; f++){
         for (let c = 0; c < buscaminas.numColumnas; c++){
             let newDiv = document.createElement("div");
-            newDiv.setAttribute("id","f" + f + "_c" + c );
+            newDiv.setAttribute ("id", "f" + f + "_c" + c );
             newDiv.dataset.fila = f;
             newDiv.dataset.columna = c;
-            newDiv.addEventListener("contextmenu",marcar);
-            newDiv.addEventListener("click",revelar);
-            tablero.appendChild(newDiv);
+            newDiv.addEventListener ("contextmenu", marcar);
+            newDiv.addEventListener ("click", revelar);
+            tablero.appendChild (newDiv);
         }
     }
 }
@@ -66,7 +66,7 @@ function contarMinas(){
     for (let fila = 0; fila < buscaminas.numFilas; fila++){
         for (let columna = 0; columna < buscaminas.numColumnas; columna++){
             if (buscaminas.aCampoMinas [fila] [columna]!="B"){
-                contarMinasAlrededorCasilla(fila,columna);
+                contarMinasAlrededorCasilla (fila,columna);
             }
         }
     }
@@ -85,19 +85,19 @@ function marcar(miEvento){
 
         if (fila >= 0 && columna >= 0 && fila < buscaminas.numFilas && columna < buscaminas.numColumnas) {
 
-            if (casilla.classList.contains("icon-bandera")){
-                casilla.classList.remove("icon-bandera");
-                casilla.classList.add("icon-duda");
+            if (casilla.classList.contains ("icon-bandera")){
+                casilla.classList.remove ("icon-bandera");
+                casilla.classList.add ("icon-duda");
                 buscaminas.numMinasEncontradas--;
 
-            } else if (casilla.classList.contains("icon-duda")){
-                casilla.classList.remove("icon-duda");
+            } else if (casilla.classList.contains ("icon-duda")){
+                casilla.classList.remove ("icon-duda");
             } else if (casilla.classList.length == 0){
                 
-                casilla.classList.add("icon-bandera");
+                casilla.classList.add ("icon-bandera");
                 buscaminas.numMinasEncontradas++;
                 if (buscaminas.numMinasEncontradas == buscaminas.numMinasTotales){
-                    resolverTablero(true);
+                    resolverTablero (true);
                 }
             }
             actualizarNumMinasRestantes();
@@ -107,16 +107,16 @@ function marcar(miEvento){
 function revelar(miEvento){
     if (miEvento.type === "click"){
         let casilla = miEvento.currentTarget;
-        let fila = parseInt(casilla.dataset.fila,10);
-        let columna = parseInt(casilla.dataset.columna,10);
-        revelarCuadro(fila,columna);
+        let fila = parseInt (casilla.dataset.fila, 10);
+        let columna = parseInt (casilla.dataset.columna, 10);
+        revelarCuadro (fila,columna);
     }
 }
 function revelarCuadro(fila, columna){
     if (fila > - 1 && fila < buscaminas.numFilas &&
         columna > - 1 && columna < buscaminas.numColumnas){
 
-        console.log("destapamos la casilla con fila " + fila + " y columna " + columna );
+        console.log("Destapamos la casilla con fila " + fila + " y columna " + columna );
 
         let casilla = document.querySelector("#f" + fila + "_c" + columna);
 
@@ -152,31 +152,31 @@ function revelarCuadro(fila, columna){
 function resolverTablero(isOK){
     let aCasillas = tablero.children;
     for (let i = 0 ; i < aCasillas.length; i++){
-        aCasillas [i].removeEventListener("click", revelar);
-        aCasillas [i].removeEventListener("contextmenu", marcar);
+        aCasillas [i].removeEventListener ("click", revelar);
+        aCasillas [i].removeEventListener ("contextmenu", marcar);
 
         let fila = parseInt(aCasillas [i].dataset.fila,10);
         let columna = parseInt(aCasillas [i].dataset.columna,10);
 
-        if (aCasillas [i].classList.contains("icon-bandera")){
+        if (aCasillas [i].classList.contains ("icon-bandera")){
             if (buscaminas.aCampoMinas [fila] [columna] == "B"){
-                aCasillas [i].classList.add("destapado");
-                aCasillas [i].classList.remove("icon-bandera");
-                aCasillas [i].classList.add("icon-bomba");
+                aCasillas [i].classList.add ("destapado");
+                aCasillas [i].classList.remove ("icon-bandera");
+                aCasillas [i].classList.add ("icon-bomba");
             } else {
-                aCasillas [i].classList.add("destapado");
-                aCasillas [i].classList.add("banderaErronea");
+                aCasillas [i].classList.add ("destapado");
+                aCasillas [i].classList.add ("banderaErronea");
                 isOK = false;
             }
-        } else if (!aCasillas[i].classList.contains("destapado")){
+        } else if (!aCasillas[i].classList.contains ("destapado")){
             if (buscaminas.aCampoMinas [fila] [columna] == "B"){
-                aCasillas [i].classList.add("destapado");
-                aCasillas [i].classList.add("icon-bomba");
+                aCasillas [i].classList.add ("destapado");
+                aCasillas [i].classList.add ("icon-bomba");
             }
         }
     }
     if (isOK){
-        alert("Felicidades, used ha ganado");
+        alert("Felicidades, usted ha ganado");
     }
     else {
         alert("Acaba de perder, intente de nuevo");
