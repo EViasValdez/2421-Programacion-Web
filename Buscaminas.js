@@ -38,7 +38,7 @@ function generarCampoMinasVacio(){
 function ponerMinas(){
     let numMinasEsparcidas = 0;
 
-    while (numMinasEsparcidas<buscaminas.numMinasTotales){
+    while (numMinasEsparcidas < buscaminas.numMinasTotales){
         let fila = Math.floor (Math.random() * buscaminas.numFilas);
         let columna = Math.floor (Math.random() * buscaminas.numColumnas);
 
