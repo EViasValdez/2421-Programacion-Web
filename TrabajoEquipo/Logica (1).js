@@ -31,8 +31,9 @@ $(document).ready(function () {
                     let aux = 1 + 0.12 / plazos * plazos;
                     var FRC = 1 + 0.12 / plazos * aux / aux * - 1;
                     var PI = total * FRC;
+
                     console.log(PI);
-                    var nuevo=((Math.pow((1 + (t / p))) * (t / p)), 2)
+                    var nuevo = ((Math.pow((1 + (t / p))) * (t / p)), 2)
                 }
                 if (amortizacion == 1){
                     var A2 = PI;
