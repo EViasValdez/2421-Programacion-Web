@@ -20,7 +20,7 @@ function operaciones(){
         division();
     }
     reuno = resultado;
-    console.log("El resultado es " + resultado)
+    console.log("El resultado es: " + resultado)
 }
 
 function suma(){
