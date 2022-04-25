@@ -45,13 +45,13 @@ function funcionamiento(){
             document.getElementById("cuatro").innerHTML = `Producto(${contador4}): ${objeto} = $2600`;
             contador4++;
         }
-        if (objeto == "opteron"){
+        if (objeto == "Opteron"){
             total += 2470;
             precios1 += 2470;
             document.getElementById("cinco").innerHTML = `Producto(${contador5}): ${objeto} = $2470`;
             contador5++;
         }
-        if (objeto == "threadripper"){
+        if (objeto == "Threadripper"){
             total += 4900;
             precios6 += 4900;
             document.getElementById("seis").innerHTML = `Producto(${contador6}): ${objeto} = $4900`;
