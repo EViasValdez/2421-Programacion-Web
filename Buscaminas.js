@@ -80,8 +80,8 @@ function marcar(miEvento){
         miEvento.stopPropagation();
         miEvento.preventDefault();
 
-        let fila = parseInt(casilla.dataset.fila, 10);
-        let columna = parseInt(casilla.dataset.columna, 10);
+        let fila = parseInt (casilla.dataset.fila, 10);
+        let columna = parseInt (casilla.dataset.columna, 10);
 
         if (fila >= 0 && columna >= 0 && fila < buscaminas.numFilas && columna < buscaminas.numColumnas) {
 
