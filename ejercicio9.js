@@ -27,12 +27,13 @@ function amortizacion(){
 
     if (amortizacion == 1){
         let aux = 1 + 0.12 / plazos * plazos;
-        var FRC = 1 + 0.12 / plazos * aux / aux * -1;
+        var FRC = 1 + 0.12 / plazos * aux / aux * - 1;
         var PI = total * FRC;
         console.log(PI);
     }
     else (amortizacion == 2);{
         var A2 = PI;
+        
         FO = A2 + I * 1 + 0.12
 
         if (totaln > 0){
