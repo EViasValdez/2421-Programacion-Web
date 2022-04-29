@@ -18,10 +18,8 @@ console.log("Prueba");
 
 var palabra = "hola mundo";
 var obel1 = [1, 2, 3, 4, 5 ,6 ,7, 8, 9, 10];
-
 var contenedor = [];
 var obel2 = [11, 2, 4, 12, 20, 40, 14, 28];
-
 var contr = obel1.length - 1;
 
 for (var x = 0; x < obel1.length; x++){
@@ -36,5 +34,4 @@ for (var x = 0; x < obel1.length; x++){
     }
     contr--;
 }
-
 console.log(contenedor);
