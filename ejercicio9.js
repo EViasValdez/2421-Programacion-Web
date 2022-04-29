@@ -12,6 +12,7 @@ function tabla(){
     else{
         var fila = "<tr><th>"+ nombre +"</th><th>"+ ap +"</th><th>"+ montoprestamo + "</th><th>" + fechapago + "</th><th>"+ nplazo + "</th></tr>";
         var boton = document.createElement("tr");
+
         boton.innerHTML = fila;
         document.getElementById("tablacontenido").appendChild(boton);
         alert("Datos aceptados");
@@ -28,6 +29,7 @@ function amortizacion(){
         let aux = 1 + 0.12 / plazos * plazos;
         var FRC = 1 + 0.12 / plazos * aux / aux * - 1;
         var PI = total * FRC;
+        
         console.log(PI);
     }
     else (amortizacion == 2);{
