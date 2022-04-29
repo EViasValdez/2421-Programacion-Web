@@ -5,6 +5,7 @@ function() {
 );
 
 var total = 0;
+
 $(".botones").click(function()
 {   
     var valor = $(this).attr("valor");
@@ -18,11 +19,9 @@ $(".botones").click(function()
     }
 }
 );
-
 function valorAleatorio(min = 0, max = 1){
     return Math.floor(Math.random () * (max - min + 1)) + min;
 }
-
 function cargarValores(){
     $(".verificar").each(
         function(){
