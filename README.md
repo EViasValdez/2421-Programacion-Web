@@ -10,7 +10,6 @@ Estos son todos los ejercicios de las tres unidades de la materia de programacio
 
 **- El orden de cada ejercicio realizado va junto con sus archivos correspondientes.**
 <!----Separador---->
-
 <!----Directorio con ubicacion de archivos---->
 # Lista con ubicacion de archivos
 ## ● Unidad 1 ●
