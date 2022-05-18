@@ -15,7 +15,7 @@ function mostrarTablero(){
         tablero.firstChild.removeEventListener ("contextmenu", marcar);
         tablero.firstChild.removeEventListener ("click", revelar);
         tablero.removeChild (tablero.firstChild);
-    }
+}
 
     for (let f = 0; f < buscaminas.numFilas; f++){
         for (let c = 0; c < buscaminas.numColumnas; c++){
