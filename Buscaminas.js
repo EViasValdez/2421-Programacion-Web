@@ -65,7 +65,7 @@ function contarMinasAlrededorCasilla(fila,columna){
 function contarMinas(){
     for (let fila = 0; fila < buscaminas.numFilas; fila++){
         for (let columna = 0; columna < buscaminas.numColumnas; columna++){
-            if (buscaminas.aCampoMinas [fila] [columna]!="B"){
+            if (buscaminas.aCampoMinas [fila] [columna] != "B"){
                 contarMinasAlrededorCasilla (fila,columna);
             }
         }
