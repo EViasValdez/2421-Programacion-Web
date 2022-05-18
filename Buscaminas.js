@@ -83,13 +83,11 @@ function marcar(miEvento){
         let fila = parseInt (casilla.dataset.fila, 10);
         let columna = parseInt (casilla.dataset.columna, 10);
 
-        if (fila >= 0 && columna >= 0 && fila < buscaminas.numFilas && columna < buscaminas.numColumnas) {
-
+        if (fila >= 0 && columna >= 0 && fila < buscaminas.numFilas && columna < buscaminas.numColumnas){
             if (casilla.classList.contains ("icon-bandera")){
                 casilla.classList.remove ("icon-bandera");
                 casilla.classList.add ("icon-duda");
                 buscaminas.numMinasEncontradas--;
-
             } else if (casilla.classList.contains ("icon-duda")){
                 casilla.classList.remove ("icon-duda");
             } else if (casilla.classList.length == 0){
@@ -121,7 +119,6 @@ function revelarCuadro(fila, columna){
         let casilla = document.querySelector("#f" + fila + "_c" + columna);
 
         if (!casilla.classList.contains("destapado")){
-
             if (!casilla.classList.contains("icon-bandera")){
                 casilla.classList.add("destapado");
                 casilla.innerHTML = buscaminas.aCampoMinas [fila] [columna];
