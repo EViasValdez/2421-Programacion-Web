@@ -1,17 +1,17 @@
 # Programacion web
-<!----Descripcion---->
-Estos son todos los ejercicios de las tres unidades de la materia de programacion web, creo que esta es de mis materias las cuales realice varias cosas en lo que respecta a la creacion de sitios web y diseño.
-<!----Separador de la descripcion ---->
+<!----Descripción---->
+Estos son todos los ejercicios de las tres unidades de la materia de programacion web, creo que esta es de mis materias las cuales realice varias cosas en lo que respecta a la creación de sitios web y diseño.
+<!----Separador de la descripción ---->
 
 <!----Notas---->
 **Notas**
 
-**- Solo en este repositorio puse las fechas de realizacion y el tipo de trabajo en el commit de cada archivo.**
+**- Solo en este repositorio puse las fechas de realización y el tipo de trabajo en el commit de cada archivo.**
 
 **- El orden de cada ejercicio realizado va junto con sus archivos correspondientes.**
 <!----Separador---->
-<!----Directorio con ubicacion de archivos---->
-# Lista con ubicacion de archivos
+<!----Directorio con ubicación de archivos---->
+# Lista con ubicación de archivos
 ## ● Unidad 1 ●
 ###### Ejercicio 1 - 03/09/21
 (Ejercicio1.html, ejercicio1.png)
@@ -63,4 +63,4 @@ TrabajoEquipo/JQuerry.min (1).js)
 (Ejercicio12.php, E12Conexion.php, E12Postm.php)
 ###### Ejercicio 13 - 11/21
 (Ejercicio13.php, E13Conexion.php, E13ContUsua.php, E13Datos.php ,E13Postm.php ,E13Usuario.php)
-<!----Separador del direrctorio con ubicacion de archivos---->
+<!----Separador del directorio con ubicación de archivos---->
