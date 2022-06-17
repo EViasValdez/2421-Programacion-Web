@@ -17,7 +17,7 @@ $(document).ready(function () {
         let interesInicial = monto * 0.01 + iva;
         var total = monto + interesInicial;
         var totalNegativo = 0 - total;
-        console.log(`Sr. ${nombreCompleto} su prestamo fue aceptado.`);  
+        console.log(`Sr. ${nombreCompleto} su préstamo fue aceptado.`);  
         console.log(totalNegativo);
 
         //datos importantes
@@ -27,7 +27,7 @@ $(document).ready(function () {
                 var montos = $("#pago").val();
 
                 if (amortizacion == 0){
-                    //seccion2
+                    // seccion2
                     let aux = 1 + 0.12 / plazos * plazos;
                     var FRC = 1 + 0.12 / plazos * aux / aux * - 1;
                     var PI = total * FRC;
@@ -46,7 +46,7 @@ $(document).ready(function () {
             $("#boton3").click( function () {
                 for (let x = 0; x < plazos; x++){
                    $(".nombre").html(x);
-                   $(".periodo").html(`${fechaPrestamo1}-${fechaPrestamo2}-${fechaPrestamo3}`);
+                   $(".periodo").html(`${fechaPrestamo1} - ${fechaPrestamo2} - ${fechaPrestamo3}`);
                    $(".dias").html(dias);
                    $(".saldo").html(monto);
                    $(".insoluto").html(totalNegativo);
