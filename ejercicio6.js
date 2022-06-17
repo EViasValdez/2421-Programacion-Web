@@ -18,25 +18,25 @@ function enviardatos(){
         document.getElementById("email").focus();
     }
     else if (numero == ""){
-        alert("No ha ingresado su numero de telefono");
+        alert("No ha ingresado su numero de teléfono");
         document.getElementById("numero").focus();
     }
     else if (contras == ""){
         alert("No ha ingresado su contraseña");
         document.getElementById("contras").focus();
     } else {
-        alert("Sus datos han sido registrados con exito");
+        alert("Sus datos han sido registrados con éxito");
         console.log(nombre + " " + usuario + " " + email + " " + numero + " " + contras);
     }
 }
 function selectdos(){
     if (document.getElementById("seleccion").value == "predeterminado"){
-        alert("No deje esta parte vacia, eliga una opcion");
+        alert("No deje esta parte vacía, elige una opción");
     }
 }
 function marcado(){
     if (document.getElementById("marcado").checked == false){
-        alert("Esta opcion es obligatoria");
+        alert("Esta opción es obligatoria");
     }
 }
 function datos(){
