@@ -1,7 +1,7 @@
 var num1 = 10;
 var num2 = 10;
 var result;
-var oper = prompt("Ingresa la operacion a realizar");
+var oper = prompt("Ingresa la operación a realizar");
 var prueba = operacion();
 
 alert(prueba);
