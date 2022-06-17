@@ -1,9 +1,9 @@
 var id = {
-    "Informacion personal":{
+    "Información":{
     "Nombre": "Eduardo",
     "Edad": 21,
-    "Carrera": "Ingenieria en software",
-    "Universidad": "Universidad Politecnica de Tecamac",
+    "Carrera": "Ingeniería en software",
+    "Universidad": "Universidad Politécnica de Tecamac",
     "Horario": "Vespertino"
     },
 };
@@ -16,19 +16,19 @@ var info = {
                 "IDE 4": "Visual Studio Code",
                 "IDE 5": "Visual Studio Community",
             },
-        "Lenguajes de programacion favoritos":{
+        "Lenguajes de programación favoritos":{
                 "Lenguaje 1": "Java",
                 "Lenguaje 2": "C#",
                 "Lenguaje 3": "HTML",
                 "Lenguaje 4": "Javascript"
             },
-        "Videoconsolas en posesion":{
+        "Videoconsolas en posesión":{
                 "Videoconsola 1": "PS2",
                 "Videoconsola 2": "Wii"
             },
-        "Generos musicales":{
-                "Generos": "Rock",
-                "Generos": "New Age"
+        "Géneros musicales":{
+                "Géneros": "Rock",
+                "Géneros": "New Age"
             },
     },
 };
