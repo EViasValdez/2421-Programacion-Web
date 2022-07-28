@@ -1,5 +1,5 @@
 <?php
-class registro{
+class registro {
     include "E13Postm.php";
     $individuo = new Individuo();
 }
