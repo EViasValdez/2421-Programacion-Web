@@ -10,7 +10,7 @@ function__construct(){
     $this->con = mysqli_connect($servername, $username, $password, $database);
     mysqli_query($this->con, "SET NAMES "utf8"");
 
-    if (!$con){
+    if (!$con) {
         die("Connection failed: " . mysqli_connect_error());
     }
 }
