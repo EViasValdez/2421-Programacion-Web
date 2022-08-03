@@ -9,12 +9,12 @@
 </head>
 <body>
     <style type="text/css">
-        h1{
+        h1 {
             text-align: center;
             font-family: "Verdana";
             font-size: 40px;
         }
-        form{
+        form {
             text-align: center;
             font-size: 20px;
             font-family: "Arial";
