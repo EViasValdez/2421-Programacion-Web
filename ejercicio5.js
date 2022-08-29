@@ -7,15 +7,15 @@ function() {
 var total = 0;
 
 $(".botones").click(function()
-{   
+{
     var valor = $(this).attr("valor");
     if (valor == 1){
-        $(this).css("background-color", "white");            
+        $(this).css("background-color", "white");
         total++;
     }else{
         $(this).css("background-color", "red");
         alert("Perdiste, estos son tus puntos: " + total);
-        location.reload();            
+        location.reload();
     }
 }
 );
