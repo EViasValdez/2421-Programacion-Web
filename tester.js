@@ -6,35 +6,31 @@ var prueba = operacion();
 
 alert(prueba);
 
-function operaciones(){
-    if (oper == "sumar"){
+function operaciones() {
+    if (oper == "sumar") {
         suma();
     }
-    if (oper == "restar"){
+    if (oper == "restar") {
         restar();
     }
-    if (oper = "multiplicar"){
+    if (oper = "multiplicar") {
         multiplicacion();
     }
-    if (oper = "dividir"){
+    if (oper = "dividir") {
         division();
     }
     reuno = resultado;
     console.log("El resultado es: " + resultado)
 }
-
-function suma(){
+function suma() {
     result = num1 + num2;
 }
-
-function resta(){
+function resta() {
     result = num1 - num2;
 }
-
-function mulitplicacion(){
+function mulitplicacion() {
     result = num1 * num2;
 }
-
-function division(){
+function division() {
     result = num1 / num2;
 }
