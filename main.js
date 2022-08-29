@@ -10,7 +10,7 @@ for (var i = 0; i < elemento1.length; i++){
     if (elemento1 [i] == elemento2 [contrario])
         console.log("Son iguales");
     else
-        console.log("No son iguales");    
+        console.log("No son iguales");
     contrario--;
 }
 
