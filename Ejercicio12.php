@@ -11,15 +11,15 @@
     body {
         background-color: rgb(0, 153, 51);
     }
-    #texto {
-        text-align: center;
-        font-family: "Lexend";
-        color: white;
-    }
     form {
         text-align: center;
         font-family: "Lexend";
         font-size: 20px;
+        color: white;
+    }
+    #texto {
+        text-align: center;
+        font-family: "Lexend";
         color: white;
     }
     #n, #e {
