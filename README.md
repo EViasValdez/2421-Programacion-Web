@@ -1,20 +1,17 @@
 # Programacion web
 
 <!----Descripción---->
-
 Estos son todos los ejercicios de las tres unidades de la materia de programación web, creo que esta es de mis materias las cuales realice varias cosas en lo que respecta a la creación de sitios web y diseño.
-
 <!----Separador de la descripción ---->
 
 <!----Notas---->
-
 **Notas**
 
 **- Solo en este repositorio puse las fechas de realización y el tipo de trabajo en el commit de cada archivo.**
 
 **- El orden de cada ejercicio realizado va junto con sus archivos correspondientes.**
-
 <!----Separador de las notas---->
+
 <!----Directorio con ubicación de archivos---->
 # Lista con ubicación de archivos
 
