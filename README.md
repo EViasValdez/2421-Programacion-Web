@@ -79,5 +79,4 @@ TrabajoEquipo/JQuerry.min (1).js)
 
 ###### Ejercicio 13 - 11/21
 (Ejercicio13.php, E13Conexion.php, E13ContUsua.php, E13Datos.php ,E13Postm.php ,E13Usuario.php)
-
 <!----Separador del directorio con ubicación de archivos---->
