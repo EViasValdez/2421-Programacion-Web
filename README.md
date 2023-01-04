@@ -12,7 +12,7 @@ Estos son todos los ejercicios de las tres unidades de la materia de programaci�
 **- El orden de cada ejercicio realizado va junto con sus archivos correspondientes.**
 <!----Separador de las notas---->
 
-<!----Directorio con ubicación de archivos---->
+<!----Directorio con descripcion de los programas---->
 # Lista con ubicación de archivos
 
 ## ● Unidad 1 ●
@@ -46,7 +46,7 @@ Utilizacion de funciones con la utilizacion de jQuery.
 <!----Separador---->
 
 ###### Buscaminas - 20/09/21
-Version de buscaminas en HTML con CSS y JavaScript, con cambios de codigo y mejoras visuales.
+Version de buscaminas en HTML utilizando CSS y JavaScript, con cambios de codigo y mejoras visuales.
 
 <!----Separador---->
 
@@ -82,26 +82,27 @@ En equipo se creo un programa el cual pueda mostrar y realizar funciones de ingr
 <!----Separador---->
 
 ###### Trabajoenequipo - 22/10/21
-Trabajo realizado en bootstrap de la actividad originalmente mostrada.
+Trabajo realizado en bootstrap de la actividad originalmente mostrada previamente.
 
 <!----Separador---->
 
 ## ● Unidad 3 ●
-###### Ejercicio10 - 25/10/21
-De aqui en adelante los archivos que se crearon fueron creados en el lenguaje PHP.
+###### Ejercicio10, E10Datos - 25/10/21
+De aqui en adelante los archivos que se crearon fueron creados en el lenguaje PHP, este primer ejercicio utiliza que permite agregar datos.
 
 <!----Separador---->
 
-###### Ejercicio11 - 29/10/21
-Texto por ser escrito.
+###### Ejercicio11, E11Datos - 29/10/21
+Aqui se permite cambiar los caracteres de mayusculas a minusculas o viceversa.
 
 <!----Separador---->
 
-###### Ejercicio12 - 01/11/21
-Texto por ser escrito.
+###### Ejercicio12, E12Conexion, E12Postm - 01/11/21
+Carga de datos api con Postman.
 
 <!----Separador---->
 
-###### Ejercicio13 - 11/21
-Texto por ser escrito.
+###### Ejercicio13, E13Conexion, E13ContUsua, E13Datos, E13Postm, E13Usuario - 11/21
+Registro de cada archivo, usando cada archivo que permite esto.
+
 <!----Separador del directorio con ubicación de archivos---->
