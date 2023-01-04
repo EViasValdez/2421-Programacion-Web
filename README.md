@@ -13,7 +13,7 @@ Estos son todos los ejercicios de las tres unidades de la materia de programaci�
 <!----Separador de las notas---->
 
 <!----Directorio con descripcion de los programas---->
-# Lista con ubicación de archivos
+# Descripcion de los programas
 
 ## ● Unidad 1 ●
 ###### Ejercicio1 - 03/09/21
