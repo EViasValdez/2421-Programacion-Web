@@ -39,7 +39,7 @@ function Marcado(){
         alert("Esta opción es obligatoria");
     }
 }
-function datos(){
+function Datos(){
     Marcado();
     Selectos();
     EnviarDatos();
