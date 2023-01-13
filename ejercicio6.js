@@ -1,46 +1,46 @@
-function enviardatos(){
-    var nombre = document.getElementById("nombre").value;
-    var usuario = document.getElementById("usuario").value;
-    var email = document.getElementById("email").value;
-    var numero = parseFloat(document.getElementById("numero")).value;
-    var contras = document.getElementById("contras").value;
+function EnviarDatos(){
+    var Nombre = document.getElementById("nombre").value;
+    var Usuario = document.getElementById("usuario").value;
+    var Email = document.getElementById("email").value;
+    var Numero = parseFloat(document.getElementById("numero")).value;
+    var Contras = document.getElementById("contras").value;
 
-    if (nombre == "") {
+    if (Nombre == "") {
         alert("No ha ingresado su nombre completo");
-        document.getElementById("nombre").focus();
+        document.getElementById("Nombre").focus();
     }
-    else if (usuario == "") {
+    else if (Usuario == "") {
         alert("No ha ingresado su nombre de usuario");
-        document.getElementById("usuario").focus();
+        document.getElementById("Usuario").focus();
     }
-    else if (email == "") {
+    else if (Email == "") {
         alert("No ha ingresado su correo");
-        document.getElementById("email").focus();
+        document.getElementById("Email").focus();
     }
-    else if (numero == "") {
+    else if (Numero == "") {
         alert("No ha ingresado su numero de teléfono");
-        document.getElementById("numero").focus();
+        document.getElementById("Numero").focus();
     }
-    else if (contras == "") {
+    else if (Contras == "") {
         alert("No ha ingresado su contraseña");
-        document.getElementById("contras").focus();
+        document.getElementById("Contras").focus();
     } else {
         alert("Sus datos han sido registrados con éxito");
-        console.log(nombre + " " + usuario + " " + email + " " + numero + " " + contras);
+        console.log(Nombre + " " + Usuario + " " + Email + " " + Numero + " " + Contras);
     }
 }
-function selectdos(){
-    if (document.getElementById("seleccion").value == "predeterminado") {
+function Selectos(){
+    if (document.getElementById("Seleccion").value == "predeterminado") {
         alert("No deje esta parte vacía, elige una opción");
     }
 }
-function marcado(){
-    if (document.getElementById("marcado").checked == false) {
+function Marcado(){
+    if (document.getElementById("Marcado").checked == false) {
         alert("Esta opción es obligatoria");
     }
 }
 function datos(){
-    marcado();
-    selectdos();
-    enviardatos();
+    Marcado();
+    Selectos();
+    EnviarDatos();
 }
