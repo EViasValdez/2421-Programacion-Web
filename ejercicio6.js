@@ -1,4 +1,4 @@
-function EnviarDatos(){
+function EnviarDatos() {
     var Nombre = document.getElementById("nombre").value;
     var Usuario = document.getElementById("usuario").value;
     var Email = document.getElementById("email").value;
@@ -29,17 +29,17 @@ function EnviarDatos(){
         console.log(Nombre + " " + Usuario + " " + Email + " " + Numero + " " + Contras);
     }
 }
-function Selectos(){
+function Selectos() {
     if (document.getElementById("Seleccion").value == "predeterminado") {
         alert("No deje esta parte vacía, elige una opción");
     }
 }
-function Marcado(){
+function Marcado() {
     if (document.getElementById("Marcado").checked == false) {
         alert("Esta opción es obligatoria");
     }
 }
-function Datos(){
+function Datos() {
     Marcado();
     Selectos();
     EnviarDatos();

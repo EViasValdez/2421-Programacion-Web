@@ -9,7 +9,7 @@ var total = 0;
 $(".botones").click(function()
 {
     var valor = $(this).attr("valor");
-    if (valor == 1){
+    if (valor == 1) {
         $(this).css("background-color", "white");
         total++;
     }else{
@@ -19,10 +19,10 @@ $(".botones").click(function()
     }
 }
 );
-function valorAleatorio(min = 0, max = 1){
+function valorAleatorio(min = 0, max = 1) {
     return Math.floor(Math.random () * (max - min + 1)) + min;
 }
-function cargarValores(){
+function cargarValores() {
     $(".verificar").each(
         function(){
             $(this).attr("valor", valorAleatorio)
