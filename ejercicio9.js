@@ -1,48 +1,48 @@
-function tabla(){
-    var nombre = document.getElementById("nombres").value;
-    var ap = document.getElementById("apellidos").value;
-    var montoprestamo = document.getElementById("montoprestamo").value;
-    var fechapago = document.getElementById("fechapago").value;
-    var nplazo = document.getElementById("nplazo").value;
+function Tabla() {
+    var Nombre = document.getElementById("nombres").value;
+    var Ap = document.getElementById("apellidos").value;
+    var MontoPrestamo = document.getElementById("MontoPrestamo").value;
+    var FechaPago = document.getElementById("FechaPago").value;
+    var NPlazo = document.getElementById("NPlazo").value;
 
-    if (nombre == "" || ap == "" || montoprestamo == "" || fechapago == "" || nplazo == "")
+    if (Nombre == "" || Ap == "" || MontoPrestamo == "" || FechaPago == "" || NPlazo == "")
     {
         alert("No ha ingresado dato alguno");
     }
     else{
-        var fila = "<tr><th>"+ nombre +"</th><th>"+ ap +"</th><th>"+ montoprestamo + "</th><th>" + fechapago + "</th><th>"+ nplazo + "</th></tr>";
-        var boton = document.createElement("tr");
+        var Fila = "<tr><th>"+ Nombre +"</th><th>"+ Ap +"</th><th>"+ MontoPrestamo + "</th><th>" + FechaPago + "</th><th>"+ NPlazo + "</th></tr>";
+        var Boton = document.createElement("tr");
 
-        boton.innerHTML = fila;
-        document.getElementById("tablacontenido").appendChild(boton);
+        Boton.innerHTML = Fila;
+        document.getElementById("tablacontenido").appendChild(Boton);
         alert("Datos aceptados");
     }
 }
-function amortizacion(){
-    var iva = montoprestamo * 0.12;
-    let iniciointeres = monto * 0.01 + iva;
-    var total = montoprestamo + iniciointeres;
-    var totaln = 0 - total;
-    var amortizacion = document.getElementById("amortizacion");
+function Amortizacion() {
+    var Iva = MontoPrestamo * 0.12;
+    let InicioInteres = monto * 0.01 + Iva;
+    var Total = MontoPrestamo + InicioInteres;
+    var TotalN = 0 - Total;
+    var Amortizacion = document.getElementById("Amortizacion");
 
-    if (amortizacion == 1) {
-        let aux = 1 + 0.12 / plazos * plazos;
-        var FRC = 1 + 0.12 / plazos * aux / aux * - 1;
-        var PI = total * FRC;
+    if (Amortizacion == 1) {
+        let Aux = 1 + 0.12 / plazos * plazos;
+        var FRC = 1 + 0.12 / plazos * Aux / Aux * - 1;
+        var PI = Total * FRC;
         
         console.log(PI);
     }
-    else (amortizacion == 2); {
+    else (Amortizacion == 2); {
         var A2 = PI;
         
         FO = A2 + I * 1 + 0.12
 
-        if (totaln > 0) {
+        if (TotalN > 0) {
             alert("Saldo salado");
         }
     }
 }
 function poner(){
-    tabla();
-    amortizacion();
+    Tabla();
+    Amortizacion();
 }

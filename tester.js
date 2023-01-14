@@ -1,36 +1,36 @@
-var num1 = 10;
-var num2 = 10;
-var result;
-var oper = prompt("Ingresa la operación a realizar");
-var prueba = operacion();
+var Num1 = 10;
+var Num2 = 10;
+var Result;
+var Oper = prompt("Ingresa la operación a realizar");
+var Prueba = Operaciones();
 
-alert(prueba);
+alert(Prueba);
 
-function operaciones() {
-    if (oper == "sumar") {
+function Operaciones() {
+    if (Oper == "sumar") {
         suma();
     }
-    if (oper == "restar") {
+    if (Oper == "restar") {
         restar();
     }
-    if (oper = "multiplicar") {
+    if (Oper = "multiplicar") {
         multiplicacion();
     }
-    if (oper = "dividir") {
+    if (Oper = "dividir") {
         division();
     }
     reuno = resultado;
     console.log("El resultado es: " + resultado)
 }
 function suma() {
-    result = num1 + num2;
+    Result = Num1 + Num2;
 }
 function resta() {
-    result = num1 - num2;
+    Result = Num1 - Num2;
 }
 function mulitplicacion() {
-    result = num1 * num2;
+    Result = Num1 * Num2;
 }
 function division() {
-    result = num1 / num2;
+    Result = Num1 / Num2;
 }
