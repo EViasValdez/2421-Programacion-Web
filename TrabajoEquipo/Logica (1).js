@@ -2,23 +2,23 @@ $(document).ready(function () {
     $("#tres").hide();
         $("#boton").click(function () {
             var puntualizadad = Math.floor(Math.random() * 1);
-            var nombre = $("#nombres").val();
-            var apeidoPaterno = $("#apeidoP").val();
-            var apeidoMaterno = $("#apeidoM").val();
-            var monto = parseFloat($("#pedido").val());
-            var plazos = parseFloat($("#tipo").val());
-            var amortizacion = $("#amortizacion").val();
-            var fechaPrestamo1 = $("#fecha1").val();
-            var fechaPrestamo2 = $("#fecha2").val();
-            var fechaPrestamo3 = $("#fecha3").val();
-            var dias = 28 * plazos;
-            var nombreCompleto = nombre + " " + apeidoPaterno + " " + apeidoMaterno;
-            var iva = monto * 0.12;
-            let interesInicial = monto * 0.01 + iva;
-            var total = monto + interesInicial;
+            var Nombre = $("#nombres").val();
+            var ApeidoPaterno = $("#apeidoP").val();
+            var ApeidoMaterno = $("#apeidoM").val();
+            var Monto = parseFloat($("#pedido").val());
+            var Plazos = parseFloat($("#tipo").val());
+            var Amortizacion = $("#Amortizacion").val();
+            var FechaPrestamo1 = $("#fecha1").val();
+            var FechaPrestamo2 = $("#fecha2").val();
+            var FechaPrestamo3 = $("#fecha3").val();
+            var Dias = 28 * Plazos;
+            var NombreCompleto = Nombre + " " + ApeidoPaterno + " " + ApeidoMaterno;
+            var iva = Monto * 0.12;
+            let interesInicial = Monto * 0.01 + iva;
+            var total = Monto + interesInicial;
             var totalNegativo = 0 - total;
             
-            console.log(`Sr. ${nombreCompleto} su préstamo fue aceptado.`);  
+            console.log(`Sr. ${NombreCompleto} su préstamo fue aceptado.`);  
             console.log(totalNegativo);
 
             // Datos importantes
@@ -27,16 +27,16 @@ $(document).ready(function () {
 
                     var montos = $("#pago").val();
 
-                    if (amortizacion == 0) {
+                    if (Amortizacion == 0) {
                         // seccion2
-                        let aux = 1 + 0.12 / plazos * plazos;
-                        var FRC = 1 + 0.12 / plazos * aux / aux * - 1;
+                        let aux = 1 + 0.12 / Plazos * Plazos;
+                        var FRC = 1 + 0.12 / Plazos * aux / aux * - 1;
                         var PI = total * FRC;
 
                         console.log(PI);
                         var nuevo = ((Math.pow((1 + (t / p))) * (t / p)), 2)
                     }
-                    if (amortizacion == 1) {
+                    if (Amortizacion == 1) {
                         var A2 = PI;
                         FO = A2 + I * 1 + 0.12
                         if (totalNegativo > 0) {
@@ -45,11 +45,11 @@ $(document).ready(function () {
                     }
                 });
             $("#boton3").click( function () {
-                for (let x = 0; x < plazos; x++) {
+                for (let x = 0; x < Plazos; x++) {
                    $(".nombre").html(x);
-                   $(".periodo").html(`${fechaPrestamo1} - ${fechaPrestamo2} - ${fechaPrestamo3}`);
-                   $(".dias").html(dias);
-                   $(".saldo").html(monto);
+                   $(".periodo").html(`${FechaPrestamo1} - ${FechaPrestamo2} - ${FechaPrestamo3}`);
+                   $(".dias").html(Dias);
+                   $(".saldo").html(Monto);
                    $(".insoluto").html(totalNegativo);
                    $(".iva").html(iva);
                 }

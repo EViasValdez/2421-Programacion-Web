@@ -1,17 +1,17 @@
-var total = 0;
-var contador1 = 1;
-var contador2 = 1;
-var contador3 = 1;
-var contador4 = 1;
-var contador5 = 1;
-var contador6 = 1;
+var Total = 0;
+var Contador1 = 1;
+var Contador2 = 1;
+var Contador3 = 1;
+var Contador4 = 1;
+var Contador5 = 1;
+var Contador6 = 1;
 
-var precios1 = 0;
-var precios2 = 0;
-var precios3 = 0;
-var precios4 = 0;
-var precios5 = 0;
-var precios6 = 0;
+var Precios1 = 0;
+var Precios2 = 0;
+var Precios3 = 0;
+var Precios4 = 0;
+var Precios5 = 0;
+var Precios6 = 0;
 
 function funcionamiento() {
     var marca = parseInt(document.getElementById("op").value);
@@ -19,44 +19,44 @@ function funcionamiento() {
 
     if (marca == 1){
         if (objeto == "Core i5") {
-            total += 1900;
-            precios1 += 1900;
-            document.getElementById("uno").innerHTML = `Productos (${contador1}): ${objeto} = $1900`;
-            contador1++;
+            Total += 1900;
+            Precios1 += 1900;
+            document.getElementById("uno").innerHTML = `Productos (${Contador1}): ${objeto} = $1900`;
+            Contador1++;
         }
         if (objeto == "Xeon") {
-            total += 1300;
-            precios2 += 1300;
-            document.getElementById("dos").innerHTML = `Producto (${contador2}): ${objeto} = $1300`;
-            contador2++;
+            Total += 1300;
+            Precios2 += 1300;
+            document.getElementById("dos").innerHTML = `Producto (${Contador2}): ${objeto} = $1300`;
+            Contador2++;
         }
         if (objeto == "Core i9") {
-            total += 2900;
-            precios3 += 2900;
-            document.getElementById("tres").innerHTML = `Producto(${contador3}): ${objeto} = $2900`;
-            contador3++;
+            Total += 2900;
+            Precios3 += 2900;
+            document.getElementById("tres").innerHTML = `Producto(${Contador3}): ${objeto} = $2900`;
+            Contador3++;
         }
     }
 
     if (marca == 2) {
         if (objeto == "Ryzen 5"||objeto == "Ryzen 5") {
-            total += 2600;
-            precios1 += 2600;
-            document.getElementById("cuatro").innerHTML = `Producto(${contador4}): ${objeto} = $2600`;
-            contador4++;
+            Total += 2600;
+            Precios1 += 2600;
+            document.getElementById("cuatro").innerHTML = `Producto(${Contador4}): ${objeto} = $2600`;
+            Contador4++;
         }
         if (objeto == "Opteron") {
-            total += 2470;
-            precios1 += 2470;
-            document.getElementById("cinco").innerHTML = `Producto(${contador5}): ${objeto} = $2470`;
-            contador5++;
+            Total += 2470;
+            Precios1 += 2470;
+            document.getElementById("cinco").innerHTML = `Producto(${Contador5}): ${objeto} = $2470`;
+            Contador5++;
         }
         if (objeto == "Threadripper") {
-            total += 4900;
-            precios6 += 4900;
-            document.getElementById("seis").innerHTML = `Producto(${contador6}): ${objeto} = $4900`;
-            contador6++;
+            Total += 4900;
+            Precios6 += 4900;
+            document.getElementById("seis").innerHTML = `Producto(${Contador6}): ${objeto} = $4900`;
+            Contador6++;
         }
     }
-    document.getElementById("precios").innerHTML=`Total: $${total}`;
+    document.getElementById("precios").innerHTML=`Total: $${Total}`;
 }
