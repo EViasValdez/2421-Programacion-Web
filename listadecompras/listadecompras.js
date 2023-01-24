@@ -14,47 +14,47 @@ var Precios5 = 0;
 var Precios6 = 0;
 
 function funcionamiento() {
-    var marca = parseInt(document.getElementById("op").value);
-    var objeto = document.getElementById("objet").value;
+    var Marca = parseInt(document.getElementById("op").value);
+    var Objeto = document.getElementById("objet").value;
 
-    if (marca == 1){
-        if (objeto == "Core i5") {
+    if (Marca == 1){
+        if (Objeto == "Core i5") {
             Total += 1900;
             Precios1 += 1900;
-            document.getElementById("uno").innerHTML = `Productos (${Contador1}): ${objeto} = $1900`;
+            document.getElementById("uno").innerHTML = `Productos (${Contador1}): ${Objeto} = $1900`;
             Contador1++;
         }
-        if (objeto == "Xeon") {
+        if (Objeto == "Xeon") {
             Total += 1300;
             Precios2 += 1300;
-            document.getElementById("dos").innerHTML = `Producto (${Contador2}): ${objeto} = $1300`;
+            document.getElementById("dos").innerHTML = `Producto (${Contador2}): ${Objeto} = $1300`;
             Contador2++;
         }
-        if (objeto == "Core i9") {
+        if (Objeto == "Core i9") {
             Total += 2900;
             Precios3 += 2900;
-            document.getElementById("tres").innerHTML = `Producto(${Contador3}): ${objeto} = $2900`;
+            document.getElementById("tres").innerHTML = `Producto(${Contador3}): ${Objeto} = $2900`;
             Contador3++;
         }
     }
 
-    if (marca == 2) {
-        if (objeto == "Ryzen 5"||objeto == "Ryzen 5") {
+    if (Marca == 2) {
+        if (Objeto == "Ryzen 5"||Objeto == "Ryzen 5") {
             Total += 2600;
             Precios1 += 2600;
-            document.getElementById("cuatro").innerHTML = `Producto(${Contador4}): ${objeto} = $2600`;
+            document.getElementById("cuatro").innerHTML = `Producto(${Contador4}): ${Objeto} = $2600`;
             Contador4++;
         }
-        if (objeto == "Opteron") {
+        if (Objeto == "Opteron") {
             Total += 2470;
             Precios1 += 2470;
-            document.getElementById("cinco").innerHTML = `Producto(${Contador5}): ${objeto} = $2470`;
+            document.getElementById("cinco").innerHTML = `Producto(${Contador5}): ${Objeto} = $2470`;
             Contador5++;
         }
-        if (objeto == "Threadripper") {
+        if (Objeto == "Threadripper") {
             Total += 4900;
             Precios6 += 4900;
-            document.getElementById("seis").innerHTML = `Producto(${Contador6}): ${objeto} = $4900`;
+            document.getElementById("seis").innerHTML = `Producto(${Contador6}): ${Objeto} = $4900`;
             Contador6++;
         }
     }
