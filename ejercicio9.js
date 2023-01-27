@@ -42,7 +42,7 @@ function Amortizacion() {
         }
     }
 }
-function poner() {
+function Poner() {
     Tabla();
     Amortizacion();
 }
