@@ -19,8 +19,8 @@ class Usuario extends Conexion
         $res = $pre->get_result();
         return $res->fetch_object(Usuario::class);
     }
-    function insert(){
-        $this->Fecha_Registro = date("D-M-Y");
+    function Insert() {
+        $this->FechaRegistro = date("D-M-Y");
         $pre = mysqli_prepare($this->con, "INSERT INTO personas(nombre, edad) VALUES (?,?)");
         $pre-> bind_param("sssssss", $this->Nombre, $this ->edad);
         $pre->execute();
@@ -30,7 +30,7 @@ class Usuario extends Conexion
         $r = $pre -> get_result();
         $this->id_Usuario = $r->fetch_assoc()["id"];
     }
-    function guardar(){
+    function Guardar() {
         $pre = mysqli_prepare($this->con, "INSERT INTO personas(nombre, edad) VALUES (?,?)");
         $pre->bind_param("ss", $this->nombre, $this->edad);
         $pre->execute();
