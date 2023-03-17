@@ -1,8 +1,8 @@
 <?php
-class Nececidad{
+class Nececidad {
     public $elemento = "Uno";
 
-    public static function repertorio(){
+    public static function repertorio() {
         echo "Dale";
     }
 }

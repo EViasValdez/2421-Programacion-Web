@@ -1,19 +1,19 @@
 <?php
     if (isset($_GET["palabra"]))
     {
-        $palabra = $_GET["palabra"];
+        $Palabra = $_GET["palabra"];
         if (isset($_GET["tipo"]))
         {
             $tipo = $_GET["tipo"];
         }
         if ($tipo == 0){
-            $palabra = strtolower($palabra);
-            echo "El resultado es: $palabra";
+            $Palabra = strtolower($Palabra);
+            echo "El resultado es: $Palabra";
         }
         else
         {
-            $palabra = strtoupper($palabra);
-            echo "El resultado es: $palabra";
+            $Palabra = strtoupper($Palabra);
+            echo "El resultado es: $Palabra";
         }
     }
 ?>

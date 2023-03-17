@@ -6,15 +6,15 @@ class ControlUsuarios{
     function__construct(){
     }
     public function buscarId(){
-        $id = $_GET["id"];
-        $usuario = Usuario::buscar($id);
-        echo json_encode($usuario);
+        $Id = $_GET["id"];
+        $Usuario = Usuario::buscar($Id);
+        echo json_encode($Usuario);
     }
     public function insertar(){
-        $usuario = new Usuario();
-        $usuario->nombre = "Xavier";
-        $usuario->edad = 50;
-        $usuario->guardar();
+        $Usuario = new Usuario();
+        $Usuario->nombre = "Xavier";
+        $Usuario->edad = 50;
+        $Usuario->guardar();
     }
     public function testEncriptar(){
         echo password_hash("", PASSWPRD_DEFAULT);
