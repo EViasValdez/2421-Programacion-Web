@@ -1,49 +1,49 @@
-const buscaminas = {
+const Buscaminas = {
     numMinasTotales: 30,
     numMinasEncontradas: 0,
     numFilas: 15,
     numColumnas: 15,
     aCampoMinas: []
 }
-function mostrarTablero() {
-    let tablero = document.querySelector("#tablero");
+function MostrarTablero() {
+    let Tablero = document.querySelector("#Tablero");
 
-    document.querySelector("html").style.setProperty("--num-filas", buscaminas.numFilas);
-    document.querySelector("html").style.setProperty("--num-columnas", buscaminas.numColumnas);
+    document.querySelector("html").style.setProperty("--num-filas", Buscaminas.numFilas);
+    document.querySelector("html").style.setProperty("--num-columnas", Buscaminas.numColumnas);
 
-    while (tablero.firstChild) {
-        tablero.firstChild.removeEventListener ("contextmenu", marcar);
-        tablero.firstChild.removeEventListener ("click", revelar);
-        tablero.removeChild (tablero.firstChild);
+    while (Tablero.firstChild) {
+        Tablero.firstChild.removeEventListener ("contextmenu", Marcar);
+        Tablero.firstChild.removeEventListener ("click", revelar);
+        Tablero.removeChild (Tablero.firstChild);
     }
 
-    for (let f = 0; f < buscaminas.numFilas; f++) {
-        for (let c = 0; c < buscaminas.numColumnas; c++) {
+    for (let f = 0; f < Buscaminas.numFilas; f++) {
+        for (let c = 0; c < Buscaminas.numColumnas; c++) {
             let newDiv = document.createElement("div");
             newDiv.setAttribute ("id", "f" + f + "_c" + c );
             newDiv.dataset.fila = f;
             newDiv.dataset.columna = c;
-            newDiv.addEventListener ("contextmenu", marcar);
+            newDiv.addEventListener ("contextmenu", Marcar);
             newDiv.addEventListener ("click", revelar);
-            tablero.appendChild (newDiv);
+            Tablero.appendChild (newDiv);
         }
     }
 }
-function generarCampoMinasVacio() {
-    buscaminas.aCampoMinas = new Array (buscaminas.numFilas);
-    for (let fila = 0; fila < buscaminas.numFilas; fila++) {
-        buscaminas.aCampoMinas [fila] = new Array (buscaminas.numColumnas);
+function GenerarCampoMinasVacio() {
+    Buscaminas.aCampoMinas = new Array (Buscaminas.numFilas);
+    for (let fila = 0; fila < Buscaminas.numFilas; fila++) {
+        Buscaminas.aCampoMinas [fila] = new Array (Buscaminas.numColumnas);
     }
 }
-function ponerMinas() {
+function PonerMinas() {
     let numMinasEsparcidas = 0;
 
-    while (numMinasEsparcidas < buscaminas.numMinasTotales) {
-        let fila = Math.floor (Math.random() * buscaminas.numFilas);
-        let columna = Math.floor (Math.random() * buscaminas.numColumnas);
+    while (numMinasEsparcidas < Buscaminas.numMinasTotales) {
+        let fila = Math.floor (Math.random() * Buscaminas.numFilas);
+        let columna = Math.floor (Math.random() * Buscaminas.numColumnas);
 
-        if (buscaminas.aCampoMinas [fila] [columna] != "B") {
-            buscaminas.aCampoMinas [fila] [columna] = "B";
+        if (Buscaminas.aCampoMinas [fila] [columna] != "B") {
+            Buscaminas.aCampoMinas [fila] [columna] = "B";
             numMinasEsparcidas++;
         }
     }
@@ -53,78 +53,78 @@ function contarMinasAlrededorCasilla(fila,columna) {
 
     for (let zFila = fila - 1; zFila <= fila + 1; zFila++) {
         for (let zColumna = columna - 1; zColumna <= columna + 1; zColumna++) {
-            if (zFila >- 1 && zFila < buscaminas.numFilas && zColumna> - 1 && zColumna < buscaminas.numColumnas) {
-                if (buscaminas.aCampoMinas [zFila] [zColumna] == "B") {
+            if (zFila >- 1 && zFila < Buscaminas.numFilas && zColumna> - 1 && zColumna < Buscaminas.numColumnas) {
+                if (Buscaminas.aCampoMinas [zFila] [zColumna] == "B") {
                     numeroMinasAlrededor++;
                 }
             }
         }
     }
-    buscaminas.aCampoMinas [fila] [columna] = numeroMinasAlrededor;
+    Buscaminas.aCampoMinas [fila] [columna] = numeroMinasAlrededor;
 }
-function contarMinas() {
-    for (let fila = 0; fila < buscaminas.numFilas; fila++) {
-        for (let columna = 0; columna < buscaminas.numColumnas; columna++) {
-            if (buscaminas.aCampoMinas [fila] [columna] != "B") {
+function ContarMinas() {
+    for (let fila = 0; fila < Buscaminas.numFilas; fila++) {
+        for (let columna = 0; columna < Buscaminas.numColumnas; columna++) {
+            if (Buscaminas.aCampoMinas [fila] [columna] != "B") {
                 contarMinasAlrededorCasilla (fila,columna);
             }
         }
     }
 }
-function marcar(miEvento) {
+function Marcar(miEvento) {
     if (miEvento.type === "contextmenu") {
         console.log (miEvento);
 
-        let casilla = miEvento.currentTarget;
+        let Casilla = miEvento.currentTarget;
 
         miEvento.stopPropagation();
         miEvento.preventDefault();
 
-        let fila = parseInt (casilla.dataset.fila, 10);
-        let columna = parseInt (casilla.dataset.columna, 10);
+        let fila = parseInt (Casilla.dataset.fila, 10);
+        let columna = parseInt (Casilla.dataset.columna, 10);
 
-        if (fila >= 0 && columna >= 0 && fila < buscaminas.numFilas && columna < buscaminas.numColumnas) {
-            if (casilla.classList.contains ("icon-bandera")) {
-                casilla.classList.remove ("icon-bandera");
-                casilla.classList.add ("icon-duda");
-                buscaminas.numMinasEncontradas--;
-            } else if (casilla.classList.contains ("icon-duda")) {
-                casilla.classList.remove ("icon-duda");
-            } else if (casilla.classList.length == 0){
+        if (fila >= 0 && columna >= 0 && fila < Buscaminas.numFilas && columna < Buscaminas.numColumnas) {
+            if (Casilla.classList.contains ("icon-bandera")) {
+                Casilla.classList.remove ("icon-bandera");
+                Casilla.classList.add ("icon-duda");
+                Buscaminas.numMinasEncontradas--;
+            } else if (Casilla.classList.contains ("icon-duda")) {
+                Casilla.classList.remove ("icon-duda");
+            } else if (Casilla.classList.length == 0){
                 
-                casilla.classList.add ("icon-bandera");
-                buscaminas.numMinasEncontradas++;
-                if (buscaminas.numMinasEncontradas == buscaminas.numMinasTotales) {
+                Casilla.classList.add ("icon-bandera");
+                Buscaminas.numMinasEncontradas++;
+                if (Buscaminas.numMinasEncontradas == Buscaminas.numMinasTotales) {
                     resolverTablero (true);
                 }
             }
-            actualizarNumMinasRestantes();
+            ActualizarNumMinasRestantes();
         }
     }
 }
 function revelar(miEvento) {
     if (miEvento.type === "click") {
-        let casilla = miEvento.currentTarget;
-        let fila = parseInt (casilla.dataset.fila, 10);
-        let columna = parseInt (casilla.dataset.columna, 10);
+        let Casilla = miEvento.currentTarget;
+        let fila = parseInt (Casilla.dataset.fila, 10);
+        let columna = parseInt (Casilla.dataset.columna, 10);
         revelarCuadro (fila,columna);
     }
 }
 function revelarCuadro(fila, columna) {
-    if (fila > - 1 && fila < buscaminas.numFilas &&
-        columna > - 1 && columna < buscaminas.numColumnas) {
+    if (fila > - 1 && fila < Buscaminas.numFilas &&
+        columna > - 1 && columna < Buscaminas.numColumnas) {
 
-        console.log("Destapamos la casilla con fila " + fila + " y columna " + columna );
+        console.log("Destapamos la Casilla con fila " + fila + " y columna " + columna );
 
-        let casilla = document.querySelector("#f" + fila + "_c" + columna);
+        let Casilla = document.querySelector("#f" + fila + "_c" + columna);
 
-        if (!casilla.classList.contains("destapado")) {
-            if (!casilla.classList.contains("icon-bandera")) {
-                casilla.classList.add("destapado");
-                casilla.innerHTML = buscaminas.aCampoMinas [fila] [columna];
-                casilla.classList.add("c" + buscaminas.aCampoMinas [fila] [columna])
-                if (buscaminas.aCampoMinas [fila] [columna] !== "B") {
-                    if (buscaminas.aCampoMinas [fila] [columna] == 0) {
+        if (!Casilla.classList.contains("destapado")) {
+            if (!Casilla.classList.contains("icon-bandera")) {
+                Casilla.classList.add("destapado");
+                Casilla.innerHTML = Buscaminas.aCampoMinas [fila] [columna];
+                Casilla.classList.add("c" + Buscaminas.aCampoMinas [fila] [columna])
+                if (Buscaminas.aCampoMinas [fila] [columna] !== "B") {
+                    if (Buscaminas.aCampoMinas [fila] [columna] == 0) {
                         revelarCuadro(fila - 1, columna - 1);
                         revelarCuadro(fila - 1, columna);
                         revelarCuadro(fila - 1, columna + 1);
@@ -134,12 +134,12 @@ function revelarCuadro(fila, columna) {
                         revelarCuadro(fila + 1, columna);
                         revelarCuadro(fila + 1, columna + 1);
 
-                        casilla.innerHTML  = "";
+                        Casilla.innerHTML  = "";
                     }
-                }else if (buscaminas.aCampoMinas [fila] [columna] == "B") {
-                    casilla.innerHTML = "";
-                    casilla.classList.add("icon-bomba");
-                    casilla.classList.add("sinmarcar");
+                }else if (Buscaminas.aCampoMinas [fila] [columna] == "B") {
+                    Casilla.innerHTML = "";
+                    Casilla.classList.add("icon-bomba");
+                    Casilla.classList.add("sinmarcar");
                     resolverTablero(false);
                 }
             }
@@ -147,16 +147,16 @@ function revelarCuadro(fila, columna) {
     }
 }
 function resolverTablero(isOK) {
-    let aCasillas = tablero.children;
+    let aCasillas = Tablero.children;
     for (let i = 0 ; i < aCasillas.length; i++) {
         aCasillas [i].removeEventListener ("click", revelar);
-        aCasillas [i].removeEventListener ("contextmenu", marcar);
+        aCasillas [i].removeEventListener ("contextmenu", Marcar);
 
         let fila = parseInt(aCasillas [i].dataset.fila,10);
         let columna = parseInt(aCasillas [i].dataset.columna,10);
 
         if (aCasillas [i].classList.contains ("icon-bandera")) {
-            if (buscaminas.aCampoMinas [fila] [columna] == "B") {
+            if (Buscaminas.aCampoMinas [fila] [columna] == "B") {
                 aCasillas [i].classList.add ("destapado");
                 aCasillas [i].classList.remove ("icon-bandera");
                 aCasillas [i].classList.add ("icon-bomba");
@@ -166,7 +166,7 @@ function resolverTablero(isOK) {
                 isOK = false;
             }
         } else if (!aCasillas[i].classList.contains ("destapado")) {
-            if (buscaminas.aCampoMinas [fila] [columna] == "B"){
+            if (Buscaminas.aCampoMinas [fila] [columna] == "B"){
                 aCasillas [i].classList.add ("destapado");
                 aCasillas [i].classList.add ("icon-bomba");
             }
@@ -179,17 +179,17 @@ function resolverTablero(isOK) {
         alert("Acaba de perder, intente de nuevo");
     }
 }
-function actualizarNumMinasRestantes() {
+function ActualizarNumMinasRestantes() {
     document.querySelector("#numMinasRestantes").innerHTML =
-        (buscaminas.numMinasTotales - buscaminas.numMinasEncontradas);
+        (Buscaminas.numMinasTotales - Buscaminas.numMinasEncontradas);
 }
 function inicio() {
-    buscaminas.numFilas = 10;
-    buscaminas.numColumnas = 10;
-    buscaminas.numMinasTotales = 12;
-    mostrarTablero();
-    generarCampoMinasVacio();
-    ponerMinas();
-    contarMinas();
-    actualizarNumMinasRestantes();
+    Buscaminas.numFilas = 10;
+    Buscaminas.numColumnas = 10;
+    Buscaminas.numMinasTotales = 12;
+    MostrarTablero();
+    GenerarCampoMinasVacio();
+    PonerMinas();
+    ContarMinas();
+    ActualizarNumMinasRestantes();
 }
