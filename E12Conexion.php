@@ -1,7 +1,7 @@
 <?php
 public $con;
 
-function__construct(){
+function__construct() {
     $Host = "localhost";
     $Username = "root";
     $Password = "";
