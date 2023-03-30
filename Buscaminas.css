@@ -10,9 +10,9 @@
 	color: rgb(124, 124, 124);
 }
 #tablero {
-	align-content : center;
+	align-content: center;
 	padding: 8px;
-	display:grid;
+	display: grid;
 	grid-template-columns: repeat(var(--num-columnas), var(--size));
 	grid-template-rows: repeat(var(--num-filas), var(--size));
 	background-color: #9c9c9c;
@@ -32,8 +32,8 @@
 }
 #tablero div:hover {
 	background: rgb(73, 73, 73);
-            color: #000000;
-            border: 1px solid #000000 ;
+    color: #000000;
+    border: 1px solid #000000 ;
 }
 #tablero div.destapado {
 	font-family: 'Arial Black', sans-serif;
@@ -95,7 +95,7 @@
 }
 #estado div {
 	text-align: center;
-	font-family:'Corbel';
+	font-family: 'Corbel';
 	font-weight: bold;
 	font-size: 20px;
 	color: #ffffff;
