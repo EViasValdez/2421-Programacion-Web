@@ -92,12 +92,12 @@ h2 {
     color: white;
     font-size: 20px;
     padding: 5px;
-    font-family: 'Kalam', cursive;    
+    font-family: 'Kalam', cursive;
 }
 .Enviar:hover {
     background: white;
     color: #4860ca;
-    border: 1px solid #4860ca ;
+    border: 1px solid #4860ca;
 }
 .pc {
     font-size: 25px;
