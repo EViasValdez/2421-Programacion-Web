@@ -64,13 +64,13 @@ h1 {
     height: 50px;
     float: left;
     color:#2b2b2b;
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
     font-size: 55px;
 }
 h2 {
     font-size: 50px;
     color: #ffffff;
-    font-family: 'Fredoka One', cursive;
+    font-family: "Fredoka One", cursive;
 }
 .Buscador {
     width: 350px;
@@ -81,7 +81,7 @@ h2 {
     color: white;
     font-size: 20px;
     padding: 5px;
-    font-family: 'Kalam', cursive;
+    font-family: "Kalam", cursive;
  }
 .Enviar {
     width: 70px;
@@ -92,7 +92,7 @@ h2 {
     color: white;
     font-size: 20px;
     padding: 5px;
-    font-family: 'Kalam', cursive;
+    font-family: "Kalam", cursive;
 }
 .Enviar:hover {
     background: white;
@@ -102,7 +102,7 @@ h2 {
 .pc {
     font-size: 25px;
     color: #ffffff;
-    font-family: 'Fredoka One', cursive; 
+    font-family: "Fredoka One", cursive; 
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #ffffff;
