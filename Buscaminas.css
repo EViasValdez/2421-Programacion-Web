@@ -4,7 +4,7 @@
 	--size: 48px;
 }
 .titulo {
-	font-family: 'Corbel';
+	font-family: "Corbel";
 	font-weight: bold;
 	font-size: 40px;
 	color: rgb(124, 124, 124);
@@ -36,7 +36,7 @@
     border: 1px solid #000000 ;
 }
 #tablero div.destapado {
-	font-family: 'Arial Black', sans-serif;
+	font-family: "Arial Black", sans-serif;
 	font-size: 28px;
 	font-weight: bold;
 	border-left: 1px solid #6e6e6e;
@@ -49,7 +49,7 @@
 	background-color: #ff0000;
 }
 .comenzar {
-	font-family: 'Corbel';
+	font-family: "Corbel";
 	font-weight: bold;
     width: 110px;
     height: 70px;
@@ -65,7 +65,7 @@
     border: 1px solid #ffffff ;
 }
 .reiniciar {
-	font-family: 'Corbel';
+	font-family: "Corbel";
 	font-weight: bold;
     width: 110px;
     height: 70px;
@@ -95,7 +95,7 @@
 }
 #estado div {
 	text-align: center;
-	font-family: 'Corbel';
+	font-family: "Corbel";
 	font-weight: bold;
 	font-size: 20px;
 	color: #ffffff;
