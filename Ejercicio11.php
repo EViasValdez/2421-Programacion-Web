@@ -9,15 +9,15 @@
 </head>
 <body>
     <style type="text/css">
-    h1{
-        text-align: center;
-        font-family: "Franklin Gothic";
-    }
-    form{
-        text-align: center;
-        font-size: 20px;
-        font-family: "Lucida Console";
-    }
+        h1 {
+            text-align: center;
+            font-family: "Franklin Gothic";
+        }
+        form {
+            text-align: center;
+            font-size: 20px;
+            font-family: "Lucida Console";
+        }
     </style>
     <h1>Minusculas y mayusculas</h1>
     <form action="E11Datos.php" method="get">
