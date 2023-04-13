@@ -17,7 +17,7 @@
         font-size: 20px;
         color: white;
     }
-    #texto {
+    #Texto {
         text-align: center;
         font-family: "Lexend";
         color: white;
@@ -63,7 +63,7 @@
     }
 </style>
 <body>
-    <h1 id="texto">Hola mundo</h1>
+    <h1 id="Texto">Hola mundo</h1>
     <form action="E12Postm.php" method="post">
         <input id="n" name="nombre" placeholder="Nombre">
         <input id="e" name="edad" placeholder="Edad">
