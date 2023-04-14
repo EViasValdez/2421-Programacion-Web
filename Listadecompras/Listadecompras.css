@@ -1,0 +1,120 @@
+body {
+    background-image: url("Minimalista.png");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kalam', cursive;
+}
+.Barra {
+    width: 100%;
+    height: 65px;
+    background-image: url("Barra.jpg");
+    position: fixed;
+}
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+.logo {
+    float: left;
+    line-height: 65px;
+
+    text-align:left;
+}
+.menu {
+    float: right;
+    line-height: 65px;
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+.menu a {
+    display: block;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #353535;
+    transition: all 500ms ease;
+}
+.menu a:hover {
+    background: #2543c5;
+    color: #fff;
+}
+.menu .submenu {
+    background: #fff;
+    box-shadow: 3px 10px 10px rgba(0,0,0,0.2);
+    display: none;
+}
+.menu .submenu li a {
+    line-height: 50px;
+}
+.menu ul li a:hover + ul, .menu .submenu:hover {
+    display: block;
+}
+.Portada {
+    width: 100%;
+    height: 520px;
+    background-image: url("purpura.jpg");
+    background-size: 100vw 100vh;
+}
+h1 {
+    width: 50px;
+    height: 50px;
+    float: left;
+    color:#2b2b2b;
+    font-family: "Fredoka One", cursive;
+    font-size: 55px;
+}
+h2 {
+    font-size: 50px;
+    color: #ffffff;
+    font-family: "Fredoka One", cursive;
+}
+.Buscador {
+    width: 350px;
+    height: 50px;
+    background: #4860ca;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    font-family: "Kalam", cursive;
+ }
+.Enviar {
+    width: 70px;
+    height: 50px;
+    background: #4860ca;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    font-family: "Kalam", cursive;
+}
+.Enviar:hover {
+    background: white;
+    color: #4860ca;
+    border: 1px solid #4860ca;
+}
+.pc {
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Fredoka One", cursive; 
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ffffff;
+    opacity: 1; /* Firefox */
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #ffffff;
+    opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ffffff;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ffffff;
+}
