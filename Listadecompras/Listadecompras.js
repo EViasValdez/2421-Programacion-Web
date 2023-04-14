@@ -13,7 +13,7 @@ var Precios4 = 0;
 var Precios5 = 0;
 var Precios6 = 0;
 
-function funcionamiento() {
+function Funcionamiento() {
     var Marca = parseInt(document.getElementById("op").value);
     var Objeto = document.getElementById("objet").value;
 
