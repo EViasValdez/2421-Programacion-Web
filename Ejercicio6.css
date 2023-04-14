@@ -92,7 +92,7 @@ option {
     display: inline-block;
     margin: 20px 5px 0;
 }
-#registro {
+#Registro {
     text-align: center;
     width: 100%;
     padding: 10px 5px;
@@ -105,7 +105,7 @@ option {
     font-weight: 400;
     color: #fff;
 }
-#registro:hover {
+#Registro:hover {
     text-align: center;
     width: 100%;
     padding: 10px 5px;

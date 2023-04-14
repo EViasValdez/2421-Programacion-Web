@@ -22,7 +22,7 @@ body {
     color: white;
     font-size: 20px;
 }
-#nombres, #apellidos, #montoprestamo, #fechapago, #nplazo {
+#Nombres, #Apellidos, #MontoPrestamo, #FechaPago, #NPlazo {
     text-align: center;
     border: 1px solid rgb(255, 255, 255);
     font-family: "Palanquin Dark";
@@ -32,7 +32,7 @@ body {
     color: white;
     transition: 0.2s ease-in-out;
 }
-#nombres:hover, #apellidos:hover, #montoprestamo:hover, #fechapago:hover, #nplazo:hover {
+#Nombres:hover, #Apellidos:hover, #MontoPrestamo:hover, #FechaPago:hover, #NPlazo:hover {
     text-align: center;
     border: 1px solid rgb(255, 255, 255);
     font-family: "Palanquin Dark";
@@ -42,7 +42,7 @@ body {
     color: black;
     transition: 0.2s ease-in-out;
 }
-#amortizacion {
+#Amortizacion {
     text-align: center;
     border: 1px solid rgb(255, 255, 255);
     font-family: "Palanquin Dark";
@@ -51,7 +51,7 @@ body {
     color: white;
     transition: 0.2s ease-in-out;
 }
-#amortizacion:hover {
+#Amortizacion:hover {
     text-align: center;
     border: 1px solid rgb(255, 255, 255);
     font-family: "Palanquin Dark";
@@ -60,7 +60,7 @@ body {
     color: black;
     transition: 0.2s ease-in-out;
 }
-#boton1 {
+#Boton1 {
     text-align: center;
     border: 1px solid rgb(255, 255, 255);
     font-family: "Palanquin Dark";
@@ -68,7 +68,7 @@ body {
     background-color: black;
     color: white;
 }
-#boton1:active {
+#Boton1:active {
     border: 1px solid rgb(255, 255, 255);
     font-family: "Palanquin Dark";
     font-size: 18px;

@@ -2,7 +2,7 @@
 include "Conexion.php";
 include "E13Usuario.php";
 
-class ControlUsuarios{
+class ControlUsuarios {
     function__construct() {
     }
     public function buscarId() {

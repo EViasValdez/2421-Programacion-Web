@@ -1,6 +1,6 @@
 <?php
 namespace Models;
-class Conexion{
+class Conexion {
     public $con;
     function__construct() {
         $Host = "localhost";

@@ -12,10 +12,11 @@ if (isset($_POST["Edad"])) {
 }
 
 $sql = "INSERT INTO personas (id, Nombre, Edad) VALUES ('', '$Nombre', '$Edad')";
-    if (mysqli_query($conn, $sql)) {
-        echo "New record created successfully";
-    }
-    else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-    }
+
+if (mysqli_query($conn, $sql)) {
+    echo "New record created successfully";
+}
+else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
 ?>
