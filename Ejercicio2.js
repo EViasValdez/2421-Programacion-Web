@@ -1,18 +1,18 @@
-// var objeto1 = [A, B, C, D, F, G, H, J];
-// var objeto2 = [R, S, C, G, H, W, X, Y];
+// var Objeto1 = [A, B, C, D, F, G, H, J];
+// var Objeto2 = [R, S, C, G, H, W, X, Y];
 
 // console.log("--------------------");
-// for (var i = 0; i >= objeto1.length; i++){
-//     // objeto2.push(objeto1 [i]);
-//     if (objeto1 = objeto2) {
+// for (var i = 0; i >= Objeto1.length; i++){
+//     // Objeto2.push(Objeto1 [i]);
+//     if (Objeto1 = Objeto2) {
 //         console.log("Estos elementos son iguales:");
 //     } else {
 //         console.log("Estos elementos no son iguales")
 //     }
 // }
 
-// console.log(objeto1);
-// console.log(objeto2);
+// console.log(Objeto1);
+// console.log(Objeto2);
 
 console.log("Prueba");
 

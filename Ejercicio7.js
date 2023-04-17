@@ -1,12 +1,12 @@
 $( function() {
-    $( "#agarra1" ).draggable();
+    $( "#Agarra1" ).draggable();
 } );
 $( function() {
-    $( "#agarra2" ).draggable();
+    $( "#Agarra2" ).draggable();
 } );
 $( function() {
-    $( "#agarra3" ).draggable();
+    $( "#Agarra3" ).draggable();
 } );
 $( function() {
-    $( "#agarra4" ).draggable();
+    $( "#Agarra4" ).draggable();
 } );
