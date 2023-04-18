@@ -105,14 +105,14 @@
 	border-bottom: 1px solid #8d8d8d;
 	padding: 2px;
 }
-#tablero div.c1 { color: #ff0000;}
-#tablero div.c2 { color: #ffe600;}
-#tablero div.c3 { color: #0033ff;}
-#tablero div.c4 { color: #14af00;}
-#tablero div.c5 { color: #4700a3;}
-#tablero div.c6 { color: #ff9100;}
-#tablero div.c7 { color: #ff00d4;}
-#tablero div.c8 { color: #00ffea;}
+#tablero div.c1 {color: #ff0000;}
+#tablero div.c2 {color: #ffe600;}
+#tablero div.c3 {color: #0033ff;}
+#tablero div.c4 {color: #14af00;}
+#tablero div.c5 {color: #4700a3;}
+#tablero div.c6 {color: #ff9100;}
+#tablero div.c7 {color: #ff00d4;}
+#tablero div.c8 {color: #00ffea;}
 .icon-bandera:before { content: '\2691';  color: #0300a8;}
 .icon-duda:before { content: '\003F'; color: #fffb00;}
 .icon-bomba:before { content: '\1F4A3'; color:rgb(0, 0, 0)}

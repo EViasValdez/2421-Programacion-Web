@@ -23,34 +23,34 @@ body {
 
     text-align:left;
 }
-.menu {
+.Menu {
     float: right;
     line-height: 65px;
 }
-.menu ul {
+.Menu ul {
     display: flex;
     list-style: none;
 }
-.menu a {
+.Menu a {
     display: block;
     padding: 0px 20px;
     text-decoration: none;
     color: #353535;
     transition: all 500ms ease;
 }
-.menu a:hover {
+.Menu a:hover {
     background: #2543c5;
     color: #fff;
 }
-.menu .submenu {
+.Menu .Submenu {
     background: #fff;
     box-shadow: 3px 10px 10px rgba(0,0,0,0.2);
     display: none;
 }
-.menu .submenu li a {
+.Menu .Submenu li a {
     line-height: 50px;
 }
-.menu ul li a:hover + ul, .menu .submenu:hover {
+.Menu ul li a:hover + ul, .Menu .Submenu:hover {
     display: block;
 }
 .Portada {
