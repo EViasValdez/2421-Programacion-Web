@@ -17,7 +17,7 @@ function Funcionamiento() {
     var Marca = parseInt(document.getElementById("op").value);
     var Objeto = document.getElementById("objet").value;
 
-    if (Marca == 1){
+    if (Marca == 1) {
         if (Objeto == "Core i5") {
             Total += 1900;
             Precios1 += 1900;
@@ -39,7 +39,7 @@ function Funcionamiento() {
     }
 
     if (Marca == 2) {
-        if (Objeto == "Ryzen 5"||Objeto == "Ryzen 5") {
+        if (Objeto == "Ryzen 5" || Objeto == "Ryzen 5") {
             Total += 2600;
             Precios1 += 2600;
             document.getElementById("cuatro").innerHTML = `Producto(${Contador4}): ${Objeto} = $2600`;

@@ -1,4 +1,4 @@
-var id = {
+var Id = {
     "Información": {
     "Nombre": "Eduardo",
     "Edad": 21,
@@ -7,7 +7,7 @@ var id = {
     "Horario": "Vespertino"
     },
 };
-var info = {
+var Info = {
     "Intereses": {
         "IDES preferidos": {
                 "IDE 1": "NetBeans",
@@ -33,5 +33,5 @@ var info = {
     },
 };
 
-console.log(id);
-console.log(info);
+console.log(Id);
+console.log(Info);

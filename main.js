@@ -1,17 +1,17 @@
-var palabra = "aoertpser";
-var elemento1 = [1,2,3,4,5,6,78,9,70];
-var contenedorPalabra = [];
-var elemento2 = [10,5,4,8,7,8,10,2,1];
-var contrario = elemento1.length - 1;
+var Palabra = "aoertpser";
+var Elemento1 = [1,2,3,4,5,6,78,9,70];
+var ContenedorPalabra = [];
+var Elemento2 = [10,5,4,8,7,8,10,2,1];
+var Contrario = Elemento1.length - 1;
 
-for (var i = 0; i < elemento1.length; i++){
-    contenedorPalabra.push(palabra [i]);
+for (var i = 0; i < Elemento1.length; i++){
+    ContenedorPalabra.push(Palabra [i]);
 
-    if (elemento1 [i] == elemento2 [contrario])
+    if (Elemento1 [i] == Elemento2 [Contrario])
         console.log("Son iguales");
     else
         console.log("No son iguales");
-    contrario--;
+    Contrario--;
 }
 
-console.log(contenedorPalabra);
+console.log(ContenedorPalabra);
