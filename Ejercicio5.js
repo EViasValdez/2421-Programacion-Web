@@ -12,7 +12,7 @@ $(".botones").click(function()
     if (Valor == 1) {
         $(this).css("background-color", "white");
         total++;
-    }else{
+    } else {
         $(this).css("background-color", "red");
         alert("Perdiste, estos son tus puntos: " + total);
         location.reload();

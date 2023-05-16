@@ -9,7 +9,7 @@ function Tabla() {
     {
         alert("No ha ingresado dato alguno");
     }
-    else{
+    else {
         var Fila = "<tr><th>"+ Nombre +"</th><th>"+ Ap +"</th><th>"+ MontoPrestamo + "</th><th>" + FechaPago + "</th><th>"+ NPlazo + "</th></tr>";
         var Boton = document.createElement("tr");
 
