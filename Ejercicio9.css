@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    color: white;
+    color: rgba(255, 255, 255);;
     background: radial-gradient(circle, rgba(0,15,93,1) 0%, rgba(66,0,13,1) 100%);
     background-size: cover;
 }
@@ -15,63 +15,63 @@ body {
 .tabla, .tablacontenido, tr, th {
     column-width: 200px;
     border-collapse: collapse;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgba(255, 255, 255);
     font-family: "Palanquin Dark";
     font-weight: bolder;
-    background-color: rgb(0, 17, 255);
-    color: white;
+    background-color: rgba(0, 17, 255);
+    color: rgba(255, 255, 255);;
     font-size: 20px;
 }
 #Nombres, #Apellidos, #MontoPrestamo, #FechaPago, #NPlazo {
     text-align: center;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255);
     font-family: "Palanquin Dark";
     font-size: 18px;
     width: 224px;
-    background-color: black;
-    color: white;
+    background-color: rgba(0, 0, 0);
+    color: rgba(255, 255, 255);;
     transition: 0.2s ease-in-out;
 }
 #Nombres:hover, #Apellidos:hover, #MontoPrestamo:hover, #FechaPago:hover, #NPlazo:hover {
     text-align: center;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255);
     font-family: "Palanquin Dark";
     font-size: 18px;
     width: 224px;
-    background-color: white;
-    color: black;
+    background-color: rgba(255, 255, 255);;
+    color: rgba(0, 0, 0);
     transition: 0.2s ease-in-out;
 }
 #Amortizacion {
     text-align: center;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255);
     font-family: "Palanquin Dark";
     font-size: 18px;
-    background-color: black;
-    color: white;
+    background-color: rgba(0, 0, 0);
+    color: rgba(255, 255, 255);;
     transition: 0.2s ease-in-out;
 }
 #Amortizacion:hover {
     text-align: center;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255);
     font-family: "Palanquin Dark";
     font-size: 18px;
-    background-color: white;
-    color: black;
+    background-color: rgba(255, 255, 255);;
+    color: rgba(0, 0, 0);
     transition: 0.2s ease-in-out;
 }
 #Boton1 {
     text-align: center;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255);
     font-family: "Palanquin Dark";
     font-size: 18px;
-    background-color: black;
-    color: white;
+    background-color: rgba(0, 0, 0);
+    color: rgba(255, 255, 255);;
 }
 #Boton1:active {
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255);
     font-family: "Palanquin Dark";
     font-size: 18px;
-    background-color: white;
-    color: black;
+    background-color: rgba(255, 255, 255);;
+    color: rgba(0, 0, 0);
 }

@@ -2,12 +2,12 @@
     align-self: center;
     margin-top: 10%;
     width: 20%;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0);
 }
 .Botones {
     width: 100%;
     height: 50px;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0);
     background-color: #6b6666a4;
     text-align: center;
     line-height: 50px;
@@ -17,7 +17,7 @@
 .Botones:hover {
     width: 100%;
     height: 50px;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255);
     background-color: #ada2a2a4;
     text-align: center;
     line-height: 50px;
