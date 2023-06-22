@@ -12,7 +12,7 @@ body {
     font-family: "Secular One";
     font-size: 24px;
 }
-.tabla, .tablacontenido, tr, th {
+.tabla, .TablaContenido, tr, th {
     column-width: 200px;
     border-collapse: collapse;
     border: 2px solid rgba(255, 255, 255);
