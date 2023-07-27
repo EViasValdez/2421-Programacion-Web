@@ -94,7 +94,7 @@ Aqui se permite cambiar los caracteres de mayusculas a minusculas o viceversa.
 <!----Separador---->
 
 ###### Ejercicio12, E12Conexion, E12Postm - 01/11/21
-Carga de datos api con Postman.
+Carga de datos API con Postman.
 
 <!----Separador---->
 
