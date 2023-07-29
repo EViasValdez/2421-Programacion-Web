@@ -99,5 +99,5 @@ Carga de datos API con Postman.
 <!----Separador---->
 
 ###### Ejercicio13, E13Conexion, E13ContUsua, E13Datos, E13Postm, E13Usuario - 11/21
-Registro de cada archivo, usando cada archivo que permite esto.
+Registro de cada archivo, usando cada archivo que permite el funcionamiento del programa inicial.
 <!----Separador del directorio con ubicación de archivos---->
