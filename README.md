@@ -42,7 +42,7 @@ Utilizacion de funciones con la utilizacion de jQuery.
 <!----Separador---->
 
 ###### Buscaminas - 20/09/21
-Version de buscaminas en HTML utilizando CSS y JavaScript, con cambios de codigo y mejoras visuales.
+Version de buscaminas en HTML con el uso de CSS y JavaScript, con cambios de codigo y mejoras visuales.
 
 <!----Separador---->
 
