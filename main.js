@@ -4,7 +4,8 @@ var ContenedorPalabra = [];
 var Elemento2 = [10,5,4,8,7,8,10,2,1];
 var Contrario = Elemento1.length - 1;
 
-for (var i = 0; i < Elemento1.length; i++){
+for (var i = 0; i < Elemento1.length; i++)
+{
     ContenedorPalabra.push(Palabra [i]);
 
     if (Elemento1 [i] == Elemento2 [Contrario])
