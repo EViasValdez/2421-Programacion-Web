@@ -8,16 +8,20 @@ function calcular() {
     var Operacion = document.getElementById("Operacion").value;
     var Calcular = document.getElementById("Calcular").value;
 
-    if (Operacion == 1) {
+    if (Operacion == 1)
+    {
         document.getElementById("Resultado").value = N1 + N2;
     }
-    else if (Operacion == 2) {
+    else if (Operacion == 2)
+    {
         document.getElementById("Resultado").value = N1 - N2;
     }
-    else if (Operacion == 3) {
+    else if (Operacion == 3)
+    {
         document.getElementById("Resultado").value = N1 * N2;
     }
-    else if (Operacion = 4) {
+    else if (Operacion = 4)
+    {
         document.getElementById("Resultado").value = N1 / N2;
     }
 }

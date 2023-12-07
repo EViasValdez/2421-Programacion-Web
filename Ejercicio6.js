@@ -5,23 +5,28 @@ function EnviarDatos() {
     var Numero = parseFloat(document.getElementById("numero")).value;
     var Contras = document.getElementById("contras").value;
 
-    if (Nombre == "") {
+    if (Nombre == "")
+    {
         alert("No ha ingresado su nombre completo");
         document.getElementById("Nombre").focus();
     }
-    else if (Usuario == "") {
+    else if (Usuario == "")
+    {
         alert("No ha ingresado su nombre de usuario");
         document.getElementById("Usuario").focus();
     }
-    else if (Email == "") {
+    else if (Email == "")
+    {
         alert("No ha ingresado su correo");
         document.getElementById("Email").focus();
     }
-    else if (Numero == "") {
+    else if (Numero == "")
+    {
         alert("No ha ingresado su numero de teléfono");
         document.getElementById("Numero").focus();
     }
-    else if (Contras == "") {
+    else if (Contras == "")
+    {
         alert("No ha ingresado su contraseña");
         document.getElementById("Contras").focus();
     } else {
@@ -30,12 +35,14 @@ function EnviarDatos() {
     }
 }
 function Selectos() {
-    if (document.getElementById("Seleccion").value == "predeterminado") {
+    if (document.getElementById("Seleccion").value == "predeterminado")
+    {
         alert("No deje esta parte vacía, elige una opción");
     }
 }
 function Marcado() {
-    if (document.getElementById("Marcado").checked == false) {
+    if (document.getElementById("Marcado").checked == false)
+    {
         alert("Esta opción es obligatoria");
     }
 }
