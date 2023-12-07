@@ -22,10 +22,12 @@ var Contenedor = [];
 var Obel2 = [11, 2, 4, 12, 20, 40, 14, 28];
 var Contr = Obel1.length - 1;
 
-for (var x = 0; x < Obel1.length; x++) {
+for (var x = 0; x < Obel1.length; x++)
+{
     Contenedor.push(Palabra[x]);
 
-    if (Obel1[x] == Obel2[Contr]) {
+    if (Obel1[x] == Obel2[Contr])
+    {
         console.log("Estos elementos son iguales");
     }
     else
