@@ -29,7 +29,9 @@ function EnviarDatos() {
     {
         alert("No ha ingresado su contraseña");
         document.getElementById("Contras").focus();
-    } else {
+    }
+    else
+    {
         alert("Sus datos han sido registrados con éxito");
         console.log(Nombre + " " + Usuario + " " + Email + " " + Numero + " " + Contras);
     }

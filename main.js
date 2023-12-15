@@ -9,10 +9,13 @@ for (var i = 0; i < Elemento1.length; i++)
     ContenedorPalabra.push(Palabra [i]);
 
     if (Elemento1 [i] == Elemento2 [Contrario])
+    {
         console.log("Son iguales");
-    else
+    }
+    else {
         console.log("No son iguales");
-    Contrario--;
+        Contrario--;
+    }
 }
 
 console.log(ContenedorPalabra);

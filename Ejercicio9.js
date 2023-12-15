@@ -9,7 +9,8 @@ function Tabla() {
     {
         alert("No ha ingresado dato alguno");
     }
-    else {
+    else
+    {
         var Fila = "<tr><th>"+ Nombre +"</th><th>"+ Ap +"</th><th>"+ MontoPrestamo + "</th><th>" + FechaPago + "</th><th>"+ NPlazo + "</th></tr>";
         var Boton = document.createElement("tr");
 
@@ -32,7 +33,8 @@ function Amortizacion() {
         
         console.log(PI);
     }
-    else (Amortizacion == 2); {
+    else (Amortizacion == 2);
+    {
         var A2 = PI;
         
         FO = A2 + I * 1 + 0.12
