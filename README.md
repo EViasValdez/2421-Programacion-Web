@@ -1,4 +1,4 @@
-# Programacion web
+# Programación web
 
 <!----Notas---->
 **Notas**
@@ -46,7 +46,7 @@ Version de buscaminas en HTML con el uso de CSS y JavaScript, con cambios de có
 
 <!----Separador---->
 
-###### listadecompras - 22/09/21
+###### Listadecompras - 22/09/21
 Trabajo en equipo para replicar una tienda de compras por internet.
 
 <!----Separador---->
@@ -99,6 +99,6 @@ Carga de datos API con Postman.
 <!----Separador---->
 
 ###### Ejercicio13, E13Conexion, E13ContUsua, E13Datos, E13Postm, E13Usuario - 11/21
-Registro de cada archivo, usando cada archivo que permite el funcionamiento del programa / aplicacion inicial.
+Registro de cada archivo, usando cada archivo que permite el funcionamiento del programa / aplicación inicial.
 
 <!----Separador del directorio con ubicación de archivos---->
