@@ -18,7 +18,7 @@ Actividad simple de ingreso a la página usando el nombre del usuario.
 <!----Separador---->
 
 ###### EjercicioTablas - 07/09/21
-Muestra usando CSS adjunto de una tabla con datos.
+Muestra una tabla con datos usando CSS.
 
 <!----Separador---->
 
