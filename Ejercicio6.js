@@ -36,18 +36,21 @@ function EnviarDatos() {
         console.log(Nombre + " " + Usuario + " " + Email + " " + Numero + " " + Contras);
     }
 }
+
 function Selectos() {
     if (document.getElementById("Seleccion").value == "predeterminado")
     {
         alert("No deje esta parte vacía, elige una opción");
     }
 }
+
 function Marcado() {
     if (document.getElementById("Marcado").checked == false)
     {
         alert("Esta opción es obligatoria");
     }
 }
+
 function Datos() {
     Marcado();
     Selectos();

@@ -19,6 +19,7 @@ function Tabla() {
         alert("Datos aceptados");
     }
 }
+
 function Amortizacion() {
     var Iva = MontoPrestamo * 0.12;
     let InicioInteres = monto * 0.01 + Iva;
@@ -44,6 +45,7 @@ function Amortizacion() {
         }
     }
 }
+
 function Poner() {
     Tabla();
     Amortizacion();
