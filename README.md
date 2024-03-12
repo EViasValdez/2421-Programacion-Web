@@ -77,7 +77,7 @@ En equipo se creó un programa el cual pueda mostrar y realizar funciones de ing
 
 <!----Separador---->
 
-###### Trabajoenequipo - 22/10/21
+###### TrabajoEquipo - 22/10/21
 Trabajo realizado en Bootstrap de la actividad originalmente mostrada previamente.
 
 <!----Separador---->
