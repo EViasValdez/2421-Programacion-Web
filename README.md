@@ -64,7 +64,6 @@ Usando como base una plantilla, se modificaron y programaron algunas funciones d
 
 ###### Ejercicio7 - 13/10/21
 Uso de un sitio con elementos que se pueden agarrar y soltar usando jQuery UI.
-
 <!----Separador---->
 
 ###### Ejercicio8 - 15/10/21
