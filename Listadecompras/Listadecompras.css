@@ -40,10 +40,10 @@ body {
 }
 .Menu a:hover {
     background: #2543c5;
-    color: #fff;
+    color: rgba(255, 255, 255);
 }
 .Menu .Submenu {
-    background: #fff;
+    background: rgba(255, 255, 255);
     box-shadow: 3px 10px 10px rgba(0,0,0,0.2);
     display: none;
 }
@@ -69,7 +69,7 @@ h1 {
 }
 h2 {
     font-size: 50px;
-    color: #ffffff;
+    color: rgba(255, 255, 255);
     font-family: "Fredoka One", cursive;
 }
 .Buscador {
@@ -78,7 +78,7 @@ h2 {
     background: #4860ca;
     border: none;
     border-radius: 5px 5px 5px 5px;
-    color: white;
+    color: rgba(255, 255, 255);
     font-size: 20px;
     padding: 5px;
     font-family: "Kalam", cursive;
@@ -89,32 +89,32 @@ h2 {
     background: #4860ca;
     border: none;
     border-radius: 5px 5px 5px 5px;
-    color: white;
+    color: rgba(255, 255, 255);
     font-size: 20px;
     padding: 5px;
     font-family: "Kalam", cursive;
 }
 .Enviar:hover {
-    background: white;
+    background: rgba(255, 255, 255);
     color: #4860ca;
     border: 1px solid #4860ca;
 }
 .pc {
     font-size: 25px;
-    color: #ffffff;
+    color: rgba(255, 255, 255);
     font-family: "Fredoka One", cursive; 
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #ffffff;
+    color: rgba(255, 255, 255);
     opacity: 1; /* Firefox */
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: #ffffff;
+    color: rgba(255, 255, 255);
     opacity: 1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #ffffff;
+    color: rgba(255, 255, 255);
 }
 ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #ffffff;
+    color: rgba(255, 255, 255);
 }
