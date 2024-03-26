@@ -55,16 +55,16 @@ input, select {
     margin-bottom: 30px;
     background: transparent;
     border: none;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgba(238, 238, 238);
 }
 input::placeholder {
-    color: #eee;
+    color: rgba(238, 238, 238);
 }
 option:focus {
     border: none;
 }
 option {
-    background: black; 
+    background: rgba(0, 0, 0); 
     border: none;
 }
 .checkbox input {
@@ -72,21 +72,21 @@ option {
     vertical-align: middle;
 }
 .checkbox a {
-    color: #26a9e0;
+    color: rgba(38, 169, 224);
 }
 .checkbox a:hover {
-    color: #85d6de;
+    color: rgba(133, 214, 222);
 }
 .btn-item {
     padding: 10px 5px;
     margin-top: 20px;
     border-radius: 5px; 
     border: none;
-    background: #26a9e0; 
+    background: rgba(38, 169, 224); 
     text-decoration: none;
     font-size: 15px;
     font-weight: 400;
-    color: #fff;
+    color: rgba(255, 255, 255);
 }
 .btn-item {
     display: inline-block;
@@ -99,7 +99,7 @@ option {
     margin-top: 20px;
     border-radius: 5px; 
     border: none;
-    background: #26a9e0; 
+    background: rgba(38, 169, 224);
     text-decoration: none;
     font-size: 15px;
     font-weight: 400;
@@ -112,7 +112,7 @@ option {
     margin-top: 20px;
     border-radius: 5px; 
     border: none;
-    background: #85d6de;
+    background: rgba(133, 214, 222);
     text-decoration: none;
     font-size: 15px;
     font-weight: 400;

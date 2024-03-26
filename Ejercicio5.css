@@ -8,7 +8,7 @@
     width: 100%;
     height: 50px;
     border: 1px solid rgba(0, 0, 0);
-    background-color: #6b6666a4;
+    background-color: rgba(107, 102, 102, 0.643);
     text-align: center;
     line-height: 50px;
     font-size: 20px;
@@ -18,7 +18,7 @@
     width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255);
-    background-color: #ada2a2a4;
+    background-color: rgba(173, 162, 162, 0.643);
     text-align: center;
     line-height: 50px;
     font-size: 20px;
