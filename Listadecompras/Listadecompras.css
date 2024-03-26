@@ -35,11 +35,11 @@ body {
     display: block;
     padding: 0px 20px;
     text-decoration: none;
-    color: #353535;
+    color: rgba(53, 53, 53);
     transition: all 500ms ease;
 }
 .Menu a:hover {
-    background: #2543c5;
+    background: rgba(37, 67, 197);
     color: rgba(255, 255, 255);
 }
 .Menu .Submenu {
@@ -75,7 +75,7 @@ h2 {
 .Buscador {
     width: 350px;
     height: 50px;
-    background: #4860ca;
+    background: rgba(37, 67, 197);
     border: none;
     border-radius: 5px 5px 5px 5px;
     color: rgba(255, 255, 255);
@@ -86,7 +86,7 @@ h2 {
 .Enviar {
     width: 70px;
     height: 50px;
-    background: #4860ca;
+    background: rgba(37, 67, 197);;
     border: none;
     border-radius: 5px 5px 5px 5px;
     color: rgba(255, 255, 255);
@@ -96,8 +96,8 @@ h2 {
 }
 .Enviar:hover {
     background: rgba(255, 255, 255);
-    color: #4860ca;
-    border: 1px solid #4860ca;
+    color: rgba(37, 67, 197);;
+    border: 1px solid rgba(37, 67, 197);;
 }
 .pc {
     font-size: 25px;
