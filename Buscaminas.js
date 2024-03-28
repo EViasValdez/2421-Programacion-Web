@@ -5,141 +5,212 @@ const Buscaminas = {
     numColumnas: 15,
     aCampoMinas: []
 }
-function MostrarTablero() {
-    let Tablero = document.querySelector("#Tablero");
 
-    document.querySelector("html").style.setProperty("--num-filas", Buscaminas.numFilas);
-    document.querySelector("html").style.setProperty("--num-columnas", Buscaminas.numColumnas);
+function pintarTablero() {
+    //seleccionamos el objeto tablero
+    let tablero = document.querySelector("#tablero");
 
-    while (Tablero.firstChild) {
-        Tablero.firstChild.removeEventListener ("contextmenu", Marcar);
-        Tablero.firstChild.removeEventListener ("click", revelar);
-        Tablero.removeChild (Tablero.firstChild);
+    //actualizamos las variables CSS con las variables JavaScript
+    document.querySelector("html").style.setProperty("--num-filas",Buscaminas.numFilas);
+    document.querySelector("html").style.setProperty("--num-columnas",Buscaminas.numColumnas);
+
+    //borramos el tablero actual
+    while (tablero.firstChild) {
+        tablero.firstChild.removeEventListener("contextmenu",marcar);
+        tablero.firstChild.removeEventListener("click",destapar);
+        tablero.removeChild(tablero.firstChild);
     }
 
-    for (let f = 0; f < Buscaminas.numFilas; f++) {
-        for (let c = 0; c < Buscaminas.numColumnas; c++) {
+    //creamos las casillas que necesitemos
+    for (let f=0; f<Buscaminas.numFilas; f++){
+        for (let c=0; c<Buscaminas.numColumnas; c++) {
             let newDiv = document.createElement("div");
-            newDiv.setAttribute ("id", "f" + f + "_c" + c );
+            newDiv.setAttribute("id","f" + f + "_c" + c );
             newDiv.dataset.fila = f;
             newDiv.dataset.columna = c;
-            newDiv.addEventListener ("contextmenu", Marcar);
-            newDiv.addEventListener ("click", revelar);
-            Tablero.appendChild (newDiv);
+            newDiv.addEventListener("contextmenu",marcar); //evento con el botón derecho del raton
+            newDiv.addEventListener("click",destapar); //evento con el botón izquierdo del raton
+
+            tablero.appendChild(newDiv);
         }
     }
 }
-function GenerarCampoMinasVacio() {
-    Buscaminas.aCampoMinas = new Array (Buscaminas.numFilas);
-    for (let fila = 0; fila < Buscaminas.numFilas; fila++) {
-        Buscaminas.aCampoMinas [fila] = new Array (Buscaminas.numColumnas);
+
+function generarCampoMinasVacio() {
+    //generamos el campo de minas
+    Buscaminas.aCampoMinas = new Array(Buscaminas.numFilas);
+    for (let fila=0; fila<Buscaminas.numFilas; fila++){
+        Buscaminas.aCampoMinas[fila] = new Array(Buscaminas.numColumnas);
     }
 }
-function PonerMinas() {
+
+function esparcirMinas() {
+    //repartimos de forma aleatoria las minas
     let numMinasEsparcidas = 0;
 
-    while (numMinasEsparcidas < Buscaminas.numMinasTotales) {
-        let fila = Math.floor (Math.random() * Buscaminas.numFilas);
-        let columna = Math.floor (Math.random() * Buscaminas.numColumnas);
+    while (numMinasEsparcidas<Buscaminas.numMinasTotales){
+        //numero aleatorio en el intervalo [0,numFilas-1]
+        let fila    = Math.floor(Math.random() * Buscaminas.numFilas);
 
-        if (Buscaminas.aCampoMinas [fila] [columna] != "B") {
-            Buscaminas.aCampoMinas [fila] [columna] = "B";
+        //numero aleatorio en el intervalo [0,numColumnas-1]
+        let columna = Math.floor(Math.random() * Buscaminas.numColumnas);
+
+        //si no hay bomba en esa posicion
+        if (Buscaminas.aCampoMinas[fila][columna] != "B"){
+            //la ponemos
+            Buscaminas.aCampoMinas[fila][columna] = "B";
+
+            //y sumamos 1 a las bombas esparcidas
             numMinasEsparcidas++;
         }
     }
 }
+
 function contarMinasAlrededorCasilla(fila,columna) {
     let numeroMinasAlrededor = 0;
 
-    for (let zFila = fila - 1; zFila <= fila + 1; zFila++) {
-        for (let zColumna = columna - 1; zColumna <= columna + 1; zColumna++) {
-            if (zFila >- 1 && zFila < Buscaminas.numFilas && zColumna> - 1 && zColumna < Buscaminas.numColumnas) {
-                if (Buscaminas.aCampoMinas [zFila] [zColumna] == "B") {
+    //de la fila anterior a la posterior
+    for (let zFila = fila-1; zFila <= fila+1; zFila++){
+
+        //de la columna anterior a la posterior
+        for (let zColumna = columna-1; zColumna <= columna+1; zColumna++) {
+
+            //si la casilla cae dentro del tablero
+            if (zFila>-1 && zFila<Buscaminas.numFilas && zColumna>-1 && zColumna<Buscaminas.numColumnas){
+
+                //miramos si en esa posición hay bomba
+                if (Buscaminas.aCampoMinas[zFila][zColumna]=="B"){
+
+                    //y sumamos 1 al numero de minas que hay alrededor de esa casilla
                     numeroMinasAlrededor++;
                 }
             }
         }
     }
-    Buscaminas.aCampoMinas [fila] [columna] = numeroMinasAlrededor;
+
+    //y guardamos cuantas minas hay en esa posicion
+    Buscaminas.aCampoMinas[fila][columna] = numeroMinasAlrededor;
 }
-function ContarMinas() {
-    for (let fila = 0; fila < Buscaminas.numFilas; fila++) {
-        for (let columna = 0; columna < Buscaminas.numColumnas; columna++) {
-            if (Buscaminas.aCampoMinas [fila] [columna] != "B") {
-                contarMinasAlrededorCasilla (fila,columna);
+
+
+
+function contarMinas() {
+    //contamos cuantas minas hay alrededor de cada casilla
+    for (let fila=0; fila<Buscaminas.numFilas; fila++) {
+        for (let columna=0; columna<Buscaminas.numColumnas; columna++) {
+            //solo contamos si es distinto de bomba
+            if (Buscaminas.aCampoMinas[fila][columna]!="B"){
+                contarMinasAlrededorCasilla(fila,columna);
             }
         }
     }
 }
-function Marcar(miEvento) {
+
+function marcar(miEvento) {
     if (miEvento.type === "contextmenu") {
-        console.log (miEvento);
+        console.log(miEvento);
 
-        let Casilla = miEvento.currentTarget;
+        //obtenemos el elemento que ha disparado el evento
+        let casilla = miEvento.currentTarget;
 
+        //detenemos el burbujeo del evento y su accion por defecto
         miEvento.stopPropagation();
         miEvento.preventDefault();
 
-        let fila = parseInt (Casilla.dataset.fila, 10);
-        let columna = parseInt (Casilla.dataset.columna, 10);
+        //obtenemos la fila de las propiedades dataset.
+        //como es un string hay que convertirlo a numero
+        let fila = parseInt(casilla.dataset.fila,10);
+        let columna = parseInt(casilla.dataset.columna,10);
 
-        if (fila >= 0 && columna >= 0 && fila < Buscaminas.numFilas && columna < Buscaminas.numColumnas) {
-            if (Casilla.classList.contains ("icon-bandera")) {
-                Casilla.classList.remove ("icon-bandera");
-                Casilla.classList.add ("icon-duda");
+        if (fila>=0 && columna>=0 && fila< Buscaminas.numFilas && columna < Buscaminas.numColumnas) {
+            //si esta marcada como "bandera"
+            if (casilla.classList.contains("icon-bandera")) {
+                //la quitamos
+                casilla.classList.remove("icon-bandera");
+                //y la marcamos como duda
+                casilla.classList.add("icon-duda");
+                //y al numero de minas encontradas le restamos 1
                 Buscaminas.numMinasEncontradas--;
-            } else if (Casilla.classList.contains ("icon-duda")) {
-                Casilla.classList.remove ("icon-duda");
-            } else if (Casilla.classList.length == 0){
-                
-                Casilla.classList.add ("icon-bandera");
+            } else if (casilla.classList.contains("icon-duda")) {
+                //si estaba marcada como duda lo quitamos
+                casilla.classList.remove("icon-duda");
+            } else if (casilla.classList.length == 0) {
+                //si no está marcada la marcamos como "bandera"
+                casilla.classList.add("icon-bandera");
+                //y sumamos 1 al numero de minas encontradas
                 Buscaminas.numMinasEncontradas++;
+                //si es igual al numero de minas totales resolvemos el tablero para ver si esta bien
                 if (Buscaminas.numMinasEncontradas == Buscaminas.numMinasTotales) {
-                    resolverTablero (true);
+                    resolverTablero(true);
                 }
             }
-            ActualizarNumMinasRestantes();
+            actualizarNumMinasRestantes();
         }
+
     }
 }
-function revelar(miEvento) {
-    if (miEvento.type === "click") {
-        let Casilla = miEvento.currentTarget;
-        let fila = parseInt (Casilla.dataset.fila, 10);
-        let columna = parseInt (Casilla.dataset.columna, 10);
-        revelarCuadro (fila,columna);
+function destapar(miEvento) {
+    if (miEvento.type === "click"){
+        let casilla = miEvento.currentTarget;
+        let fila = parseInt(casilla.dataset.fila,10);
+        let columna = parseInt(casilla.dataset.columna,10);
+
+        destaparCasilla(fila,columna);
     }
 }
-function revelarCuadro(fila, columna) {
-    if (fila > - 1 && fila < Buscaminas.numFilas &&
-        columna > - 1 && columna < Buscaminas.numColumnas) {
+function destaparCasilla(fila, columna){
+    //si la casilla esta dentro del tablero
+    if (fila > -1 && fila < Buscaminas.numFilas &&
+        columna >-1 && columna < Buscaminas.numColumnas){
 
-        console.log("Destapamos la Casilla con fila " + fila + " y columna " + columna );
+        console.log("destapamos la casilla con fila " + fila + " y columna " +columna );
 
-        let Casilla = document.querySelector("#f" + fila + "_c" + columna);
+        //obtenermos la casilla con la fila y columna
+        let casilla = document.querySelector("#f" + fila + "_c" + columna);
 
-        if (!Casilla.classList.contains("destapado")) {
-            if (!Casilla.classList.contains("icon-bandera")) {
-                Casilla.classList.add("destapado");
-                Casilla.innerHTML = Buscaminas.aCampoMinas [fila] [columna];
-                Casilla.classList.add("c" + Buscaminas.aCampoMinas [fila] [columna])
-                if (Buscaminas.aCampoMinas [fila] [columna] !== "B") {
-                    if (Buscaminas.aCampoMinas [fila] [columna] == 0) {
-                        revelarCuadro(fila - 1, columna - 1);
-                        revelarCuadro(fila - 1, columna);
-                        revelarCuadro(fila - 1, columna + 1);
-                        revelarCuadro(fila, columna - 1);
-                        revelarCuadro(fila, columna + 1);
-                        revelarCuadro(fila + 1, columna - 1);
-                        revelarCuadro(fila + 1, columna);
-                        revelarCuadro(fila + 1, columna + 1);
+        //si la casilla no esta destapada
+        if (!casilla.classList.contains("destapado")) {
 
-                        Casilla.innerHTML  = "";
+            //si no esta marcada como "bandera"
+            if (!casilla.classList.contains("icon-bandera")) {
+
+                //la destapamos
+                casilla.classList.add("destapado");
+
+                //ponemos en la casilla el número de minas que tiene alrededor
+                casilla.innerHTML = Buscaminas.aCampoMinas[fila][columna];
+
+                //ponemos el estilo del numero de minas que tiene alrededor (cada uno es de un color)
+                casilla.classList.add("c" + Buscaminas.aCampoMinas[fila][columna])
+
+                //si no es bomba
+                if (Buscaminas.aCampoMinas[fila][columna] !=="B"){
+
+                    // y tiene 0 minas alrededor, destapamos las casillas contiguas
+                    if (Buscaminas.aCampoMinas[fila][columna] == 0){
+                        destaparCasilla(fila-1,columna-1);
+                        destaparCasilla(fila-1,columna);
+                        destaparCasilla(fila-1,columna+1);
+                        destaparCasilla(fila,columna-1);
+                        destaparCasilla(fila,columna+1);
+                        destaparCasilla(fila+1,columna-1);
+                        destaparCasilla(fila+1,columna);
+                        destaparCasilla(fila+1,columna+1);
+
+                        //y borramos el 0 poniendo la cadena vacía
+                        casilla.innerHTML  = "";
                     }
-                }else if (Buscaminas.aCampoMinas [fila] [columna] == "B") {
-                    Casilla.innerHTML = "";
-                    Casilla.classList.add("icon-bomba");
-                    Casilla.classList.add("sinmarcar");
+                }else if (Buscaminas.aCampoMinas[fila][columna]=="B"){
+                    // si por el contrario hay bomba quitamos la B
+                    casilla.innerHTML = "";
+
+                    //añadimos el estilo de que hay bomba
+                    casilla.classList.add("icon-bomba");
+
+                    // y que se nos ha olvidado marcarla
+                    casilla.classList.add("sinmarcar");
+
+                    // y resolvemos el tablero indicando (false), que hemos cometido un fallo
                     resolverTablero(false);
                 }
             }
@@ -147,49 +218,56 @@ function revelarCuadro(fila, columna) {
     }
 }
 function resolverTablero(isOK) {
-    let aCasillas = Tablero.children;
+    let aCasillas = tablero.children;
     for (let i = 0 ; i < aCasillas.length; i++) {
-        aCasillas [i].removeEventListener ("click", revelar);
-        aCasillas [i].removeEventListener ("contextmenu", Marcar);
+        //quitamos los listeners de los eventos a las casillas
+        aCasillas[i].removeEventListener("click", destapar);
+        aCasillas[i].removeEventListener("contextmenu", marcar);
 
-        let fila = parseInt(aCasillas [i].dataset.fila,10);
-        let columna = parseInt(aCasillas [i].dataset.columna,10);
+        let fila = parseInt(aCasillas[i].dataset.fila,10);
+        let columna = parseInt(aCasillas[i].dataset.columna,10);
 
-        if (aCasillas [i].classList.contains ("icon-bandera")) {
-            if (Buscaminas.aCampoMinas [fila] [columna] == "B") {
-                aCasillas [i].classList.add ("destapado");
-                aCasillas [i].classList.remove ("icon-bandera");
-                aCasillas [i].classList.add ("icon-bomba");
+        if (aCasillas[i].classList.contains("icon-bandera")){
+            if (Buscaminas.aCampoMinas[fila][columna] == "B"){
+                //bandera correcta
+                aCasillas[i].classList.add("destapado");
+                aCasillas[i].classList.remove("icon-bandera");
+                aCasillas[i].classList.add("icon-bomba");
             } else {
-                aCasillas [i].classList.add ("destapado");
-                aCasillas [i].classList.add ("banderaErronea");
+                //bandera erronea
+                aCasillas[i].classList.add("destapado");
+                aCasillas[i].classList.add("banderaErronea");
                 isOK = false;
             }
-        } else if (!aCasillas[i].classList.contains ("destapado")) {
-            if (Buscaminas.aCampoMinas [fila] [columna] == "B"){
-                aCasillas [i].classList.add ("destapado");
-                aCasillas [i].classList.add ("icon-bomba");
+        } else if (!aCasillas[i].classList.contains("destapado")){
+            if (Buscaminas.aCampoMinas[fila][columna] == "B"){
+                //destapamos el resto de las bombas
+                aCasillas[i].classList.add("destapado");
+                aCasillas[i].classList.add("icon-bomba");
             }
         }
+
     }
+
     if (isOK) {
-        alert("Felicidades, usted ha ganado");
-    }
-    else {
-        alert("Acaba de perder, intente de nuevo");
+        alert("Felicitaciones, lo ha logrado");
     }
 }
-function ActualizarNumMinasRestantes() {
+
+function actualizarNumMinasRestantes() {
     document.querySelector("#numMinasRestantes").innerHTML =
         (Buscaminas.numMinasTotales - Buscaminas.numMinasEncontradas);
 }
+
 function inicio() {
     Buscaminas.numFilas = 10;
     Buscaminas.numColumnas = 10;
     Buscaminas.numMinasTotales = 12;
-    MostrarTablero();
-    GenerarCampoMinasVacio();
-    PonerMinas();
-    ContarMinas();
-    ActualizarNumMinasRestantes();
+    pintarTablero();
+    generarCampoMinasVacio();
+    esparcirMinas();
+    contarMinas();
+    actualizarNumMinasRestantes();
 }
+
+window.onload = inicio;
