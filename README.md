@@ -58,7 +58,7 @@ Version de buscaminas usando únicamente HTML y JavaScript, fueron realizadas al
 <!----Separador---->
 
 ###### Ejercicio6 - 11/10/21
-Usando como base una plantilla, se modificaron y programaron algunas funciones de esta.
+Usando como base una plantilla, se modificaron y programaron algunas funciones de esta misma.
 
 <!----Separador---->
 
