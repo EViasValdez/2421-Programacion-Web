@@ -7,29 +7,29 @@ const Buscaminas = {
 }
 
 function pintarTablero() {
-    //seleccionamos el objeto tablero
+    // Seleccionamos el objeto tablero.
     let tablero = document.querySelector("#tablero");
 
-    //actualizamos las variables CSS con las variables JavaScript
+    // Actualizamos las variables CSS con las variables JavaScript.
     document.querySelector("html").style.setProperty("--num-filas",Buscaminas.numFilas);
     document.querySelector("html").style.setProperty("--num-columnas",Buscaminas.numColumnas);
 
-    //borramos el tablero actual
+    // Borramos el tablero actual.
     while (tablero.firstChild) {
         tablero.firstChild.removeEventListener("contextmenu",marcar);
         tablero.firstChild.removeEventListener("click",destapar);
         tablero.removeChild(tablero.firstChild);
     }
 
-    //creamos las casillas que necesitemos
+    // Creamos las casillas que necesitemos.
     for (let f=0; f<Buscaminas.numFilas; f++){
         for (let c=0; c<Buscaminas.numColumnas; c++) {
             let newDiv = document.createElement("div");
             newDiv.setAttribute("id","f" + f + "_c" + c );
             newDiv.dataset.fila = f;
             newDiv.dataset.columna = c;
-            newDiv.addEventListener("contextmenu",marcar); //evento con el botón derecho del raton
-            newDiv.addEventListener("click",destapar); //evento con el botón izquierdo del raton
+            newDiv.addEventListener("contextmenu",marcar); // Evento con el botón derecho del raton.
+            newDiv.addEventListener("click",destapar); // Evento con el botón izquierdo del raton.
 
             tablero.appendChild(newDiv);
         }
