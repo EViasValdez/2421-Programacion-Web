@@ -6,6 +6,8 @@
 **- Solo en este repositorio puse las fechas de realización y el tipo de trabajo en el commit de cada archivo.**
 
 **- El orden de cada ejercicio realizado va junto con sus archivos correspondientes.**
+
+**- He incorporado tambien archivos de mis cursos de C++ y de Bootstrap.**
 <!----Separador de las notas---->
 
 <!----Directorio con descripción de los programas---->
