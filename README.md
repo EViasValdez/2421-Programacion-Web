@@ -7,7 +7,7 @@
 
 **- El orden de cada ejercicio realizado va junto con sus archivos correspondientes.**
 
-**- He incorporado tambien archivos de mis cursos de C++ y de Bootstrap.**
+**- He incorporado tambien archivos de mis cursos de C++ y de Bootstrap (tambien incorporare los de Angular y React si llego a tomar esos cursos).**
 <!----Separador de las notas---->
 
 <!----Directorio con descripción de los programas---->
