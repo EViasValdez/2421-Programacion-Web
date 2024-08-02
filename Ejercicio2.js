@@ -5,7 +5,7 @@
 // for (var i = 0; i >= Objeto1.length; i++){
 //     // Objeto2.push(Objeto1[i]);
 //     if (Objeto1 = Objeto2) {
-//         console.log("Estos elementos son iguales:");
+//         console.log("Estos elementos son iguales");
 //     } else {
 //         console.log("Estos elementos no son iguales")
 //     }
