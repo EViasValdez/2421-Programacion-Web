@@ -86,7 +86,7 @@ Trabajo realizado en Bootstrap de la actividad originalmente mostrada previament
 
 ## ● Unidad 3 ●
 ###### Ejercicio10, E10Datos - 25/10/21
-De aquí en adelante los archivos que se crearon fueron creados en el lenguaje PHP, este primer ejercicio utiliza que permite agregar datos.
+De aquí en adelante los archivos que se crearon fueron creados en el lenguaje PHP, este primer ejercicio permite agregar datos por medio de un archivo aparte.
 
 <!----Separador---->
 
