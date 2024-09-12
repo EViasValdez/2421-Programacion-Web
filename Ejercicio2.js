@@ -16,7 +16,7 @@
 
 console.log("Prueba");
 
-var Palabra = "hola mundo";
+var Palabra = "Hola Mundo";
 var Obel1 = [1, 2, 3, 4, 5 ,6 ,7, 8, 9, 10];
 var Contenedor = [];
 var Obel2 = [11, 2, 4, 12, 20, 40, 14, 28];
