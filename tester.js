@@ -7,30 +7,30 @@ var Prueba = Operaciones();
 alert(Prueba);
 
 function Operaciones() {
-    if (Oper == "sumar") {
+    if (Oper == "Sumar") {
         suma();
     }
-    if (Oper == "restar") {
+    if (Oper == "Restar") {
         restar();
     }
-    if (Oper = "multiplicar") {
+    if (Oper = "Multiplicar") {
         multiplicacion();
     }
-    if (Oper = "dividir") {
+    if (Oper = "Dividir") {
         division();
     }
     reuno = resultado;
     console.log("El resultado es: " + resultado)
 }
-function suma() {
+function Suma() {
     Result = Num1 + Num2;
 }
-function resta() {
+function Resta() {
     Result = Num1 - Num2;
 }
-function mulitplicacion() {
+function Mulitplicacion() {
     Result = Num1 * Num2;
 }
-function division() {
+function Division() {
     Result = Num1 / Num2;
 }
