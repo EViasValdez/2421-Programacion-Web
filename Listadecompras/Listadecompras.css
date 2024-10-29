@@ -108,7 +108,7 @@ h2 {
     color: rgba(255, 255, 255);
     opacity: 1; /* Firefox */
 }
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+:-moz-placeholder { /* Mozilla Firefox 4 a 18 */
     color: rgba(255, 255, 255);
     opacity: 1;
 }

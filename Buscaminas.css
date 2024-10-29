@@ -7,7 +7,7 @@
 	font-family: "Corbel";
 	font-weight: bold;
 	font-size: 40px;
-	color: rgb(124, 124, 124);
+	color: rgba(124, 124, 124);
 }
 #tablero {
 	align-content: center;
@@ -31,7 +31,7 @@
 	line-height: var(--size);
 }
 #tablero div:hover {
-	background: rgb(73, 73, 73);
+	background: rgba(73, 73, 73);
     color: #000000;
     border: 1px solid #000000 ;
 }
