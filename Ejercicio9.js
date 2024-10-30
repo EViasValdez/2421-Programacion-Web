@@ -21,8 +21,8 @@ function Tabla() {
 }
 
 function Amortizacion() {
-    var Iva = MontoPrestamo * 0.12;
-    let InicioInteres = monto * 0.01 + Iva;
+    var IVA = MontoPrestamo * 0.12;
+    let InicioInteres = monto * 0.01 + IVA;
     var Total = MontoPrestamo + InicioInteres;
     var TotalN = 0 - Total;
     var Amortizacion = document.getElementById("Amortizacion");

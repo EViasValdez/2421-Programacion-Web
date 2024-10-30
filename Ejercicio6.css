@@ -103,7 +103,7 @@ option {
     text-decoration: none;
     font-size: 15px;
     font-weight: 400;
-    color: #fff;
+    color: rgba(255, 255, 255);
 }
 #Registro:hover {
     text-align: center;
@@ -116,13 +116,13 @@ option {
     text-decoration: none;
     font-size: 15px;
     font-weight: 400;
-    color: #fff;
+    color: rgba(255, 255, 255);
 }
 button {
     width: 100%;
 }
 button:hover, .btn-item:hover{
-    background: #85d6de;
+    background: rgba(133, 214, 222);
 }
 @media (min-width: 568px) {
     html, body {

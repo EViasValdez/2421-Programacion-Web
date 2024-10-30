@@ -40,7 +40,7 @@ function EnviarDatos() {
 function Selectos() {
     if (document.getElementById("Seleccion").value == "predeterminado")
     {
-        alert("No deje esta parte vacía, elige una opción");
+        alert("No deje esta parte vacía, eliga una opción");
     }
 }
 
