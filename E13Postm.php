@@ -8,13 +8,13 @@ class Individuo {
 public function_construct() {
     
 }
-public function saludouno() {
+public function SaludoUno() {
     echo "Hola, mi nombre es".$this->Nombre;
 }
-private function saludouno() {
+private function SaludoUno() {
     echo "Hola, mi edad es".$this->Edad;
 }
-static function saludotres() {
+static function SaludoTres() {
     echo "Yo ando bien";
 }
 ?>
