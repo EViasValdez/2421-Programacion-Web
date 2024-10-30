@@ -12,8 +12,8 @@ class ControlUsuarios {
     }
     public function insertar() {
         $Usuario = new Usuario();
-        $Usuario->nombre = "Xavier";
-        $Usuario->edad = 50;
+        $Usuario->Nombre = "Xavier";
+        $Usuario->Edad = 50;
         $Usuario->guardar();
     }
     public function testEncriptar() {
