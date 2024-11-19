@@ -92,8 +92,6 @@ function contarMinasAlrededorCasilla(fila,columna) {
     Buscaminas.aCampoMinas[fila][columna] = numeroMinasAlrededor;
 }
 
-
-
 function contarMinas() {
     //contamos cuantas minas hay alrededor de cada casilla
     for (let fila=0; fila<Buscaminas.numFilas; fila++) {
