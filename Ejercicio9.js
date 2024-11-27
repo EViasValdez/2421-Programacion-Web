@@ -7,7 +7,7 @@ function Tabla() {
 
     if (Nombre == "" || Ap == "" || MontoPrestamo == "" || FechaPago == "" || NPlazo == "")
     {
-        alert("No ha ingresado dato alguno");
+        alert("No ha ingresado datos");
     }
     else
     {

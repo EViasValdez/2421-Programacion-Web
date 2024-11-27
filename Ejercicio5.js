@@ -4,17 +4,17 @@ function() {
 }
 );
 
-var total = 0;
+var Total = 0;
 
 $(".botones").click(function()
 {
     var Valor = $(this).attr("valor");
     if (Valor == 1) {
         $(this).css("background-color", "white");
-        total++;
+        Total++;
     } else {
         $(this).css("background-color", "red");
-        alert("Perdiste, estos son tus puntos: " + total);
+        alert("Perdiste, estos son tus puntos: " + Total);
         location.reload();
     }
 }
