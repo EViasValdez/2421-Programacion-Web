@@ -4,14 +4,17 @@ body {
     background: radial-gradient(circle, rgba(0,15,93,1) 0%, rgba(66,0,13,1) 100%);
     background-size: cover;
 }
+
 .Texto1 {
     font-family: "Secular One";
     font-size: 48px;
 }
+
 .Texto2 {
     font-family: "Secular One";
     font-size: 24px;
 }
+
 .tabla, .TablaContenido, tr, th {
     column-width: 200px;
     border-collapse: collapse;
@@ -22,6 +25,7 @@ body {
     color: rgba(255, 255, 255);
     font-size: 20px;
 }
+
 #Nombres, #Apellidos, #MontoPrestamo, #FechaPago, #NPlazo {
     text-align: center;
     border: 1px solid rgba(255, 255, 255);
@@ -32,6 +36,7 @@ body {
     color: rgba(255, 255, 255);
     transition: 0.2s ease-in-out;
 }
+
 #Nombres:hover, #Apellidos:hover, #MontoPrestamo:hover, #FechaPago:hover, #NPlazo:hover {
     text-align: center;
     border: 1px solid rgba(255, 255, 255);
@@ -42,6 +47,7 @@ body {
     color: rgba(0, 0, 0);
     transition: 0.2s ease-in-out;
 }
+
 #Amortizacion {
     text-align: center;
     border: 1px solid rgba(255, 255, 255);
@@ -51,6 +57,7 @@ body {
     color: rgba(255, 255, 255);;
     transition: 0.2s ease-in-out;
 }
+
 #Amortizacion:hover {
     text-align: center;
     border: 1px solid rgba(255, 255, 255);
@@ -60,6 +67,7 @@ body {
     color: rgba(0, 0, 0);
     transition: 0.2s ease-in-out;
 }
+
 #Boton1 {
     text-align: center;
     border: 1px solid rgba(255, 255, 255);
@@ -68,6 +76,7 @@ body {
     background-color: rgba(0, 0, 0);
     color: rgba(255, 255, 255);
 }
+
 #Boton1:active {
     border: 1px solid rgba(255, 255, 255);
     font-family: "Palanquin Dark";

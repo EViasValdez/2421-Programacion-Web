@@ -1,6 +1,7 @@
 html, body {
     min-height: 100%;
 }
+
 body, div, form, input, select, p { 
     padding: 0;
     margin: 0;
@@ -9,17 +10,21 @@ body, div, form, input, select, p {
     font-size: 16px;
     color: rgba(255, 255, 255);
 }
+
 body {
     background: radial-gradient(circle, rgba(140,255,130,1) 0%, rgba(0,116,0,1) 100%) no-repeat;
     background-size: cover;
 }
+
 h1, h2 {
     text-transform: uppercase;
     font-weight: 400;
 }
+
 h2 {
     margin: 0 0 0 8px;
 }
+
 .main-block {
     display: flex;
     flex-direction: column;
@@ -29,27 +34,33 @@ h2 {
     padding: 25px;
     background: rgba(0, 0, 0, 0.5); 
 }
+
 .left-part, form {
     padding: 25px;
 }
+
 .left-part {
     text-align: center;
 }
+
 .fa-graduation-cap {
     font-size: 72px;
 }
 form {
     background: linear-gradient(167deg, rgba(0, 0, 0, 0.804) 0%, rgba(5, 54, 0, 0.802) 100%);
 }
+
 .title {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
+
 .info {
     display: flex;
     flex-direction: column;
 }
+
 input, select {
     padding: 5px;
     margin-bottom: 30px;
@@ -57,26 +68,33 @@ input, select {
     border: none;
     border-bottom: 1px solid rgba(238, 238, 238);
 }
+
 input::placeholder {
     color: rgba(238, 238, 238);
 }
+
 option:focus {
     border: none;
 }
+
 option {
     background: rgba(0, 0, 0); 
     border: none;
 }
+
 .checkbox input {
     margin: 0 10px 0 0;
     vertical-align: middle;
 }
+
 .checkbox a {
     color: rgba(38, 169, 224);
 }
+
 .checkbox a:hover {
     color: rgba(133, 214, 222);
 }
+
 .btn-item {
     padding: 10px 5px;
     margin-top: 20px;
@@ -88,10 +106,12 @@ option {
     font-weight: 400;
     color: rgba(255, 255, 255);
 }
+
 .btn-item {
     display: inline-block;
     margin: 20px 5px 0;
 }
+
 #Registro {
     text-align: center;
     width: 100%;
@@ -105,6 +125,7 @@ option {
     font-weight: 400;
     color: rgba(255, 255, 255);
 }
+
 #Registro:hover {
     text-align: center;
     width: 100%;
@@ -118,20 +139,25 @@ option {
     font-weight: 400;
     color: rgba(255, 255, 255);
 }
+
 button {
     width: 100%;
 }
-button:hover, .btn-item:hover{
+
+button:hover, .btn-item:hover {
     background: rgba(133, 214, 222);
 }
+
 @media (min-width: 568px) {
     html, body {
     height: 100%;
 }
+
 .main-block {
     flex-direction: row;
     height: calc(100% - 50px);
 }
+
 .left-part, form {
     flex: 1;
     height: auto;
