@@ -13,6 +13,7 @@
             text-align: center;
             font-family: "Franklin Gothic";
         }
+        
         form {
             text-align: center;
             font-size: 20px;

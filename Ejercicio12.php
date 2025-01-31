@@ -11,17 +11,20 @@
     body {
         background-color: rgb(0, 153, 51);
     }
+
     form {
         text-align: center;
         font-family: "Lexend";
         font-size: 20px;
         color: white;
     }
+
     #Texto {
         text-align: center;
         font-family: "Lexend";
         color: white;
     }
+
     #n, #e {
         border-collapse: collapse;
         border: 2px solid rgb(255, 255, 255);
@@ -32,6 +35,7 @@
         background-color: transparent;
         transition: 0.2s ease-in-out;
     }
+
     #s {
         border-collapse: collapse;
         border: 2px solid rgb(255, 255, 255);
@@ -42,6 +46,7 @@
         background-color: transparent;
         transition: 0.2s ease-in-out;
     }
+
     #n:hover, #e:hover {
         border-collapse: collapse;
         border: 2px solid rgb(255, 255, 255);
@@ -52,6 +57,7 @@
         background-color: white;
         transition: 0.2s ease-in-out;
     }
+    
     #s:hover {
         border-collapse: collapse;
         border: 2px solid rgb(255, 255, 255);
