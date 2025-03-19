@@ -27,7 +27,8 @@ function Amortizacion() {
     var TotalN = 0 - Total;
     var Amortizacion = document.getElementById("Amortizacion");
 
-    if (Amortizacion == 1) {
+    if (Amortizacion == 1)
+    {
         let Aux = 1 + 0.12 / plazos * plazos;
         var FRC = 1 + 0.12 / plazos * Aux / Aux * - 1;
         var PI = Total * FRC;
@@ -40,7 +41,8 @@ function Amortizacion() {
         
         FO = A2 + I * 1 + 0.12
 
-        if (TotalN > 0) {
+        if (TotalN > 0)
+        {
             alert("Saldo salado");
         }
     }
