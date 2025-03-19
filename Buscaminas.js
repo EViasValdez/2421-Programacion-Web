@@ -22,7 +22,7 @@ function pintarTablero() {
     }
 
     // Creamos las casillas que necesitemos.
-    for (let f=0; f<Buscaminas.numFilas; f++){
+    for (let f=0; f<Buscaminas.numFilas; f++) {
         for (let c=0; c<Buscaminas.numColumnas; c++) {
             let newDiv = document.createElement("div");
             newDiv.setAttribute("id","f" + f + "_c" + c );
@@ -39,7 +39,7 @@ function pintarTablero() {
 function generarCampoMinasVacio() {
     //generamos el campo de minas
     Buscaminas.aCampoMinas = new Array(Buscaminas.numFilas);
-    for (let fila=0; fila<Buscaminas.numFilas; fila++){
+    for (let fila=0; fila<Buscaminas.numFilas; fila++) {
         Buscaminas.aCampoMinas[fila] = new Array(Buscaminas.numColumnas);
     }
 }
