@@ -7,16 +7,20 @@ var Prueba = Operaciones();
 alert(Prueba);
 
 function Operaciones() {
-    if (Oper == "Sumar") {
-        suma();
+    if (Oper == "Sumar")
+    {
+        suma(); 
     }
-    if (Oper == "Restar") {
+    if (Oper == "Restar")
+    {
         restar();
     }
-    if (Oper = "Multiplicar") {
+    if (Oper = "Multiplicar")
+    {
         multiplicacion();
     }
-    if (Oper = "Dividir") {
+    if (Oper = "Dividir")
+    {
         division();
     }
     reuno = resultado;
