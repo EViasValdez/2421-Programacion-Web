@@ -138,7 +138,8 @@ function marcar(miEvento) {
             {
                 //si estaba marcada como duda lo quitamos
                 casilla.classList.remove("icon-duda");
-            } else
+            }
+            else
             if (casilla.classList.length == 0)
             {
                 //si no está marcada la marcamos como "bandera"
