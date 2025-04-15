@@ -133,7 +133,10 @@ function marcar(miEvento) {
                 casilla.classList.add("icon-duda");
                 //y al numero de minas encontradas le restamos 1
                 Buscaminas.numMinasEncontradas--;
-            } else if (casilla.classList.contains("icon-duda")) {
+            }
+            else
+            if (casilla.classList.contains("icon-duda"))
+            {
                 //si estaba marcada como duda lo quitamos
                 casilla.classList.remove("icon-duda");
             } else if (casilla.classList.length == 0) {
