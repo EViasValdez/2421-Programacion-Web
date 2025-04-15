@@ -176,7 +176,6 @@ function destaparCasilla(fila, columna) {
         //si la casilla no esta destapada
         if (!casilla.classList.contains("destapado"))
         {
-
             //si no esta marcada como "bandera"
             if (!casilla.classList.contains("icon-bandera"))
             {
@@ -209,7 +208,8 @@ function destaparCasilla(fila, columna) {
                         //y borramos el 0 poniendo la cadena vacía
                         casilla.innerHTML  = "";
                     }
-                } else if (Buscaminas.aCampoMinas[fila][columna]=="B") {
+                } else
+                if (Buscaminas.aCampoMinas[fila][columna]=="B") {
                     // si por el contrario hay bomba quitamos la B
                     casilla.innerHTML = "";
 
@@ -236,7 +236,8 @@ function resolverTablero(isOK) {
         let fila = parseInt(aCasillas[i].dataset.fila,10);
         let columna = parseInt(aCasillas[i].dataset.columna,10);
 
-        if (aCasillas[i].classList.contains("icon-bandera")) {
+        if (aCasillas[i].classList.contains("icon-bandera"))
+        {
             if (Buscaminas.aCampoMinas[fila][columna] == "B"){
                 //bandera correcta
                 aCasillas[i].classList.add("destapado");
