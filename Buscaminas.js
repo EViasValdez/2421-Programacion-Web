@@ -97,7 +97,8 @@ function contarMinas() {
     for (let fila=0; fila<Buscaminas.numFilas; fila++) {
         for (let columna=0; columna<Buscaminas.numColumnas; columna++) {
             //solo contamos si es distinto de bomba
-            if (Buscaminas.aCampoMinas[fila][columna]!="B"){
+            if (Buscaminas.aCampoMinas[fila][columna]!="B")
+            {
                 contarMinasAlrededorCasilla(fila,columna);
             }
         }
@@ -105,7 +106,8 @@ function contarMinas() {
 }
 
 function marcar(miEvento) {
-    if (miEvento.type === "contextmenu") {
+    if (miEvento.type === "contextmenu")
+    {
         console.log(miEvento);
 
         //obtenemos el elemento que ha disparado el evento
@@ -122,7 +124,8 @@ function marcar(miEvento) {
 
         if (fila>=0 && columna>=0 && fila< Buscaminas.numFilas && columna < Buscaminas.numColumnas) {
             //si esta marcada como "bandera"
-            if (casilla.classList.contains("icon-bandera")) {
+            if (casilla.classList.contains("icon-bandera"))
+            {
                 //la quitamos
                 casilla.classList.remove("icon-bandera");
                 //y la marcamos como duda
@@ -138,7 +141,8 @@ function marcar(miEvento) {
                 //y sumamos 1 al numero de minas encontradas
                 Buscaminas.numMinasEncontradas++;
                 //si es igual al numero de minas totales resolvemos el tablero para ver si esta bien
-                if (Buscaminas.numMinasEncontradas == Buscaminas.numMinasTotales) {
+                if (Buscaminas.numMinasEncontradas == Buscaminas.numMinasTotales)
+                {
                     resolverTablero(true);
                 }
             }
@@ -225,7 +229,7 @@ function resolverTablero(isOK) {
         let fila = parseInt(aCasillas[i].dataset.fila,10);
         let columna = parseInt(aCasillas[i].dataset.columna,10);
 
-        if (aCasillas[i].classList.contains("icon-bandera")){
+        if (aCasillas[i].classList.contains("icon-bandera")) {
             if (Buscaminas.aCampoMinas[fila][columna] == "B"){
                 //bandera correcta
                 aCasillas[i].classList.add("destapado");
@@ -237,7 +241,7 @@ function resolverTablero(isOK) {
                 aCasillas[i].classList.add("banderaErronea");
                 isOK = false;
             }
-        } else if (!aCasillas[i].classList.contains("destapado")){
+        } else if (!aCasillas[i].classList.contains("destapado")) {
             if (Buscaminas.aCampoMinas[fila][columna] == "B")
             {
                 //destapamos el resto de las bombas
