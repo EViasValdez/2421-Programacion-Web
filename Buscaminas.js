@@ -238,7 +238,8 @@ function resolverTablero(isOK) {
                 isOK = false;
             }
         } else if (!aCasillas[i].classList.contains("destapado")){
-            if (Buscaminas.aCampoMinas[fila][columna] == "B"){
+            if (Buscaminas.aCampoMinas[fila][columna] == "B")
+            {
                 //destapamos el resto de las bombas
                 aCasillas[i].classList.add("destapado");
                 aCasillas[i].classList.add("icon-bomba");
@@ -247,7 +248,8 @@ function resolverTablero(isOK) {
 
     }
 
-    if (isOK) {
+    if (isOK)
+    {
         alert("Felicitaciones, lo ha logrado");
     }
 }
