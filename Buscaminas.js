@@ -148,7 +148,7 @@ function marcar(miEvento) {
     }
 }
 function destapar(miEvento) {
-    if (miEvento.type === "click"){
+    if (miEvento.type === "click") {
         let casilla = miEvento.currentTarget;
         let fila = parseInt(casilla.dataset.fila,10);
         let columna = parseInt(casilla.dataset.columna,10);
@@ -156,10 +156,10 @@ function destapar(miEvento) {
         destaparCasilla(fila,columna);
     }
 }
-function destaparCasilla(fila, columna){
+function destaparCasilla(fila, columna) {
     //si la casilla esta dentro del tablero
     if (fila > -1 && fila < Buscaminas.numFilas &&
-        columna >-1 && columna < Buscaminas.numColumnas){
+        columna >-1 && columna < Buscaminas.numColumnas) {
 
         console.log("destapamos la casilla con fila " + fila + " y columna " +columna );
 
@@ -185,7 +185,7 @@ function destaparCasilla(fila, columna){
                 if (Buscaminas.aCampoMinas[fila][columna] !=="B"){
 
                     // y tiene 0 minas alrededor, destapamos las casillas contiguas
-                    if (Buscaminas.aCampoMinas[fila][columna] == 0){
+                    if (Buscaminas.aCampoMinas[fila][columna] == 0) {
                         destaparCasilla(fila-1,columna-1);
                         destaparCasilla(fila-1,columna);
                         destaparCasilla(fila-1,columna+1);
@@ -198,7 +198,7 @@ function destaparCasilla(fila, columna){
                         //y borramos el 0 poniendo la cadena vacía
                         casilla.innerHTML  = "";
                     }
-                }else if (Buscaminas.aCampoMinas[fila][columna]=="B"){
+                }else if (Buscaminas.aCampoMinas[fila][columna]=="B") {
                     // si por el contrario hay bomba quitamos la B
                     casilla.innerHTML = "";
 
