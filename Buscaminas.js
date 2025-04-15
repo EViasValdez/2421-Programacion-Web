@@ -70,31 +70,30 @@ function esparcirMinas() {
 function contarMinasAlrededorCasilla(fila,columna) {
     let numeroMinasAlrededor = 0;
 
-    //de la fila anterior a la posterior
+    // de la fila anterior a la posterior
     for (let zFila = fila-1; zFila <= fila+1; zFila++) {
-
-        //de la columna anterior a la posterior
+        // de la columna anterior a la posterior
         for (let zColumna = columna-1; zColumna <= columna+1; zColumna++) {
 
-            //si la casilla cae dentro del tablero
+            // si la casilla cae dentro del tablero
             if (zFila>-1 && zFila<Buscaminas.numFilas && zColumna>-1 && zColumna<Buscaminas.numColumnas)
             {
-                //miramos si en esa posición hay bomba
+                // miramos si en esa posición hay bomba
                 if (Buscaminas.aCampoMinas[zFila][zColumna]=="B")
                 {
-                    //y sumamos 1 al numero de minas que hay alrededor de esa casilla
+                    // y sumamos 1 al numero de minas que hay alrededor de esa casilla
                     numeroMinasAlrededor++;
                 }
             }
         }
     }
 
-    //y guardamos cuantas minas hay en esa posicion
+    // y guardamos cuantas minas hay en esa posicion
     Buscaminas.aCampoMinas[fila][columna] = numeroMinasAlrededor;
 }
 
 function contarMinas() {
-    //contamos cuantas minas hay alrededor de cada casilla
+    // contamos cuantas minas hay alrededor de cada casilla
     for (let fila=0; fila<Buscaminas.numFilas; fila++) {
         for (let columna=0; columna<Buscaminas.numColumnas; columna++) {
             //solo contamos si es distinto de bomba
@@ -139,7 +138,9 @@ function marcar(miEvento) {
             {
                 //si estaba marcada como duda lo quitamos
                 casilla.classList.remove("icon-duda");
-            } else if (casilla.classList.length == 0) {
+            } else
+            if (casilla.classList.length == 0)
+            {
                 //si no está marcada la marcamos como "bandera"
                 casilla.classList.add("icon-bandera");
                 //y sumamos 1 al numero de minas encontradas
@@ -152,7 +153,6 @@ function marcar(miEvento) {
             }
             actualizarNumMinasRestantes();
         }
-
     }
 }
 function destapar(miEvento) {
