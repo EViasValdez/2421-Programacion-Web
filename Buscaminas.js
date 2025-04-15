@@ -48,7 +48,7 @@ function esparcirMinas() {
     //repartimos de forma aleatoria las minas
     let numMinasEsparcidas = 0;
 
-    while (numMinasEsparcidas<Buscaminas.numMinasTotales){
+    while (numMinasEsparcidas<Buscaminas.numMinasTotales) {
         //numero aleatorio en el intervalo [0,numFilas-1]
         let fila    = Math.floor(Math.random() * Buscaminas.numFilas);
 
@@ -71,15 +71,15 @@ function contarMinasAlrededorCasilla(fila,columna) {
     let numeroMinasAlrededor = 0;
 
     //de la fila anterior a la posterior
-    for (let zFila = fila-1; zFila <= fila+1; zFila++){
+    for (let zFila = fila-1; zFila <= fila+1; zFila++) {
 
         //de la columna anterior a la posterior
         for (let zColumna = columna-1; zColumna <= columna+1; zColumna++) {
 
             //si la casilla cae dentro del tablero
-            if (zFila>-1 && zFila<Buscaminas.numFilas && zColumna>-1 && zColumna<Buscaminas.numColumnas){
+            if (zFila>-1 && zFila<Buscaminas.numFilas && zColumna>-1 && zColumna<Buscaminas.numColumnas) {
                 //miramos si en esa posición hay bomba
-                if (Buscaminas.aCampoMinas[zFila][zColumna]=="B"){
+                if (Buscaminas.aCampoMinas[zFila][zColumna]=="B") {
 
                     //y sumamos 1 al numero de minas que hay alrededor de esa casilla
                     numeroMinasAlrededor++;
