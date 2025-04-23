@@ -212,7 +212,8 @@ function destaparCasilla(fila, columna) {
                         //y borramos el 0 poniendo la cadena vacía
                         casilla.innerHTML  = "";
                     }
-                } else
+                }
+                else
                 if (Buscaminas.aCampoMinas[fila][columna]=="B") {
                     // si por el contrario hay bomba quitamos la B
                     casilla.innerHTML = "";
