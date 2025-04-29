@@ -27,7 +27,8 @@ $(document).ready(function () {
 
                     var montos = $("#pago").val();
 
-                    if (Amortizacion == 0) {
+                    if (Amortizacion == 0)
+                    {
                         // seccion2
                         let aux = 1 + 0.12 / Plazos * Plazos;
                         var FRC = 1 + 0.12 / Plazos * aux / aux * - 1;
@@ -36,10 +37,13 @@ $(document).ready(function () {
                         console.log(PI);
                         var nuevo = ((Math.pow((1 + (t / p))) * (t / p)), 2)
                     }
-                    if (Amortizacion == 1) {
+                    if (Amortizacion == 1)
+                    {
                         var A2 = PI;
                         FO = A2 + I * 1 + 0.12
-                        if (totalNegativo > 0) {
+
+                        if (totalNegativo > 0)
+                        {
                             console.log ("pago saldado");
                         }
                     }

@@ -17,20 +17,24 @@ function Funcionamiento() {
     var Marca = parseInt(document.getElementById("op").value);
     var Objeto = document.getElementById("objet").value;
 
-    if (Marca == 1) {
-        if (Objeto == "Core i5") {
+    if (Marca == 1)
+    {
+        if (Objeto == "Core i5")
+        {
             Total += 1900;
             Precios1 += 1900;
             document.getElementById("uno").innerHTML = `Productos (${Contador1}): ${Objeto} = $1900`;
             Contador1++;
         }
-        if (Objeto == "Xeon") {
+        if (Objeto == "Xeon")
+        {
             Total += 1300;
             Precios2 += 1300;
             document.getElementById("dos").innerHTML = `Producto (${Contador2}): ${Objeto} = $1300`;
             Contador2++;
         }
-        if (Objeto == "Core i9") {
+        if (Objeto == "Core i9")
+        {
             Total += 2900;
             Precios3 += 2900;
             document.getElementById("tres").innerHTML = `Producto(${Contador3}): ${Objeto} = $2900`;
@@ -39,19 +43,22 @@ function Funcionamiento() {
     }
 
     if (Marca == 2) {
-        if (Objeto == "Ryzen 5" || Objeto == "Ryzen 5") {
+        if (Objeto == "Ryzen 5" || Objeto == "Ryzen 5")
+        {
             Total += 2600;
             Precios1 += 2600;
             document.getElementById("cuatro").innerHTML = `Producto(${Contador4}): ${Objeto} = $2600`;
             Contador4++;
         }
-        if (Objeto == "Opteron") {
+        if (Objeto == "Opteron")
+        {
             Total += 2470;
             Precios1 += 2470;
             document.getElementById("cinco").innerHTML = `Producto(${Contador5}): ${Objeto} = $2470`;
             Contador5++;
         }
-        if (Objeto == "Threadripper") {
+        if (Objeto == "Threadripper")
+        {
             Total += 4900;
             Precios6 += 4900;
             document.getElementById("seis").innerHTML = `Producto(${Contador6}): ${Objeto} = $4900`;
