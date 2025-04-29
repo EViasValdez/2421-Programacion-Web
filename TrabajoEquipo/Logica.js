@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $("#tres").hide();
         $("#boton").click(function () {
-            var puntualizadad = Math.floor(Math.random() * 1);
+            var Puntualizadad = Math.floor(Math.random() * 1);
             var Nombre = $("#nombres").val();
             var ApeidoPaterno = $("#apeidoP").val();
             var ApeidoMaterno = $("#apeidoM").val();
@@ -14,12 +14,12 @@ $(document).ready(function () {
             var Dias = 28 * Plazos;
             var NombreCompleto = Nombre + " " + ApeidoPaterno + " " + ApeidoMaterno;
             var iva = Monto * 0.12;
-            let interesInicial = Monto * 0.01 + iva;
-            var total = Monto + interesInicial;
-            var totalNegativo = 0 - total;
+            let InteresInicial = Monto * 0.01 + iva;
+            var Total = Monto + InteresInicial;
+            var TotalNegativo = 0 - Total;
             
             console.log(`Sr. ${NombreCompleto} su préstamo fue aceptado.`);  
-            console.log(totalNegativo);
+            console.log(TotalNegativo);
 
             // Datos importantes
                 $("#boton2").click(function () { 
@@ -30,19 +30,19 @@ $(document).ready(function () {
                     if (Amortizacion == 0)
                     {
                         // seccion2
-                        let aux = 1 + 0.12 / Plazos * Plazos;
-                        var FRC = 1 + 0.12 / Plazos * aux / aux * - 1;
-                        var PI = total * FRC;
+                        let Aux = 1 + 0.12 / Plazos * Plazos;
+                        var FRC = 1 + 0.12 / Plazos * Aux / Aux * - 1;
+                        var PI = Total * FRC;
 
                         console.log(PI);
-                        var nuevo = ((Math.pow((1 + (t / p))) * (t / p)), 2)
+                        var Nuevo = ((Math.pow((1 + (t / p))) * (t / p)), 2)
                     }
                     if (Amortizacion == 1)
                     {
                         var A2 = PI;
                         FO = A2 + I * 1 + 0.12
 
-                        if (totalNegativo > 0)
+                        if (TotalNegativo > 0)
                         {
                             console.log ("pago saldado");
                         }
@@ -54,7 +54,7 @@ $(document).ready(function () {
                    $(".periodo").html(`${FechaPrestamo1} - ${FechaPrestamo2} - ${FechaPrestamo3}`);
                    $(".dias").html(Dias);
                    $(".saldo").html(Monto);
-                   $(".insoluto").html(totalNegativo);
+                   $(".insoluto").html(TotalNegativo);
                    $(".iva").html(iva);
                 }
             });

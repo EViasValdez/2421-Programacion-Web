@@ -42,7 +42,8 @@ function Funcionamiento() {
         }
     }
 
-    if (Marca == 2) {
+    if (Marca == 2)
+    {
         if (Objeto == "Ryzen 5" || Objeto == "Ryzen 5")
         {
             Total += 2600;
