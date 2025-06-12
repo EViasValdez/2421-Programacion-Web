@@ -30,7 +30,7 @@ function pintarTablero() {
             newDiv.dataset.columna = c;
             newDiv.addEventListener("contextmenu",marcar); // Evento con el botón derecho del raton.
             newDiv.addEventListener("click",destapar); // Evento con el botón izquierdo del raton.
-
+            
             tablero.appendChild(newDiv);
         }
     }
@@ -87,7 +87,7 @@ function contarMinasAlrededorCasilla(fila,columna) {
             }
         }
     }
-
+    
     // y guardamos cuantas minas hay en esa posicion
     Buscaminas.aCampoMinas[fila][columna] = numeroMinasAlrededor;
 }
@@ -122,7 +122,8 @@ function marcar(miEvento) {
         let fila = parseInt(casilla.dataset.fila,10);
         let columna = parseInt(casilla.dataset.columna,10);
 
-        if (fila>=0 && columna>=0 && fila< Buscaminas.numFilas && columna < Buscaminas.numColumnas) {
+        if (fila>=0 && columna>=0 && fila< Buscaminas.numFilas && columna < Buscaminas.numColumnas)
+        {
             //si esta marcada como "bandera"
             if (casilla.classList.contains("icon-bandera"))
             {
