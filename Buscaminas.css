@@ -128,6 +128,6 @@
 #tablero div.c7 {color: rgba(255, 0, 212);}
 #tablero div.c8 {color: rgba(0, 255, 234);}
 
-.icon-bandera:before { content: '\2691';  color: #0300a8;}
-.icon-duda:before { content: '\003F'; color: #fffb00;}
+.icon-bandera:before { content: '\2691';  color: rgba(3, 0, 168);}
+.icon-duda:before { content: '\003F'; color: rgba(255, 251, 0);}
 .icon-bomba:before { content: '\1F4A3'; color:rgb(0, 0, 0)}
