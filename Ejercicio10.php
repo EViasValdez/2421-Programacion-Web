@@ -14,7 +14,6 @@
             font-family: "Verdana";
             font-size: 40px;
         }
-        
         form {
             text-align: center;
             font-size: 20px;

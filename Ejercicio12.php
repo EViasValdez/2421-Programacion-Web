@@ -9,7 +9,7 @@
 </head>
 <style type="text/css">
     body {
-        background-color: rgb(0, 153, 51);
+        background-color: rgba(0, 153, 51);
     }
 
     form {
@@ -27,7 +27,7 @@
 
     #n, #e {
         border-collapse: collapse;
-        border: 2px solid rgb(255, 255, 255);
+        border: 2px solid rgba(255, 255, 255);
         text-align: center;
         font-family: "Lexend";
         font-size: 18px;
@@ -38,7 +38,7 @@
 
     #s {
         border-collapse: collapse;
-        border: 2px solid rgb(255, 255, 255);
+        border: 2px solid rgba(255, 255, 255);
         text-align: center;
         font-family: "Lexend";
         font-size: 18px;
@@ -49,7 +49,7 @@
 
     #n:hover, #e:hover {
         border-collapse: collapse;
-        border: 2px solid rgb(255, 255, 255);
+        border: 2px solid rgba(255, 255, 255);
         text-align: center;
         font-family: "Lexend";
         font-size: 18px;
@@ -60,7 +60,7 @@
     
     #s:hover {
         border-collapse: collapse;
-        border: 2px solid rgb(255, 255, 255);
+        border: 2px solid rgba(255, 255, 255);
         text-align: center;
         font-family: "Lexend";
         font-size: 18px;
