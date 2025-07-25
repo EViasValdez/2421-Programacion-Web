@@ -5,9 +5,7 @@ class Individuo {
     public $Nombre = "Uriel";
     private $Edad = 20;
 }
-public function_construct() {
-    
-}
+
 public function SaludoUno() {
     echo "Hola, mi nombre es".$this->Nombre;
 }

@@ -2,6 +2,7 @@
 namespace Models;
 class Conexion {
     public $con;
+    
     function__construct() {
         $Host = "localhost";
         $Username = "root";
