@@ -37,7 +37,7 @@ function pintarTablero() {
 }
 
 function generarCampoMinasVacio() {
-    //generamos el campo de minas
+    // Generamos el campo de minas.
     Buscaminas.aCampoMinas = new Array(Buscaminas.numFilas);
     for (let fila=0; fila<Buscaminas.numFilas; fila++) {
         Buscaminas.aCampoMinas[fila] = new Array(Buscaminas.numColumnas);
@@ -45,14 +45,14 @@ function generarCampoMinasVacio() {
 }
 
 function esparcirMinas() {
-    //repartimos de forma aleatoria las minas
+    // Repartimos de forma aleatoria las minas.
     let numMinasEsparcidas = 0;
 
     while (numMinasEsparcidas<Buscaminas.numMinasTotales) {
-        //numero aleatorio en el intervalo [0,numFilas-1]
+        // Numero aleatorio en el intervalo [0,numFilas-1].
         let fila    = Math.floor(Math.random() * Buscaminas.numFilas);
 
-        //numero aleatorio en el intervalo [0,numColumnas-1]
+        // Numero aleatorio en el intervalo [0,numColumnas-1].
         let columna = Math.floor(Math.random() * Buscaminas.numColumnas);
 
         //si no hay bomba en esa posicion
