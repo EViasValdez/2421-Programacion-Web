@@ -55,13 +55,13 @@ function esparcirMinas() {
         // Numero aleatorio en el intervalo [0,numColumnas-1].
         let columna = Math.floor(Math.random() * Buscaminas.numColumnas);
 
-        //si no hay bomba en esa posicion
+        // si no hay bomba en esa posicion.
         if (Buscaminas.aCampoMinas[fila][columna] != "B")
         {
-            //la ponemos
+            // la ponemos.
             Buscaminas.aCampoMinas[fila][columna] = "B";
 
-            //y sumamos 1 a las bombas esparcidas
+            // y sumamos 1 a las bombas esparcidas.
             numMinasEsparcidas++;
         }
     }
@@ -70,33 +70,33 @@ function esparcirMinas() {
 function contarMinasAlrededorCasilla(fila,columna) {
     let numeroMinasAlrededor = 0;
 
-    // de la fila anterior a la posterior
+    // de la fila anterior a la posterior.
     for (let zFila = fila-1; zFila <= fila+1; zFila++) {
-        // de la columna anterior a la posterior
+        // de la columna anterior a la posterior.
         for (let zColumna = columna-1; zColumna <= columna+1; zColumna++) {
 
-            // si la casilla cae dentro del tablero
+            // si la casilla cae dentro del tablero.
             if (zFila>-1 && zFila<Buscaminas.numFilas && zColumna>-1 && zColumna<Buscaminas.numColumnas)
             {
                 // miramos si en esa posición hay bomba
                 if (Buscaminas.aCampoMinas[zFila][zColumna]=="B")
                 {
-                    // y sumamos 1 al numero de minas que hay alrededor de esa casilla
+                    // y sumamos 1 al numero de minas que hay alrededor de esa casilla.
                     numeroMinasAlrededor++;
                 }
             }
         }
     }
     
-    // y guardamos cuantas minas hay en esa posicion
+    // y guardamos cuantas minas hay en esa posicion.
     Buscaminas.aCampoMinas[fila][columna] = numeroMinasAlrededor;
 }
 
 function contarMinas() {
-    // contamos cuantas minas hay alrededor de cada casilla
+    // contamos cuantas minas hay alrededor de cada casilla.
     for (let fila=0; fila<Buscaminas.numFilas; fila++) {
         for (let columna=0; columna<Buscaminas.numColumnas; columna++) {
-            //solo contamos si es distinto de bomba
+            // solo contamos si es distinto de bomba
             if (Buscaminas.aCampoMinas[fila][columna]!="B")
             {
                 contarMinasAlrededorCasilla(fila,columna);
@@ -110,15 +110,15 @@ function marcar(miEvento) {
     {
         console.log(miEvento);
 
-        //obtenemos el elemento que ha disparado el evento
+        // obtenemos el elemento que ha disparado el evento.
         let casilla = miEvento.currentTarget;
 
-        //detenemos el burbujeo del evento y su accion por defecto
+        // detenemos el burbujeo del evento y su accion por defecto.
         miEvento.stopPropagation();
         miEvento.preventDefault();
 
-        //obtenemos la fila de las propiedades dataset.
-        //como es un string hay que convertirlo a numero
+        // obtenemos la fila de las propiedades dataset.
+        // como es un string hay que convertirlo a numero
         let fila = parseInt(casilla.dataset.fila,10);
         let columna = parseInt(casilla.dataset.columna,10);
 
