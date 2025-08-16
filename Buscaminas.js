@@ -168,33 +168,33 @@ function destapar(miEvento) {
     }
 }
 function destaparCasilla(fila, columna) {
-    //si la casilla esta dentro del tablero
+    // si la casilla esta dentro del tablero
     if (fila > -1 && fila < Buscaminas.numFilas &&
         columna >-1 && columna < Buscaminas.numColumnas)
         {
 
         console.log("destapamos la casilla con fila " + fila + " y columna " +columna );
 
-        //obtenermos la casilla con la fila y columna
+        // obtenermos la casilla con la fila y columna
         let casilla = document.querySelector("#f" + fila + "_c" + columna);
 
-        //si la casilla no esta destapada
+        // si la casilla no esta destapada
         if (!casilla.classList.contains("destapado"))
         {
-            //si no esta marcada como "bandera"
+            // si no esta marcada como "bandera"
             if (!casilla.classList.contains("icon-bandera"))
             {
 
-                //la destapamos
+                // la destapamos
                 casilla.classList.add("destapado");
 
-                //ponemos en la casilla el número de minas que tiene alrededor
+                // ponemos en la casilla el número de minas que tiene alrededor
                 casilla.innerHTML = Buscaminas.aCampoMinas[fila][columna];
 
-                //ponemos el estilo del numero de minas que tiene alrededor (cada uno es de un color)
+                // ponemos el estilo del numero de minas que tiene alrededor (cada uno es de un color)
                 casilla.classList.add("c" + Buscaminas.aCampoMinas[fila][columna])
 
-                //si no es bomba
+                // si no es bomba
                 if (Buscaminas.aCampoMinas[fila][columna] !=="B")
                 {
 
