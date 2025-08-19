@@ -55,13 +55,10 @@ function esparcirMinas() {
         // Numero aleatorio en el intervalo [0,numColumnas-1].
         let columna = Math.floor(Math.random() * Buscaminas.numColumnas);
 
-        // si no hay bomba en esa posicion.
+        // Si no hay bomba en esa posicion la ponemos y sumamos 1 a las bombas esparcidas.
         if (Buscaminas.aCampoMinas[fila][columna] != "B")
         {
-            // la ponemos.
             Buscaminas.aCampoMinas[fila][columna] = "B";
-
-            // y sumamos 1 a las bombas esparcidas.
             numMinasEsparcidas++;
         }
     }

@@ -6,7 +6,7 @@ function Calcular() {
     let N1 = parseInt (document.getElementById("Numero1").value);
     let N2 = parseInt (document.getElementById("Numero2").value);
     var Operacion = document.getElementById("Operacion").value;
-    var Calcular = document.getElementById("Calcular").value;
+    // var Calcular = document.getElementById("Calcular").value;
 
     if (Operacion == 1)
     {
