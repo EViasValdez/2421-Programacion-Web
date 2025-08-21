@@ -165,14 +165,13 @@ function destapar(miEvento) {
     }
 }
 function destaparCasilla(fila, columna) {
-    // si la casilla esta dentro del tablero
+    // Si la casilla esta dentro del tablero obtendremos la casilla con la fila y columna.
     if (fila > -1 && fila < Buscaminas.numFilas &&
         columna >-1 && columna < Buscaminas.numColumnas)
         {
 
         console.log("destapamos la casilla con fila " + fila + " y columna " +columna );
 
-        // obtenermos la casilla con la fila y columna
         let casilla = document.querySelector("#f" + fila + "_c" + columna);
 
         // si la casilla no esta destapada
@@ -232,7 +231,7 @@ function destaparCasilla(fila, columna) {
 function resolverTablero(isOK) {
     let aCasillas = tablero.children;
     for (let i = 0 ; i < aCasillas.length; i++) {
-        //quitamos los listeners de los eventos a las casillas
+        // quitamos los listeners de los eventos a las casillas
         aCasillas[i].removeEventListener("click", destapar);
         aCasillas[i].removeEventListener("contextmenu", marcar);
 
@@ -242,14 +241,14 @@ function resolverTablero(isOK) {
         if (aCasillas[i].classList.contains("icon-bandera"))
         {
             if (Buscaminas.aCampoMinas[fila][columna] == "B"){
-                //bandera correcta
+                // bandera correcta
                 aCasillas[i].classList.add("destapado");
                 aCasillas[i].classList.remove("icon-bandera");
                 aCasillas[i].classList.add("icon-bomba");
             }
             else
             {
-                //bandera erronea
+                // bandera erronea
                 aCasillas[i].classList.add("destapado");
                 aCasillas[i].classList.add("banderaErronea");
                 isOK = false;
@@ -260,12 +259,11 @@ function resolverTablero(isOK) {
         {
             if (Buscaminas.aCampoMinas[fila][columna] == "B")
             {
-                //destapamos el resto de las bombas
+                // destapamos el resto de las bombas
                 aCasillas[i].classList.add("destapado");
                 aCasillas[i].classList.add("icon-bomba");
             }
         }
-
     }
 
     if (isOK)
