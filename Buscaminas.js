@@ -259,7 +259,7 @@ function resolverTablero(isOK) {
         {
             if (Buscaminas.aCampoMinas[fila][columna] == "B")
             {
-                // destapamos el resto de las bombas
+                // Destapamos el resto de las bombas.
                 aCasillas[i].classList.add("destapado");
                 aCasillas[i].classList.add("icon-bomba");
             }
