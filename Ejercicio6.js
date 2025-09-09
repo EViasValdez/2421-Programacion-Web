@@ -10,22 +10,26 @@ function EnviarDatos() {
         alert("No ha ingresado su nombre completo");
         document.getElementById("Nombre").focus();
     }
-    else if (Usuario == "")
+    else
+    if (Usuario == "")
     {
         alert("No ha ingresado su nombre de usuario");
         document.getElementById("Usuario").focus();
     }
-    else if (Email == "")
+    else
+    if (Email == "")
     {
         alert("No ha ingresado su correo");
         document.getElementById("Email").focus();
     }
-    else if (Numero == "")
+    else
+    if (Numero == "")
     {
         alert("No ha ingresado su numero de teléfono");
         document.getElementById("Numero").focus();
     }
-    else if (Contras == "")
+    else
+    if (Contras == "")
     {
         alert("No ha ingresado su contraseña");
         document.getElementById("Contras").focus();
