@@ -241,14 +241,14 @@ function resolverTablero(isOK) {
         if (aCasillas[i].classList.contains("icon-bandera"))
         {
             if (Buscaminas.aCampoMinas[fila][columna] == "B"){
-                // bandera correcta
+                // bandera correcta.
                 aCasillas[i].classList.add("destapado");
                 aCasillas[i].classList.remove("icon-bandera");
                 aCasillas[i].classList.add("icon-bomba");
             }
             else
             {
-                // bandera erronea
+                // bandera erronea.
                 aCasillas[i].classList.add("destapado");
                 aCasillas[i].classList.add("banderaErronea");
                 isOK = false;
