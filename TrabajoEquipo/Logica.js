@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $("#tres").hide();
         $("#boton").click(function () {
-            var Puntualizadad = Math.floor(Math.random() * 1);
+            // var Puntualizadad = Math.floor(Math.random() * 1);
             var Nombre = $("#nombres").val();
             var ApeidoPaterno = $("#apeidoP").val();
             var ApeidoMaterno = $("#apeidoM").val();
@@ -29,7 +29,6 @@ $(document).ready(function () {
 
                     if (Amortizacion == 0)
                     {
-                        // seccion2
                         let Aux = 1 + 0.12 / Plazos * Plazos;
                         var FRC = 1 + 0.12 / Plazos * Aux / Aux * - 1;
                         var PI = Total * FRC;
@@ -44,7 +43,7 @@ $(document).ready(function () {
 
                         if (TotalNegativo > 0)
                         {
-                            console.log ("pago saldado");
+                            console.log("pago saldado");
                         }
                     }
                 });
