@@ -206,7 +206,7 @@ function destaparCasilla(fila, columna) {
                         destaparCasilla(fila+1,columna);
                         destaparCasilla(fila+1,columna+1);
 
-                        //y borramos el 0 poniendo la cadena vacía
+                        // y borramos el 0 poniendo la cadena vacía
                         casilla.innerHTML  = "";
                     }
                 }
@@ -215,7 +215,7 @@ function destaparCasilla(fila, columna) {
                     // si por el contrario hay bomba quitamos la B
                     casilla.innerHTML = "";
 
-                    //añadimos el estilo de que hay bomba
+                    // añadimos el estilo de que hay bomba
                     casilla.classList.add("icon-bomba");
 
                     // y que se nos ha olvidado marcarla
