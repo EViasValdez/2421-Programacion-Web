@@ -10,7 +10,6 @@ class Usuario extends Conexion
     public function__construct() {
         parent::__construct();
     }
-
     static function find($Id) {
         $me = new Conexion();
         $pre = mysqli_prepare($me->con, "SELECT * FROM personas WHERE Id = ?");
