@@ -9,6 +9,7 @@ var Total = 0;
 $(".botones").click(function()
 {
     var Valor = $(this).attr("valor");
+    
     if (Valor == 1)
     {
         $(this).css("background-color", "white");
