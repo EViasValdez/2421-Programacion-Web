@@ -140,11 +140,11 @@ function marcar(miEvento) {
             else
             if (casilla.classList.length == 0)
             {
-                //si no está marcada la marcamos como "bandera"
+                // si no está marcada la marcamos como "bandera"
                 casilla.classList.add("icon-bandera");
-                //y sumamos 1 al numero de minas encontradas
+                // y sumamos 1 al numero de minas encontradas
                 Buscaminas.numMinasEncontradas++;
-                //si es igual al numero de minas totales resolvemos el tablero para ver si esta bien
+                // si es igual al numero de minas totales resolvemos el tablero para ver si esta bien
                 if (Buscaminas.numMinasEncontradas == Buscaminas.numMinasTotales)
                 {
                     resolverTablero(true);
