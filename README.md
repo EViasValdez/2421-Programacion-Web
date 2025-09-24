@@ -49,7 +49,7 @@ Version de buscaminas en HTML con el uso de CSS y JavaScript, con cambios de có
 <!----Separador---->
 
 ###### Listadecompras - 22/09/21
-Trabajo en equipo para replicar una tienda de compras por internet.
+Trabajo en equipo para replicar una lista de compras por internet.
 
 <!----Separador---->
 
