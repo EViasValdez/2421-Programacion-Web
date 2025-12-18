@@ -13,7 +13,7 @@ var Info = {
         "IDES preferidos": {
                 "IDE 1": "NetBeans",
                 "IDE 2": "Atom",
-                "IDE 3": "WAMP / MySQL",
+                "IDE 3": "XAMPP / MySQL",
                 "IDE 4": "Visual Studio Code",
                 "IDE 5": "Visual Studio Community",
             },
