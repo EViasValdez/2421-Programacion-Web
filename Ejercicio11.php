@@ -20,15 +20,15 @@
             font-family: "Lucida Console";
         }
     </style>
-    <h1>Minusculas y mayusculas</h1>
+    <h1>Minúsculas y mayúsculas</h1>
     <form action="E11Datos.php" method="get">
-        <label for="texto">Escriba aqui su texto</label>
+        <label for="texto">Escriba aquí su texto</label>
         <input type="text" name="palabra">
         <br>
         <label for="tipo">Ponga un tipo</label>
         <select name="tipo">
-            <option value="0">minusculas</option>
-            <option value="1">MAYUSCULAS</option>
+            <option value="0">minúsculas</option>
+            <option value="1">MAYÚSCULAS</option>
         <br>
         <input type="submit" value="Enviar">
     </form>

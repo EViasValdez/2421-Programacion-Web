@@ -5,7 +5,6 @@ var Contador3 = 1;
 var Contador4 = 1;
 var Contador5 = 1;
 var Contador6 = 1;
-
 var Precios1 = 0;
 var Precios2 = 0;
 var Precios3 = 0;

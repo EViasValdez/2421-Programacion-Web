@@ -38,7 +38,7 @@
             <option value="mujer">Mujer</option>
         </select>
         <br>
-        <label for="pais">Pais:</label>
+        <label for="pais">País:</label>
         <select name="pais" id="pais">
             <option value="argentina">Argentina</option>
             <option value="brasil">Brasil</option>
