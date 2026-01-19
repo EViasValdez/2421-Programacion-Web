@@ -1,7 +1,7 @@
 # Programación web
 
 <!----Descripción---->
-Por ser escrita.
+Para esta materia empece con los lenguajes usados en paginas web.
 <!----Separador de la descripción ---->
 
 <!----Notas---->
