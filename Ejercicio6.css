@@ -150,16 +150,16 @@ button:hover, .btn-item:hover {
 
 @media (min-width: 568px) {
     html, body {
-    height: 100%;
-}
+        height: 100%;
+    }
 
-.main-block {
-    flex-direction: row;
-    height: calc(100% - 50px);
-}
+    .main-block {
+        flex-direction: row;
+        height: calc(100% - 50px);
+    }
 
-.left-part, form {
-    flex: 1;
-    height: auto;
-}
+    .left-part, form {
+        flex: 1;
+        height: auto;
+    }
 }
