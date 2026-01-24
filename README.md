@@ -1,7 +1,7 @@
 # Programación web
 
 <!----Descripción---->
-Para esta materia empece con los lenguajes usados en paginas web.
+Para esta materia empece con los lenguajes usados en paginas web y fue el primer acercamiento completo que tuve en la carrera.
 <!----Separador de la descripción ---->
 
 <!----Notas---->
