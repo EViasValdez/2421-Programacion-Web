@@ -16,7 +16,6 @@ Para esta materia empece con los lenguajes usados en paginas web y fue el primer
 
 <!----Directorio con descripción de los programas---->
 # Descripción de los programas
-
 ## ● Unidad 1 ●
 ###### Ejercicio1 - 03/09/21
 Actividad simple de ingreso a la página usando el nombre del usuario.
