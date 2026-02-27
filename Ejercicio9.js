@@ -38,7 +38,6 @@ function Amortizacion() {
     else (Amortizacion == 2);
     {
         var A2 = PI;
-        
         FO = A2 + I * 1 + 0.12
 
         if (TotalN > 0)
