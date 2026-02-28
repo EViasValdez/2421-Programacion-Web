@@ -6,7 +6,6 @@ Para esta materia empece con los lenguajes usados en paginas web y fue el primer
 
 <!----Notas---->
 **Notas**
-
 **- Solo en este repositorio puse las fechas de realización y el tipo de trabajo en el commit de cada archivo.**
 
 **- El orden de cada ejercicio realizado va junto con sus archivos correspondientes.**
