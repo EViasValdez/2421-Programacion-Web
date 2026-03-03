@@ -90,7 +90,7 @@ function contarMinasAlrededorCasilla(fila,columna) {
 }
 
 function contarMinas() {
-    // contamos cuantas minas hay alrededor de cada casilla.
+    // Contamos cuantas minas hay alrededor de cada casilla.
     for (let fila=0; fila<Buscaminas.numFilas; fila++) {
         for (let columna=0; columna<Buscaminas.numColumnas; columna++) {
             // solo contamos si es distinto de bomba
@@ -107,10 +107,10 @@ function marcar(miEvento) {
     {
         console.log(miEvento);
 
-        // obtenemos el elemento que ha disparado el evento.
+        // Obtenemos el elemento que ha disparado el evento.
         let casilla = miEvento.currentTarget;
 
-        // detenemos el burbujeo del evento y su accion por defecto.
+        // detenemos el burbujeo del evento y su acción por defecto.
         miEvento.stopPropagation();
         miEvento.preventDefault();
 
