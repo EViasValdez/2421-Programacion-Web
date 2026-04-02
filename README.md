@@ -103,6 +103,6 @@ Carga de datos API con el programa Postman.
 <!----Separador---->
 
 ###### Ejercicio13, E13Conexion, E13ContUsua, E13Datos, E13Postm, E13Usuario - 11/21
-Registro de cada archivo que permite el funcionamiento del programa inicial, también usa Postman.
+Registro de cada archivo que permite el funcionamiento del programa anterior, también usa Postman.
 
 <!----Separador del directorio con ubicación de archivos---->
