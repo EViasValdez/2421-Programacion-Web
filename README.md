@@ -8,8 +8,6 @@ Para esta materia empece con los lenguajes usados en paginas web y fue el primer
 **Notas**
 **- Solo en este repositorio puse las fechas de realización y el tipo de trabajo en el commit de cada archivo.**
 
-**- El orden de cada ejercicio realizado va junto con sus archivos correspondientes.**
-
 **- He incorporado también archivos de mis cursos de C++ y de Bootstrap (también incorporare los de Angular y React si llego a tomar esos cursos).**
 <!----Separador de las notas---->
 
