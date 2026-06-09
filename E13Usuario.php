@@ -15,6 +15,7 @@ class Usuario extends Conexion
         $pre = mysqli_prepare($me->con, "SELECT * FROM personas WHERE Id = ?");
         $pre->bind_param("i", $Id);
         $pre->execute();
+        
         $res = $pre->get_result();
         return $res->fetch_object(Usuario::class);
     }
