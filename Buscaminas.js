@@ -28,8 +28,8 @@ function pintarTablero() {
             newDiv.setAttribute("id","f" + f + "_c" + c );
             newDiv.dataset.fila = f;
             newDiv.dataset.columna = c;
-            newDiv.addEventListener("contextmenu",marcar); // Evento con el botón derecho del raton.
-            newDiv.addEventListener("click",destapar); // Evento con el botón izquierdo del raton.
+            newDiv.addEventListener("contextmenu",marcar); // Evento con el botón derecho del ratón.
+            newDiv.addEventListener("click",destapar); // Evento con el botón izquierdo del ratón.
             
             tablero.appendChild(newDiv);
         }
@@ -93,7 +93,7 @@ function contarMinas() {
     // Contamos cuantas minas hay alrededor de cada casilla.
     for (let fila=0; fila<Buscaminas.numFilas; fila++) {
         for (let columna=0; columna<Buscaminas.numColumnas; columna++) {
-            // solo contamos si es distinto de bomba
+            //  Solo se cuenta si es distinto de bomba.
             if (Buscaminas.aCampoMinas[fila][columna]!="B")
             {
                 contarMinasAlrededorCasilla(fila,columna);
