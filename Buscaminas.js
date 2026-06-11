@@ -248,7 +248,7 @@ function resolverTablero(isOK) {
             }
             else
             {
-                // bandera erronea.
+                // bandera errónea.
                 aCasillas[i].classList.add("destapado");
                 aCasillas[i].classList.add("banderaErronea");
                 isOK = false;
