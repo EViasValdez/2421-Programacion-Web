@@ -114,14 +114,14 @@ function marcar(miEvento) {
         miEvento.stopPropagation();
         miEvento.preventDefault();
 
-        // obtenemos la fila de las propiedades dataset.
+        // Obtenemos la fila de las propiedades dataset.
         // como es un string hay que convertirlo a numero
         let fila = parseInt(casilla.dataset.fila,10);
         let columna = parseInt(casilla.dataset.columna,10);
 
         if (fila>=0 && columna>=0 && fila< Buscaminas.numFilas && columna < Buscaminas.numColumnas)
         {
-            // si esta marcada como "bandera"
+            // Si esta marcada como "bandera"
             if (casilla.classList.contains("icon-bandera"))
             {
                 // la quitamos
