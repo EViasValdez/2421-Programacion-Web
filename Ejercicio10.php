@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <title>Primer formulario en PHP</title>
+    <title>Primer formulario realizado en PHP</title>
 </head>
 <body>
     <style type="text/css">
