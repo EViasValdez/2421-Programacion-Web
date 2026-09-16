@@ -114,8 +114,7 @@ function marcar(miEvento) {
         miEvento.stopPropagation();
         miEvento.preventDefault();
 
-        // Obtenemos la fila de las propiedades dataset.
-        // como es un string hay que convertirlo a numero
+        // Obtenemos la fila de las propiedades dataset como es un string hay que convertirlo a numero.
         let fila = parseInt(casilla.dataset.fila,10);
         let columna = parseInt(casilla.dataset.columna,10);
 
@@ -144,7 +143,7 @@ function marcar(miEvento) {
                 casilla.classList.add("icon-bandera");
                 // y sumamos 1 al numero de minas encontradas
                 Buscaminas.numMinasEncontradas++;
-                // si es igual al numero de minas totales resolvemos el tablero para ver si esta bien
+                // si es igual al numero de minas totales resolvemos el tablero para ver si esta bien.
                 if (Buscaminas.numMinasEncontradas == Buscaminas.numMinasTotales)
                 {
                     resolverTablero(true);
