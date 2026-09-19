@@ -49,10 +49,10 @@ function esparcirMinas() {
     let numMinasEsparcidas = 0;
 
     while (numMinasEsparcidas<Buscaminas.numMinasTotales) {
-        // Numero aleatorio en el intervalo [0,numFilas-1].
+        // Numero aleatorio en el intervalo [0, numFilas-1].
         let fila    = Math.floor(Math.random() * Buscaminas.numFilas);
 
-        // Numero aleatorio en el intervalo [0,numColumnas-1].
+        // Numero aleatorio en el intervalo [0, numColumnas-1].
         let columna = Math.floor(Math.random() * Buscaminas.numColumnas);
 
         // Si no hay bomba en esa posición la ponemos y sumamos 1 a las bombas esparcidas.
