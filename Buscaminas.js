@@ -220,7 +220,7 @@ function destaparCasilla(fila, columna) {
                     // y que se nos ha olvidado marcarla
                     casilla.classList.add("sinmarcar");
 
-                    // y resolvemos el tablero indicando (false), que hemos cometido un fallo
+                    // y resolvemos el tablero indicando (false), que hemos cometido un error.
                     resolverTablero(false);
                 }
             }
