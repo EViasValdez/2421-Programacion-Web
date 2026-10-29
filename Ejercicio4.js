@@ -1,4 +1,4 @@
-document.getElementById("botoncalcular").click(function(){
+document.getElementById("Calcular").click(function(){
     alert();
 });
 
