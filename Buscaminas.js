@@ -7,7 +7,7 @@ const Buscaminas = {
 }
 
 function pintarTablero() {
-    // Seleccionamos el objeto tablero.
+    // Seleccionamos el objeto "tablero".
     let tablero = document.querySelector("#tablero");
 
     // Actualizamos las variables CSS con las variables JavaScript.
