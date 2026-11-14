@@ -9,19 +9,19 @@ alert(Prueba);
 function Operaciones() {
     if (Oper == "Sumar")
     {
-        suma(); 
+        Suma(); 
     }
     if (Oper == "Restar")
     {
-        restar();
+        Restar();
     }
     if (Oper = "Multiplicar")
     {
-        multiplicacion();
+        Multiplicacion();
     }
     if (Oper = "Dividir")
     {
-        division();
+        Division();
     }
     reuno = resultado;
     console.log("El resultado es: " + resultado)
