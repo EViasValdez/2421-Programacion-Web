@@ -4,7 +4,7 @@ function Tabla() {
     var MontoPrestamo = document.getElementById("MontoPrestamo").value;
     var FechaPago = document.getElementById("FechaPago").value;
     var NPlazo = document.getElementById("NPlazo").value;
-
+    
     if (Nombre == "" || Ap == "" || MontoPrestamo == "" || FechaPago == "" || NPlazo == "")
     {
         alert("No se han ingresado los datos");
